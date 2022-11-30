@@ -10,13 +10,13 @@ export default defineNuxtConfig({
     // unocss plugin - https://github.com/unocss/unocss
     '@nuxtjs/i18n',
   ],
-
+  css: ['@/assets/css/main.css'],
   // localization - i18n config
   i18n: {
     locales: [
       {
         code: 'en',
-        file: 'en-DE.json',
+        file: 'en-US.json',
       },
       { code: 'de', file: 'de-DE.json' },
     ],

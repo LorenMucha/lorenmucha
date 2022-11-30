@@ -1,6 +1,12 @@
 <script>
+import { useLanguageStore } from '~/store/languages'
+
 export default {
   name: 'AppHeader',
+  setup() {
+    const languages = useLanguageStore()
+    return { languages }
+  },
   data() {
     return {
       isActive: false,
@@ -15,7 +21,8 @@ export default {
       return string.charAt(0).toUpperCase() + string.slice(1)
     },
     switch_language() {
-      // this.change(this.languages)
+      this.languages.change()
+      this.$i18n.setLocale(this.languages.get)
     },
   },
 }
@@ -43,7 +50,7 @@ export default {
           </div>
         </div>
         <div class="hidden md:flex items-center">
-          <!-- Fixme: <a @click="switch_language" @scroll.prevent>{{ capitalize_first_letter(languages) }}</a> -->
+          <a @click="switch_language" @scroll.prevent>{{ capitalize_first_letter(languages.opposite) }}</a>
         </div> <!-- mobile button goes here -->
         <div class="md:hidden flex items-center">
           <button class="mobile-menu-button focus:outline-none">
@@ -72,9 +79,9 @@ export default {
           </a>
         </li>
         <li>
-          <!-- Fixme: <a class="block text-sm px-2 py-4" @click="switch_language" @scroll.prevent>{{
-            capitalize_first_letter(languages)
-          }}</a> -->
+          <a class="block text-sm px-2 py-4" @click="switch_language" @scroll.prevent>{{
+            capitalize_first_letter(languages.opposite)
+          }}</a>
         </li>
       </ul>
     </div>
