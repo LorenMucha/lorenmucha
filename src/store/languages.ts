@@ -7,7 +7,7 @@ export const useLanguageStore = defineStore('languages', {
       return state.language
     },
     opposite: (state) => {
-      return state.language === 'de' ? 'en' : 'de'
+      return state.language === 'de' ? 'gb' : 'de'
     },
   },
   actions: {

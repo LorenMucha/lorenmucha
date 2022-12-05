@@ -13,6 +13,11 @@ export default {
       menuItems: ['about', 'expertise', 'resume', 'contact'],
     }
   },
+  computed: {
+    flag() {
+      return `fi fi-${this.languages.opposite}`
+    },
+  },
   methods: {
     show_mobile_menu() {
       this.isActive = !this.isActive
@@ -50,7 +55,7 @@ export default {
           </div>
         </div>
         <div class="hidden md:flex items-center">
-          <a @click="switch_language" @scroll.prevent>{{ capitalize_first_letter(languages.opposite) }}</a>
+          <a @click="switch_language" @scroll.prevent><span :class="flag" /></a>
         </div> <!-- mobile button goes here -->
         <div class="md:hidden flex items-center">
           <button class="mobile-menu-button focus:outline-none">
@@ -79,9 +84,7 @@ export default {
           </a>
         </li>
         <li>
-          <a class="block text-sm px-2 py-4" @click="switch_language" @scroll.prevent>{{
-            capitalize_first_letter(languages.opposite)
-          }}</a>
+          <a class="block text-sm px-2 py-4" @click="switch_language" @scroll.prevent><span :class="flag" /></a>
         </li>
       </ul>
     </div>
