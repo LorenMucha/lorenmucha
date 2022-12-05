@@ -1,4 +1,5 @@
 <script>
+// Fixme: import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/vue'
 import Nuxt from '../assets/devicon/nuxt.svg?component'
 import Bootstrap from '../assets/devicon/bootstrap.svg?component'
 import Node from '../assets/devicon/node.svg?component'
@@ -13,6 +14,7 @@ import Kotlin from '../assets/devicon/kotlin.svg?component'
 import TailwindCss from '../assets/devicon/tailwindcss.svg?component'
 import Vuejs from '../assets/devicon/vuejs.svg?component'
 import Typescript from '../assets/devicon/typescript.svg?component'
+
 export default {
   data() {
     return {
@@ -44,12 +46,14 @@ export default {
     <div class="w-1/2">
       <div>
         <h2 class="mb-2 text-xl text-gray-700 font-bold dark:text-blue-200 capitalize">
-          Frontend
+          Languages
         </h2>
-
-        <ul class="flex flex-wrap gap-4 items-center">
-          <li v-for="(item, index) in frontend" :key="index" class="flex items-center" :title="item.title">
-            <component :is="item.component" :key="item.title" class="h-20 w-20" />
+        <ul class="grid gap-4 grid-cols-3 grid-rows-3">
+          <li v-for="(item, index) in frontend" :key="index" class="items-center flex" :title="item.title">
+            <component :is="item.component" :key="item.title" class="h-5 w-5 flex-shrink-0" />
+            <p class="ml-1.5">
+              {{ item.title }}
+            </p>
           </li>
         </ul>
       </div>
@@ -64,5 +68,19 @@ export default {
         </ul>
       </div>
     </div>
+    <!-- Fixme
+    <TabGroup>
+      <TabList>
+        <Tab>Languages</Tab>
+        <Tab>Frameworks</Tab>
+        <Tab>Methods</Tab>
+      </TabList>
+      <TabPanels>
+        <TabPanel>Content 1</TabPanel>
+        <TabPanel>Content 2</TabPanel>
+        <TabPanel>Content 3</TabPanel>
+      </TabPanels>
+    </TabGroup>
+  -->
   </div>
 </template>

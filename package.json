@@ -14,6 +14,7 @@
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
+    "@headlessui/vue": "^1.7.4",
     "@nuxtjs/i18n": "8.0.0-beta.6",
     "@pinia/nuxt": "0.4.6",
     "@tailwindcss/aspect-ratio": "0.4.2",
