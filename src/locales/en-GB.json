@@ -1,4 +1,30 @@
 {
+  "header":{
+    "expertise" : "Expertise",
+    "cv": "Resume",
+    "contact": "Contact",
+    "greet": "Hi! I'm Loren Mucha",
+    "role": "Fullstack Software Developer",
+    "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"
+  },
   "cv": "Resume",
-  "about": "I'm Loren and in my spare time I'm a passionate climber and mountain biker. On the side, I try to work on projects and try out new technologies as much as my time allows. This is also where my <a class='active-link' href='https://git.lorenmucha.de/project/climbingdiary/' target='_blank'>App</a> for climbers came into being, as a digital route book with graphic evaluation.<br/>Professionally, I have been working as a Full Stack Freelancer for <a href='https://www.vertical-life.info/' target='_blank' class='active-link'>Vertical Life</a> and <a href='https://www.no-q.info/' target='_blank' class='active-link'>NO-Q</a> since July 2022. Before that I was with <a class='active-link' href='https://datev.de' target='_blank'>DATEV eG</a> in Nürnberg, als Inhouse Consultant angestellt und hier in vielen Projekten tätig. Davor habe ich für das <a class='active-link' href='https://ioer.de' target='_blank'>Leibniz Institute for Ecological and Regional Development</a> as a research assistant. During this time I designed and implemented the <a class='active-link' href='https://github.com/ioer-dresden/ioer-monitor' target='_blank'>IÖR-Monitor</a>, which is used as a cartographic information medium on land use issues. I am passionate about writing <i>test-driven</i> clean code and always try to keep up to date. state of the art."
+  "about": "I'm Loren and in my spare time I'm a passionate climber and mountain biker. On the side, I try to work on projects and try out new technologies as much as my time allows. This is also where my <a class='active-link' href='https://git.lorenmucha.de/project/climbingdiary/' target='_blank'>App</a> for climbers came into being, as a digital route book with graphic evaluation.<br/>Professionally, I have been working as a Full Stack Freelancer for <a href='https://www.vertical-life.info/' target='_blank' class='active-link'>Vertical Life</a> and <a href='https://www.no-q.info/' target='_blank' class='active-link'>NO-Q</a> since July 2022. Before that I was with <a class='active-link' href='https://datev.de' target='_blank'>DATEV eG</a> in Nürnberg, als Inhouse Consultant angestellt und hier in vielen Projekten tätig. Davor habe ich für das <a class='active-link' href='https://ioer.de' target='_blank'>Leibniz Institute for Ecological and Regional Development</a> as a research assistant. During this time I designed and implemented the <a class='active-link' href='https://github.com/ioer-dresden/ioer-monitor' target='_blank'>IÖR-Monitor</a>, which is used as a cartographic information medium on land use issues. I am passionate about writing <i>test-driven</i> clean code and always try to keep up to date. state of the art.",
+  "resume":{
+    "tag": "Current",
+    "datev":{
+      "header": "Full Stack Developer",
+      "company": "DATEV eG",
+      "work": "<li>Conception and development of API’s for bidirectional data exhange between on-premises and external partner systems</li><li>Front-End development with Angular</li><li>DevOps for Continuous Integration und Delivery</li><li>Internal consultant in several projects, with Spring Reactive/MVC or Kotlin</li>"
+    },
+    "ioer":{
+      "header": "Research Associate",
+      "company": "Leibniz Institute of Ecological Urban and Regional Development",
+      "work":"<li>Implementation and architecture of the <a href='https://monitor.ioer.de/' target='_blank' class='active-link'>Web-GIS Monitor of Settlement and Open Space Development (IOER Monitor)</a>, with a React Frontend and Python/PHP Backend</li><li>Development and make available of Web-Processing-Services for spatial calculations of indicator values as <a href='https://github.com/LorenMucha/Monitor-API' target='_blank' class='active-link'>API</a> within the <a target='_blank' href='http://sora.git.gesis.org/' class='active-link'>SoRa research project</a></li><li>Supervision of Master's theses</li>"
+    },
+    "uni":{
+      "header":"Research Assistant",
+      "company": "Leibniz Institute of Ecological Urban and Regional Development",
+      "work":"<li>Design and implementation of an Android app for interaction with inticator maps</li><li>Conception and implementation of a web application, for the administration of geo services with Flask and React</li>"
+    }
+  }
 }

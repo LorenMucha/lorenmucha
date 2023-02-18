@@ -14,7 +14,7 @@
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
-    "@headlessui/vue": "^1.7.4",
+    "@headlessui/vue": "^1.7.10",
     "@nuxtjs/i18n": "8.0.0-beta.6",
     "@pinia/nuxt": "0.4.6",
     "@tailwindcss/aspect-ratio": "0.4.2",
@@ -35,6 +35,7 @@
     "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-vue": "9.8.0",
     "nuxt": "3.0.0",
+    "nuxt-icon": "^0.3.2",
     "prettier": "2.8.0",
     "prettier-plugin-tailwindcss": "0.2.0",
     "sass": "1.56.1",

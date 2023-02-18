@@ -1,5 +1,5 @@
 <script>
-import { siteMetaInfo } from '../constants'
+
 </script>
 
 <template>

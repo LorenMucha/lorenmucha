@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     // unocss plugin - https://github.com/unocss/unocss
     '@nuxtjs/i18n',
+    'nuxt-icon',
   ],
   css: ['@/assets/css/main.css'],
   // localization - i18n config

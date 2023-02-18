@@ -13,6 +13,19 @@ html {
   @apply text-blue-500;
 }
 
+.skill-list li{
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  width: 120px;
+  height: 120px;
+  transition: all .6s;
+  box-shadow: 0 2px 6px 0 rgb(0 0 0 / 5%), 0 0 3px 0 rgb(0 0 0 / 10%);
+}
+.skill-list svg{
+  max-width: 3rem;
+  max-height: 3rem;
+}
+
 @layer components {
   .active-link {
     @apply font-bold hover:text-blue-900;
@@ -20,20 +33,17 @@ html {
   .time-card {
     @apply px-10 rounded overflow-hidden shadow-lg;
   }
+  .section {
+    @apply min-h-max w-screen justify-center p-10
+  }
+
+  .section .header {
+   @apply container pt-16 pb-12 sm:pt-20 sm:pb-16 md:pt-24 md:pb-16 text-center
+  }
+
+  .section div h2{
+    @apply font-black leading-tight text-3xl md:text-4xl mb-4
+  }
 }
 
-.section h1 {
-  font-weight: bold;
-  font-size: x-large;
-  margin: 1rem;
-}
 
-.section {
-  margin: 1rem;
-  width: 100vw;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  padding-left: 2.5rem /* 40px */;
-  padding-right: 2.5rem /* 40px */;
-}

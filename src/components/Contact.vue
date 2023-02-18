@@ -15,8 +15,8 @@ export default {
 
 <template>
   <div id="contact" class="section">
-    <div class="w-1/2">
-      <h1>Contact</h1>
+    <div>
+      <h1>{{ $t('header.contact') }}</h1>
       <div class="flex justify-center items-center">
         <div class="block p-6 rounded-lg shadow-lg bg-white w-screen">
           <form>

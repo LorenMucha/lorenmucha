@@ -1,40 +1,56 @@
 <script>
-// Fixme: import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/vue'
-import Nuxt from '../assets/devicon/nuxt.svg?component'
-import Bootstrap from '../assets/devicon/bootstrap.svg?component'
-import Node from '../assets/devicon/node.svg?component'
-import Angular from '../assets/devicon/angular.svg?component'
-import Javascript from '../assets/devicon/javascript.svg?component'
-import Java from '../assets/devicon/java.svg?component'
-import Python from '../assets/devicon/python.svg?component'
-import Springboot from '../assets/devicon/springboot.svg?component'
-import Flask from '../assets/devicon/flask.svg?component'
-import Ruby from '../assets/devicon/ruby.svg?component'
-import Kotlin from '../assets/devicon/kotlin.svg?component'
-import TailwindCss from '../assets/devicon/tailwindcss.svg?component'
-import Vuejs from '../assets/devicon/vuejs.svg?component'
-import Typescript from '../assets/devicon/typescript.svg?component'
-
 export default {
   data() {
     return {
       frontend: [
-        { component: shallowRef(Typescript), title: 'Typescript' },
-        { component: shallowRef(Javascript), title: 'Javascript' },
-        { component: shallowRef(Bootstrap), title: 'Bootstrap' },
-        { component: shallowRef(Vuejs), title: 'Vuejs' },
-        { component: shallowRef(TailwindCss), title: 'TailwindCss' },
-        { component: shallowRef(Nuxt), title: 'Nuxt' },
-        { component: shallowRef(Node), title: 'Node' },
-        { component: shallowRef(Angular), title: 'Angular' },
+        {
+          component: 'logos:typescript-icon',
+          title: 'Typescript',
+        },
+        {
+          component: 'logos:java',
+          title: 'Java',
+        },
+        {
+          component: 'logos:python',
+          title: 'Python',
+        },
+        {
+          component: 'logos:ruby',
+          title: 'Ruby',
+        },
+        {
+          component: 'logos:kotlin-icon',
+          title: 'Kotlin',
+        },
+        {
+          component: 'logos:angular-icon',
+          title: 'Angular',
+        },
+        {
+          component: 'logos:spring-icon',
+          title: 'Spring',
+        },
+        {
+          component: 'logos:flask',
+          title: 'Flask',
+        },
+        {
+          component: 'logos:vue',
+          title: 'Vuejs',
+        },
+        {
+          component: 'logos:tailwindcss-icon',
+          title: 'TailwindCss',
+        },
+        {
+          component: 'logos:nuxt-icon',
+          title: 'Nuxt.js',
+        },
       ],
-      backend: [
-        { component: shallowRef(Java), title: 'Java' },
-        { component: shallowRef(Python), title: 'Python' },
-        { component: shallowRef(Springboot), title: 'Spring Boot' },
-        { component: shallowRef(Flask), title: 'Flask' },
-        { component: shallowRef(Ruby), title: 'Ruby' },
-        { component: shallowRef(Kotlin), title: 'Kotlin' },
+      frameworks: [
+        /*         { component: shallowRef(Springboot), title: 'Spring Boot' },
+, */
       ],
     }
   },
@@ -43,44 +59,25 @@ export default {
 
 <template>
   <div id="expertise" class="section">
-    <div class="w-1/2">
-      <div>
-        <h2 class="mb-2 text-xl text-gray-700 font-bold dark:text-blue-200 capitalize">
-          Languages
+    <div class="header">
+      <div class="max-w-3xl mx-auto">
+        <h2>
+          Skills &amp; Tools
         </h2>
-        <ul class="grid gap-4 grid-cols-3 grid-rows-3">
-          <li v-for="(item, index) in frontend" :key="index" class="items-center flex" :title="item.title">
-            <component :is="item.component" :key="item.title" class="h-5 w-5 flex-shrink-0" />
-            <p class="ml-1.5">
-              {{ item.title }}
-            </p>
-          </li>
-        </ul>
-      </div>
-      <div class="mt-4">
-        <h2 class="mb-2 text-xl text-gray-700 font-bold dark:text-blue-200 capitalize">
-          Backend
-        </h2>
-        <ul class="mb-6 flex flex-wrap gap-4">
-          <li v-for="(item, index) in backend" :key="index" class="flex items-center" :title="item.title">
-            <component :is="item.component" :key="item.title" class="h-20 w-20" />
-          </li>
-        </ul>
       </div>
     </div>
-    <!-- Fixme
-    <TabGroup>
-      <TabList>
-        <Tab>Languages</Tab>
-        <Tab>Frameworks</Tab>
-        <Tab>Methods</Tab>
-      </TabList>
-      <TabPanels>
-        <TabPanel>Content 1</TabPanel>
-        <TabPanel>Content 2</TabPanel>
-        <TabPanel>Content 3</TabPanel>
-      </TabPanels>
-    </TabGroup>
-  -->
+    <ul class="flex flex-wrap items-center justify-center skill-list load-hidden v-scroll-reveal">
+      <li
+        v-for="(item, index) in frontend" :key="index" class="p-4 rounded-lg flex items-end justify-center m-2"
+        :title="item.title"
+      >
+        <div>
+          <Icon :key="item.title" :name="item.component" size="3rem" class="w-auto mx-auto h-auto block" />
+          <span class="font-bold block mt-3 mb-1">
+            {{ item.title }}
+          </span>
+        </div>
+      </li>
+    </ul>
   </div>
 </template>

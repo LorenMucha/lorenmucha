@@ -10,7 +10,7 @@ export default {
   data() {
     return {
       isActive: false,
-      menuItems: ['about', 'expertise', 'resume', 'contact'],
+      menuItems: ['expertise', 'contact'],
     }
   },
   computed: {
@@ -21,9 +21,6 @@ export default {
   methods: {
     show_mobile_menu() {
       this.isActive = !this.isActive
-    },
-    capitalize_first_letter(string) {
-      return string.charAt(0).toUpperCase() + string.slice(1)
     },
     switch_language() {
       this.languages.change()
@@ -50,7 +47,7 @@ export default {
               :href="`#${item}`"
               class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300"
             >{{
-              capitalize_first_letter(item)
+              $t(`header.${item}`)
             }}</a>
           </div>
         </div>
@@ -80,7 +77,7 @@ export default {
       <ul>
         <li v-for="(item, index) in menuItems" :key="index">
           <a :href="`#${item}`" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">
-            {{ capitalize_first_letter(item) }}
+            {{ $t(`header.${item}`) }}
           </a>
         </li>
         <li>
