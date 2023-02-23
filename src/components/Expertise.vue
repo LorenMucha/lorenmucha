@@ -67,13 +67,15 @@ export default {
           Skills &amp; Tools
         </h2>
       </div>
-      <div class="inline-flex rounded-md shadow-sm">
-        <button type="button" class="py-3 px-4 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-lg first:ml-0 last:rounded-r-lg border font-medium bg-white text-gray-700 align-middle hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all text-sm dark:bg-gray-800 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400"
-        @click="skillList = languages">
+      <div class="inline-flex rounded-full shadow-sm p-3">
+        <button
+          type="button"
+          :class="{ highlighted: skillList === languages }" @click="skillList = languages">
           Languages
         </button>
-        <button type="button" class="py-3 px-4 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-lg first:ml-0 last:rounded-r-lg border font-medium bg-white text-gray-700 align-middle hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all text-sm dark:bg-gray-800 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400"
-                @click="skillList = frameWorks">
+        <button
+          type="button"
+          :class="{ highlighted: skillList === frameWorks }" @click="skillList = frameWorks">
           Frameworks
         </button>
       </div>
@@ -94,3 +96,25 @@ export default {
     </ul>
   </div>
 </template>
+
+<style scoped>
+#expertise .header button.highlighted{
+  @apply text-white bg-blue-500
+}
+
+#expertise .header button{
+  @apply py-4 px-5 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-full first:ml-0 last:rounded-r-full border font-medium bg-white text-gray-800 align-middle;
+}
+#expertise .skill-list li{
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  width: 120px;
+  height: 120px;
+  transition: all .6s;
+  box-shadow: 0 2px 6px 0 rgb(0 0 0 / 5%), 0 0 3px 0 rgb(0 0 0 / 10%);
+}
+#expertise .skill-list svg{
+  max-width: 3rem;
+  max-height: 3rem;
+}
+</style>
