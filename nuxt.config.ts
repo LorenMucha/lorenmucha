@@ -11,9 +11,6 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     'nuxt-icon',
   ],
-  headlessui: {
-    prefix: 'Headless',
-  },
   css: ['@/assets/css/main.css'],
   // localization - i18n config
   i18n: {
