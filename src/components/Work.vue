@@ -13,17 +13,15 @@ export default {
         </h2>
       </div>
     </div>
-    <div
-        class="grid grid-flow-row gap-8 text-neutral-600 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-      <div class="flex flex-wrap items-center justify-center skill-list load-hidden v-scroll-reveal">
+    <div class="grid grid-flow-row gap-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-3">
+      <div class="flex flex-wrap items-center justify-center">
         <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <a href="#">
             <img class="rounded-t-lg" src="~assets/images/monitor.jpeg" loading="lazy" alt=""/>
           </a>
           <div class="p-5">
             <a href="#">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Monitor der Siedlungs-
-                und Freiraumentwicklung</h5>
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">IÖR Monitor</h5>
             </a>
             <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Persequeris graece commune molestie fastidii.
               Populo amet conceptam docendi elementum partiendo mei class deserunt litora. Est nisl dolorem mnesarchum
@@ -44,9 +42,8 @@ export default {
             </a>
           </div>
         </div>
-
       </div>
-      <div class="flex flex-wrap items-center justify-center skill-list load-hidden v-scroll-reveal">
+      <div class="flex flex-wrap items-center justify-center">
         <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <a href="#">
             <img class="rounded-t-lg" src="~assets/images/climbing_diary.png" loading="lazy" alt=""/>
@@ -75,7 +72,7 @@ export default {
           </div>
         </div>
       </div>
-      <div class="flex flex-wrap items-center justify-center skill-list load-hidden v-scroll-reveal">
+      <div class="flex flex-wrap items-center justify-center">
         <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <a href="#">
             <img class="rounded-t-lg" src="~assets/images/monitor_api.jpeg" loading="lazy" alt=""/>
@@ -84,7 +81,10 @@ export default {
             <a href="#">
               <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Monitor API</h5>
             </a>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Vitae porta persecuti tristique magnis hac. Ubique facilisis proin per justo detracto donec tation utinam cras. Fastidii nascetur menandri te discere dictas urna. Ullamcorper consectetuer reprimique verterem pri no tempus nonumy habemus tation. Solet et comprehensam reque pretium.</p>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Vitae porta persecuti tristique magnis hac.
+              Ubique facilisis proin per justo detracto donec tation utinam cras. Fastidii nascetur menandri te discere
+              dictas urna. Ullamcorper consectetuer reprimique verterem pri no tempus nonumy habemus tation. Solet et
+              comprehensam reque pretium.</p>
             <a href="#"
                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
@@ -101,11 +101,12 @@ export default {
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </template>
 
 <style scoped>
-
+img {
+  @apply w-full object-cover h-32 sm:h-48 md:h-64 p-2
+}
 </style>
