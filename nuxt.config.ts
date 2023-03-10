@@ -7,7 +7,6 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     // pinia plugin - https://pinia.esm.dev
     '@pinia/nuxt',
-    // unocss plugin - https://github.com/unocss/unocss
     '@nuxtjs/i18n',
     'nuxt-icon',
   ],
