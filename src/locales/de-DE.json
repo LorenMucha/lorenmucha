@@ -8,23 +8,12 @@
     "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"
   },
   "cv": "Lebenslauf",
-  "about": "ich bin Loren und in meiner Freizeit ein leidenschaftlicher Kletterer und Mountainbiker. Nebenbei versuche ich, soweit es meine Zeit zulässt auch privat an Projekten zu arbeiten und neue Technologien auszuprobieren. Hier ist auch meine <a class='active-link' href='https://git.lorenmucha.de/project/climbingdiary/' target='_blank'>App</a> für Kletterer entstanden, als digitales Routenbuch mit graphischer Auswertung. <br /> Beruflich bin ich seit Juli 2022 als Full Stack Freelancer für <a href='https://www.vertical-life.info/' target='_blank' class='active-link'>Vertical Life</a> und <a href='https://www.no-q.info/' target='_blank' class='active-link'>NO-Q</a> tätig. Vorher war ich bei der <a class='active-link' href='https://datev.de' target='_blank'>DATEV eG</a> in Nürnberg, als In-House Consultant angestellt und hier in vielen Projekten tätig. Davor habe ich für das <a class='active-link' href='https://ioer.de' target='_blank'>Leibniz Institut für ökologische Raumentwicklung</a> als Wissenschaftlicher Mitarbeiter gearbeitet. In dieser Zeit habe ich den <a class='active-link' href='https://github.com/ioer-dresden/ioer-monitor' target='_blank'>IÖR-Monitor</a> konzipiert und implementiert, welcher als kartografisches Informationsmedium zu Fragen der Flächeninanspruchnahme dient. Ich schreibe leidenschaftlich gerne <i>test-driven</i> clean Code und versuche immer auf dem neuesten Stand zu bleiben.",
-  "resume":{
-    "tag": "Aktuell",
-    "datev":{
-      "header": "Full Stack Entwickler",
-      "company": "DATEV eG",
-      "work": "<li>Konzeption und Entwicklung von API’s für den Bidirektionalen Datenaustausch zwischen On-Premises und externen Partnersystemen</li><li>Entwicklung von Frontends mit Angular</li><li>DevOps für Continuous Integration und Delivery</li><li>Interner Konsultant in unterschiedlichen Projekten, mit Spring Reactive/MVC und Kotlin</li>"
+  "work": {
+    "ioer_monitor": {
+      "intro": "Der <a class='active-link' href='https://monitor.ioer.de' target='_blank'>IÖR-Monitor</a> ist ein Web GIS um intuitiv Fragen zur Flächennutzung in Deutschland zu beantworten."
     },
-    "ioer":{
-      "header": "Wissenschaftlicher Mitarbeiter",
-      "company": "Leibniz Institut für ökologische Raumentwicklung",
-      "work": "<li>Implementierung und Architektur des <a href='https://monitor.ioer.de/' target='_blank' class='active-link font-bold dark:text-blue-200'>Web-GIS Monitor der Siedlungs- und Freiraumentwicklung</a>, mit einem React Frontend und Python/PHP Backend</li><li>Entwicklung und Bereitstellung von Web-Processing-Services zur räumliche Berechnungen von Indikatorwerten als <a href='https://github.com/LorenMucha/Monitor-API' target='_blank' class='active-link'>API</a> im Rahmen des <a target='_blank' href='http://sora.git.gesis.org/' class='active-link'>SoRa-Forschungsprojektes</a></li><li>Betreuung von Masterarbeiten</li>"
-    },
-    "uni":{
-      "header":"Wissenschaftlicher Mitarbeiter",
-      "company": "Leibniz Institut für ökologische Raumentwicklung",
-      "work": "<li>Design und Umsetzung einer Android App zur Interaktion mit Intikatorkarten</li><li>Konzeption und Umsetzung einer Webanwendung, zur Verwaltung von OGC Diensten mit Flask und React</li>"
+    "climbing_diary": {
+      "intro": "Virtuelles Tagebuch mit Statistischer Auswertung der persönlichen Leistungen, als native Android App."
     }
   }
 }
