@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxtjs/i18n',
     'nuxt-icon',
+    '@nuxt/content',
   ],
   css: ['@/assets/css/main.css'],
   // localization - i18n config

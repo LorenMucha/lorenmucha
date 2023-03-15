@@ -37,7 +37,7 @@ export default {
         <div class="flex space-x-7">
           <div>
             <!-- Website Logo -->
-            <a href="#" class="flex items-center py-4 px-2">
+            <a class="flex items-center py-4 px-2">
               <span class="font-semibold md:text-lg text-gray-800 font-bold">Loren Mucha</span>
             </a>
           </div>
@@ -52,7 +52,7 @@ export default {
           </div>
         </div>
         <div class="hidden md:flex items-center">
-          <a @click="switch_language" @scroll.prevent><span :class="flag" /></a>
+          <button @click="switch_language" @scroll.prevent><span :class="flag" /></button>
         </div> <!-- mobile button goes here -->
         <div class="md:hidden flex items-center">
           <button class="mobile-menu-button focus:outline-none">
