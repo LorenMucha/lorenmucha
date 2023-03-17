@@ -7,7 +7,7 @@ export const siteMetaInfo = {
   headerTitle: 'Md Rathik',
   slogan: 'always stay in the moment',
   description:
-      'A tech enthusiast & self taught learner. Love to talk the way of tech.',
+        'A tech enthusiast & self taught learner. Love to talk the way of tech.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://lorenmucha.de',
@@ -24,3 +24,4 @@ export const siteMetaInfo = {
   youtube: '#',
   linkedin: 'https://www.linkedin.com/in/lorenmucha/',
 }
+

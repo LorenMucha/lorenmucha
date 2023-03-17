@@ -22,9 +22,12 @@ The application is still in the development phase and is intended to provide use
 
 <div class="mt-3 font-bold">Screenshots</div>
 
-<img class="rounded-t-lg p-3" src="/img/monitor/barchart.png" width="350" />
-<img class="rounded-t-lg p-3" src="/img/monitor/tabelle.png" width="350" />
-<img class="rounded-t-lg p-3" src="/img/monitor/linechart.png" width="350" />
-<img class="rounded-t-lg p-3" src="/img/monitor/routen.png" width="350" />
-<img class="rounded-t-lg p-3" src="/img/monitor/projects.png" width="350" />
-<img class="rounded-t-lg p-3" src="/img/monitor/filter.png" width="350" />
+<div class="mt-3 font-bold">Screenshots</div>
+<div class="container grid grid-cols-3 gap-2 mx-auto">
+    <img class="rounded-t-lg p-3" src="/img/climbing_diary/barchart.png" width="350" />
+    <img class="rounded-t-lg p-3" src="/img/climbing_diary/tabelle.png" width="350" />
+    <img class="rounded-t-lg p-3" src="/img/climbing_diary/linechart.png" width="350" />
+    <img class="rounded-t-lg p-3" src="/img/climbing_diary/routen.png" width="350" />
+    <img class="rounded-t-lg p-3" src="/img/climbing_diary/projects.png" width="350" />
+    <img class="rounded-t-lg p-3" src="/img/climbing_diary/filter.png" width="350" />
+</div>
