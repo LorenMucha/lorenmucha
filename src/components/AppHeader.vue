@@ -10,7 +10,7 @@ export default {
   data() {
     return {
       isActive: false,
-      menuItems: ['expertise', 'contact'],
+      menuItems: { expertise: '#expertise', contact: 'mailto:"lorenmucha@gmail.com"' },
     }
   },
   computed: {
@@ -34,32 +34,32 @@ export default {
   <nav class="bg-white shadow-lg fixed w-screen top-0 z-10">
     <div class="max-w-6xl mx-auto px-4">
       <div class="flex justify-between">
+        <div>
+          <!-- Website Logo -->
+          <a class="flex items-center py-4 px-2">
+            <span class="font-semibold md:text-lg text-gray-800 font-bold">Loren Mucha</span>
+          </a>
+        </div>
         <div class="flex space-x-7">
-          <div>
-            <!-- Website Logo -->
-            <a class="flex items-center py-4 px-2">
-              <span class="font-semibold md:text-lg text-gray-800 font-bold">Loren Mucha</span>
-            </a>
-          </div>
           <!-- Primary Navbar items -->
-          <div v-for="(item, index) in menuItems" :key="index" class="hidden md:flex items-center space-x-1">
+          <div v-for="(value, key) in menuItems" :key="key" class="hidden md:flex items-center space-x-1">
             <a
-              :href="`#${item}`"
+              :href="value"
               class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300"
             >{{
-              $t(`header.${item}`)
+              $t(`header.${key}`)
             }}</a>
           </div>
+          <div class="hidden md:flex items-center">
+            <button @click="switch_language" @scroll.prevent><span :class="flag" /></button>
+          </div>
         </div>
-        <div class="hidden md:flex items-center">
-          <button @click="switch_language" @scroll.prevent><span :class="flag" /></button>
-        </div> <!-- mobile button goes here -->
+        <!-- Mobile menu button -->
         <div class="md:hidden flex items-center">
           <button class="mobile-menu-button focus:outline-none">
             <i class="bx bx-menu text-3xl mt-1" />
           </button>
         </div>
-        <!-- Mobile menu button -->
         <div class="md:hidden flex items-center">
           <button class="outline-none mobile-menu-button" @click="show_mobile_menu">
             <svg
@@ -75,9 +75,9 @@ export default {
     <!-- mobile menu -->
     <div :class="[isActive ? 'active' : 'hidden']" class="mobile-menu">
       <ul>
-        <li v-for="(item, index) in menuItems" :key="index">
-          <a :href="`#${item}`" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">
-            {{ $t(`header.${item}`) }}
+        <li v-for="(value, key) in menuItems" :key="key">
+          <a :href="value" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">
+            {{ $t(`header.${key}`) }}
           </a>
         </li>
         <li>

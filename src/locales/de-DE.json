@@ -9,6 +9,7 @@
   },
   "cv": "Lebenslauf",
   "work": {
+    "header": "Projekte",
     "ioer_monitor": {
       "intro": "Der <a class='active-link' href='https://monitor.ioer.de' target='_blank'>IÖR-Monitor</a> ist ein Web GIS um intuitiv Fragen zur Flächennutzung in Deutschland zu beantworten."
     },
