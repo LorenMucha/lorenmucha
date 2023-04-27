@@ -1,5 +1,5 @@
 <script>
-import { siteMetaInfo } from '../constants'
+import { siteMetaInfo } from '~/constants'
 
 export default {
   data: () => {
@@ -20,12 +20,6 @@ export default {
           <div class="xl:mr-10 lg:mr-10 sm:mr-0">
             <hr class="my-1 h-1 bg-blue-500 rounded border-0 md:my-6 dark:bg-gray-700">
             <p class="mt-8 mb-4 dark:bg-gray-800 dark:text-blue-200 text-justify" v-html="$t('header.about')" />
-          </div>
-          <div class="flex items-center justify-left">
-            <button class="text-lg bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-              Meine Arbeit
-            </button>
-            <a class="text-lg ml-8 active-link text-blue-500">Mehr über mich</a>
           </div>
         </div>
       </div>

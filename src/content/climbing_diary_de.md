@@ -6,7 +6,7 @@ ___
 <div class="container">
 <img class="rounded-t-lg p-5" src="/img/monitor/logo.svg" loading="lazy" width="150" />
 
-Repsository für die Entwicklung der **Android-App** der
+Repository für die Entwicklung der **Android-App** der
 gleichnamigen <a class="active-link" href="https://github.com/LorenMucha/Climbing-Diary" target="_blank">
 Desktop-App</a>.
 Die Anwendung befindet sich noch in der Entwicklungsphase und soll dem Nutzer alle Funktionen der Desktop Anwendung mit
