@@ -2,6 +2,7 @@
 
 ---
 
+<div class="container-center p-5">
 <div class="mt-3 font-bold">Funktionsumfang</div>
 Inzwischen werden fast 80 Indikatoren der Kategorien Siedlung, Freiraum, Verkehr, Gebäude, Landschaftsqualität 
 (z. B. „Hemerobieindex“, „Ökotondichte“), Landschafts- und Naturschutz, Ökosystemleistungen, Bevölkerung, Risiko und Relief 
@@ -38,7 +39,10 @@ täglich (30-Hektar-Ziel) zu reduzieren. Um die Erreichung dieses Zieles zu eval
 genaues und aktuelles Flächenmonitoring notwendig.
 
 <div class="mt-3 font-bold">Screenshots</div>
-<img class="rounded-t-lg p-3" src="/img/monitor/responsive.jpeg" />
-<img class="rounded-t-lg p-3" src="/img/monitor/raster_slider.jpg" />
-<img class="rounded-t-lg p-3" src="/img/monitor/gebiete.jpg" />
-<img class="rounded-t-lg p-3" src="/img/monitor/S12RG_gem.jpg" />
+<div class="grid grid-col-2 max-md:grid-flow-col grid-flow-row gap-4">
+    <img class="rounded" src="/img/monitor/responsive.jpeg" />
+    <img class="rounded" src="/img/monitor/raster_slider.jpg" />
+    <img class="rounded" src="/img/monitor/gebiete.jpg" />
+    <img class="rounded" src="/img/monitor/S12RG_gem.jpg" />
+</div>
+</div>

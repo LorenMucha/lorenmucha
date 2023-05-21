@@ -1,5 +1,5 @@
 export const siteMetaInfo = {
-  title: 'Loren Mucha | Full Stack Software Developer',
+  title: 'Loren Mucha',
   author: 'Loren Mucha',
   author_image: '/author.png',
   position: 'Full Stack Developer',

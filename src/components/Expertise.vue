@@ -67,33 +67,39 @@ export default {
           Skills &amp; Tools
         </h2>
       </div>
-      <div class="inline-flex rounded-full shadow-sm p-3">
-        <button
-          type="button"
-          :class="{ highlighted: skillList === languages }" @click="skillList = languages">
-          Languages
-        </button>
-        <button
-          type="button"
-          :class="{ highlighted: skillList === frameWorks }" @click="skillList = frameWorks">
-          Frameworks
-        </button>
+      <div class="container">
+        <h3>Programmiersprachen</h3>
+        <ul class="flex flex-wrap items-center justify-center skill-list load-hidden v-scroll-reveal">
+          <li
+            v-for="(item, index) in languages" :key="index" class="p-4 rounded-lg flex items-end justify-center m-2"
+            :title="item.title"
+          >
+            <div>
+              <Icon :key="item.title" :name="item.component" size="3rem" class="w-auto mx-auto h-auto block" />
+              <span class="font-bold block mt-3 mb-1">
+                {{ item.title }}
+              </span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="container">
+        <h3>Frameworks</h3>
+        <ul class="flex flex-wrap items-center justify-center skill-list load-hidden v-scroll-reveal">
+          <li
+            v-for="(item, index) in frameWorks" :key="index" class="p-4 rounded-lg flex items-end justify-center m-2"
+            :title="item.title"
+          >
+            <div>
+              <Icon :key="item.title" :name="item.component" size="3rem" class="w-auto mx-auto h-auto block" />
+              <span class="font-bold block mt-3 mb-1">
+                {{ item.title }}
+              </span>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
-
-    <ul class="flex flex-wrap items-center justify-center skill-list load-hidden v-scroll-reveal">
-      <li
-        v-for="(item, index) in skillList" :key="index" class="p-4 rounded-lg flex items-end justify-center m-2"
-        :title="item.title"
-      >
-        <div>
-          <Icon :key="item.title" :name="item.component" size="3rem" class="w-auto mx-auto h-auto block" />
-          <span class="font-bold block mt-3 mb-1">
-            {{ item.title }}
-          </span>
-        </div>
-      </li>
-    </ul>
   </div>
 </template>
 
