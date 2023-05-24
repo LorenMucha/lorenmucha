@@ -22,6 +22,12 @@ html {
   .time-card {
     @apply px-10 rounded overflow-hidden shadow-lg;
   }
+  .page{
+    @apply p-10 mt-10 justify-center
+  }
+  .page h1{
+    @apply mb-2 mt-0 text-5xl font-medium leading-tight
+  }
   .section {
     @apply justify-center p-10
   }

@@ -1,7 +1,3 @@
-## Climbing Diary
-
-___
-
 <div class="container">
 <img class="rounded-t-lg p-5" src="/img/monitor/logo.svg" loading="lazy" width="250" />
 

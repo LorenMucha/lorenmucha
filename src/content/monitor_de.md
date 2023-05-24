@@ -1,7 +1,3 @@
-## IOER Monitor
-
----
-
 <div class="container-center p-5">
 <div class="mt-3 font-bold">Funktionsumfang</div>
 Inzwischen werden fast 80 Indikatoren der Kategorien Siedlung, Freiraum, Verkehr, Gebäude, Landschaftsqualität 

@@ -1,7 +1,3 @@
-## IOER Monitor
-
----
-
 <div class="mt-3 font-bold">Funktionsumfang</div>
 Meanwhile, almost 80 indicators of the categories settlement, open space, traffic, buildings, landscape quality 
 (e.g. "hemeroby index", "ecotone density"), landscape and nature conservation, ecosystem services, population, risk and relief. 

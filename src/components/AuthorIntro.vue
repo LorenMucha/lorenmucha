@@ -11,7 +11,7 @@ export default {
 </script>
 
 <template>
-  <div class="h-screen flex justify-center items-center">
+  <div class="section h-screen flex justify-center items-center mt-10">
     <div class="container grid md:grid-cols-3 grid-flow-col">
       <div class="col-span-2">
         <div class="pl-5 items-center">

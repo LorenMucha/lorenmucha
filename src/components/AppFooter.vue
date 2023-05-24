@@ -28,17 +28,8 @@ export default {
         ><span class="sr-only">mail</span>
           <img class="w-8 h-8" src="~assets/icon/mail.svg"></a>
       </div>
-      <div class="flex mb-2 space-x-2 text-sm text-gray-500 dark:text-gray-400">
+      <div class="flex px-5 sm:mb-2 sm:space-x-2 space-x-0 text-sm text-gray-500 dark:text-gray-400">
         <div>Copyright © {{ new Date().getFullYear() }}</div>
-        <div>•</div>
-        <a href="/">{{ siteMetadata.author }}'s blog - {{ siteMetadata.slogan }}</a>
-      </div>
-      <div class="mb-8 text-sm text-gray-500 dark:text-gray-400">
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://github.com/mdrathik/tailwind-nuxtjs-starter-blog"
-        />
       </div>
     </div>
   </footer>
