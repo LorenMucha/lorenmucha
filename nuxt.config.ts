@@ -10,7 +10,11 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     'nuxt-icon',
     '@nuxt/content',
+    'nuxt-swiper',
   ],
+  build: {
+    transpile: ['swiper'],
+  },
   css: ['@/assets/css/main.css'],
   // localization - i18n config
   i18n: {

@@ -1,5 +1,5 @@
 <div class="container">
-<img class="rounded-t-lg p-5" src="/img/monitor/logo.svg" loading="lazy" width="150" />
+<img class="rounded-t-lg p-5" src="/images/monitor/logo.svg" loading="lazy" width="150" />
 
 Repository for the development of the **Android-App** of the eponymous
 <a class="active-link" href="https://github.com/LorenMucha/Climbing-Diary" target="_blank">
@@ -18,10 +18,10 @@ with synchronization.
 
 <div class="mt-3 font-bold">Screenshots</div>
 <div class="container grid grid-cols-3 gap-2 mx-auto">
-    <img class="rounded-t-lg p-3" src="/img/climbing_diary/barchart.png" width="350" />
-    <img class="rounded-t-lg p-3" src="/img/climbing_diary/tabelle.png" width="350" />
-    <img class="rounded-t-lg p-3" src="/img/climbing_diary/linechart.png" width="350" />
-    <img class="rounded-t-lg p-3" src="/img/climbing_diary/routen.png" width="350" />
-    <img class="rounded-t-lg p-3" src="/img/climbing_diary/projects.png" width="350" />
-    <img class="rounded-t-lg p-3" src="/img/climbing_diary/filter.png" width="350" />
+    <img class="rounded-t-lg p-3" src="/images/climbing_diary/barchart.png" width="350" />
+    <img class="rounded-t-lg p-3" src="/images/climbing_diary/tabelle.png" width="350" />
+    <img class="rounded-t-lg p-3" src="/images/climbing_diary/linechart.png" width="350" />
+    <img class="rounded-t-lg p-3" src="/images/climbing_diary/routen.png" width="350" />
+    <img class="rounded-t-lg p-3" src="/images/climbing_diary/projects.png" width="350" />
+    <img class="rounded-t-lg p-3" src="/images/climbing_diary/filter.png" width="350" />
 </div>

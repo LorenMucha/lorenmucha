@@ -34,7 +34,7 @@ täglich (30-Hektar-Ziel) zu reduzieren. Um die Erreichung dieses Zieles zu eval
 genaues und aktuelles Flächenmonitoring notwendig.
 
 <div class="mt-3 font-bold">Screenshots</div>
-<img class="rounded-t-lg p-3" src="/img/monitor/responsive.jpeg" />
-<img class="rounded-t-lg p-3" src="/img/monitor/raster_slider.jpg" />
-<img class="rounded-t-lg p-3" src="/img/monitor/gebiete.jpg" />
-<img class="rounded-t-lg p-3" src="/img/monitor/S12RG_gem.jpg" />
+<img class="rounded-t-lg p-3" src="/images/monitor/responsive.jpeg" />
+<img class="rounded-t-lg p-3" src="/images/monitor/raster_slider.jpg" />
+<img class="rounded-t-lg p-3" src="/images/monitor/gebiete.jpg" />
+<img class="rounded-t-lg p-3" src="/images/monitor/S12RG_gem.jpg" />
