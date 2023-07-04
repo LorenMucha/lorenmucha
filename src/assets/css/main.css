@@ -22,25 +22,27 @@ html {
   .time-card {
     @apply px-10 rounded overflow-hidden shadow-lg;
   }
-  .page{
-    @apply p-10 mt-10 justify-center
+  .page {
+    @apply text-center
   }
-  .page h1{
-    @apply mb-2 mt-0 text-5xl font-medium leading-tight
-  }
-  .section {
-    @apply justify-center p-10
+  
+  .section{
+    @apply p-10 container text-center 
   }
 
-  .section .header {
+  section h1{
+    @apply mb-2 mt-0 text-5xl font-medium leading-tight
+  }
+
+  section .header {
    @apply container text-center pb-5
   }
 
-  .section div h2{
+ section h2{
     @apply font-black leading-tight text-3xl md:text-4xl mb-4
   }
 
-  .section div h3{
+  section h3{
     @apply font-black leading-tight text-xl md:text-xl mb-3
   }
 }

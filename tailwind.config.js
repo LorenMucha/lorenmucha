@@ -1,5 +1,4 @@
 module.exports = {
-  development: true,
   mode: 'jit',
   darkMode: 'class',
   content: [
@@ -7,9 +6,10 @@ module.exports = {
     './layouts/**/*.vue',
     './pages/**/*.vue',
     './plugins/**/*.{js,ts}',
+    './nuxt.config.{js,ts}',
   ],
   theme: {
-    extend: {},
+    extend: { },
   },
   plugins: [require('@tailwindcss/typography')],
 }
