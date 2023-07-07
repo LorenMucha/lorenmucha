@@ -2,7 +2,6 @@
 useHead({
   title: 'Loren Mucha',
 })
-
 </script>
 
 <template>
