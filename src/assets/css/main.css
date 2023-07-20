@@ -5,46 +5,45 @@
 @tailwind utilities;
 @tailwind screens;
 
-
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 10%;
 }
 
-.nuxt-link-exact-active {
+.active-link {
   @apply text-blue-500;
 }
 
 @layer components {
   .active-link {
-    @apply font-bold hover:text-blue-900 text-blue-700;
+    @apply font-bold hover: text-blue-900 text-blue-700;
   }
+
   .time-card {
     @apply px-10 rounded overflow-hidden shadow-lg;
   }
+
   .page {
-    @apply text-center
-  }
-  
-  .section{
-    @apply p-10 container text-center 
+    @apply text-center;
   }
 
-  section h1{
-    @apply mb-2 mt-0 text-5xl font-medium leading-tight
+  .section {
+    @apply p-10 container mx-auto;
+  }
+
+  section h1 {
+    @apply mb-2 mt-0 text-5xl font-medium leading-tight;
   }
 
   section .header {
-   @apply container text-center pb-5
+    @apply container text-center pb-5;
   }
 
- section h2{
-    @apply font-black leading-tight text-3xl md:text-4xl mb-4
+  section h2 {
+    @apply font-black leading-tight text-3xl md:text-4xl mb-4;
   }
 
-  section h3{
-    @apply font-black leading-tight text-xl md:text-xl mb-3
+  section h3 {
+    @apply font-black leading-tight text-xl md:text-xl mb-3;
   }
 }
-
-

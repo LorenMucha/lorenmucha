@@ -1,5 +1,4 @@
 <script lang="ts">
-import GooglePlayBtn from '../components/button/GooglePlayBtn.vue'
 import PageSwiper from '../components/PageSwiper.vue'
 
 definePageMeta({
@@ -38,7 +37,10 @@ export default {
   <div class="page">
     <section class="bg-slate-100">
       <div class="section">
-        <h1>Climbing-Diary</h1>
+        <div class="inline-flex items-baseline">
+          <h1>Climbing-Diary</h1>
+          <img class="h-12 w-12 ml-10" src="~assets/images/climbing_diary_launcher.png">
+        </div>
         <div>
           Schöne & umfangreiche Tracking-App deiner Erfolge beim Klettern und
           Bouldern.
@@ -46,19 +48,19 @@ export default {
         <button class="btn" href="#" title="Google Play">
           <img class="h-24 w-48 object-cover" src="~assets/images/google_play.png">
         </button>
-        <PageSwiper :input-data="slides"/>
+        <PageSwiper :input-data="slides" />
       </div>
     </section>
     <section class="bg-orange-100">
       <div class="section container">
         <h2>Umfangreiche Funktionen</h2>
-        <div class="inline-flex">
-          <div class="float-left w-1/2">
-            <img class="h-24 rounded-lg object-cover" src="~assets/images/climbing.png">
+        <div class="grid grid-cols-2">
+          <div class="container">
+            <img class="mx-auto h-24 rounded-lg object-cover" src="~assets/images/climbing.png">
             <p>Klettern</p>
           </div>
-          <div class="float-left w-1/2">
-            <img class="h-24 rounded-lg object-cover" src="~assets/images/bouldering.png">
+          <div class="container">
+            <img class="mx-auto h-24 rounded-lg object-cover" src="~assets/images/bouldering.png">
             <p>Bouldern</p>
           </div>
         </div>

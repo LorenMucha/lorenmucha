@@ -1,6 +1,6 @@
 {
-  "header":{
-    "expertise" : "Erfahrung",
+  "header": {
+    "expertise": "Erfahrung",
     "cv": "Lebenslauf",
     "contact": "Kontakt",
     "greet": "Hallo! Ich bin Loren Mucha",
@@ -11,10 +11,24 @@
   "work": {
     "header": "Projekte",
     "ioer_monitor": {
-      "intro": "Der <a class='active-link' href='https://monitor.ioer.de' target='_blank'>IÖR-Monitor</a> ist ein Web GIS um intuitiv Fragen zur Flächennutzung in Deutschland zu beantworten."
+      "header": "IÖR Moitor",
+      "intro": "Der IÖR-Monitor ist ein Web GIS um intuitiv Fragen zur Flächennutzung in Deutschland zu beantworten."
     },
     "climbing_diary": {
+      "header": "Climbing Diary",
       "intro": "Virtuelles Tagebuch mit Statistischer Auswertung der persönlichen Leistungen, als native Android App."
+    },
+    "max_jacob_theater": {
+      "header": "Max Jacob Theater",
+      "intro": "Theaterwebsite des Traditionsverein Hohnsteiner Kasper e.V. als CMS System mit Kartenverkauf und Programminfo."
+    },
+    "monitor_api": {
+      "header": "Monitor API",
+      "intro": "REST API zur Geodatenprocessierung innerhalb für das <a class='active-link' href='https://http://sora.git.gesis.org' target='_blank'>Sora-Forschungsprojektes</a> mit Usermanagement."
+    },
+    "land_use_monitor": {
+      "header": "Land Use Monitor DE",
+      "intro": "Stellt Informationen zur Flächenstruktur und deren Entwicklung sowie zur Qualität flächendeckend für die BRD als <b>App</b> bereit."
     }
   }
 }
