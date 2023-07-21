@@ -1,9 +1,10 @@
-<script>
+<script lang="ts">
 import { frameWorks, languages } from '~/constants'
 
 export default {
   data() {
     return {
+      id: 'expertise',
       skillList: languages,
       frameWorks,
       languages,
@@ -13,7 +14,8 @@ export default {
 </script>
 
 <template>
-  <div id="expertise" class="section">
+  <!-- TODO: translation -->
+  <div :id="id" :ref="id" class="section h-screen flex justify-center items-center">
     <div class="header">
       <div class="max-w-3xl mx-auto">
         <h2>

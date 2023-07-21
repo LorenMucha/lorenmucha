@@ -7,6 +7,12 @@ export default {
       siteMetadata: siteMetaInfo,
     }
   },
+  methods: {
+    scrollTo(id) {
+      const element = document.getElementById(id)
+      element.scrollIntoView({ behavior: 'smooth', block: 'end' })
+    },
+  },
 }
 </script>
 
@@ -39,6 +45,14 @@ export default {
             ><span class="sr-only">mail</span>
               <img class="profile-icon" src="~assets/icon/mail.svg"></a>
           </div>
+        </div>
+        <div class="hidden rounded-md shadow-sm mt-5 sm:inline-flex" role="group">
+          <button class="bg-blue-500 hover:bg-gray-800 text-white font-bold py-2 px-4 rounded mx-5" @click="scrollTo('work')">
+            Projekte
+          </button>
+          <button class="bg-blue-500 hover:bg-gray-800 text-white font-bold py-2 px-4 rounded" @click="scrollTo('expertise')">
+            Skills & Tools
+          </button>
         </div>
       </div>
       <div>

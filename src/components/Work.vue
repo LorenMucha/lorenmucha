@@ -4,13 +4,16 @@ import { projects } from '~/constants'
 export default {
   name: 'Work',
   data() {
-    return { workList: projects }
+    return {
+      id: 'work',
+      workList: projects,
+    }
   },
 }
 </script>
 
 <template>
-  <div id="work" class="section">
+  <div :id="id" :ref="id" class="section h-screen">
     <div class="header">
       <div class="max-w-3xl mx-auto">
         <h2>

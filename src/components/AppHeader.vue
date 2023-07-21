@@ -10,7 +10,7 @@ export default {
   data() {
     return {
       isActive: false,
-      menuItems: { expertise: '#expertise', contact: 'mailto:"lorenmucha@gmail.com"' },
+      menuItems: { contact: 'mailto:"lorenmucha@gmail.com"' },
     }
   },
   computed: {
@@ -37,7 +37,7 @@ export default {
         <div>
           <!-- Website Logo -->
           <a class="flex items-center py-4 px-2">
-            <span class="font-semibold md:text-lg text-gray-800 font-bold">Loren Mucha</span>
+            <span class="font-semibold md:text-lg text-gray-800">Loren Mucha</span>
           </a>
         </div>
         <div class="flex space-x-7">
@@ -51,7 +51,9 @@ export default {
             }}</a>
           </div>
           <div class="hidden md:flex items-center">
-            <button @click="switch_language" @scroll.prevent><span :class="flag" /></button>
+            <button @click="switch_language" @scroll.prevent>
+              <span :class="flag" />
+            </button>
           </div>
         </div>
         <!-- Mobile menu button -->
@@ -87,4 +89,3 @@ export default {
     </div>
   </nav>
 </template>
-
