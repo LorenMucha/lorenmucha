@@ -51,7 +51,7 @@ export default {
             }}</a>
           </div>
           <div class="hidden md:flex items-center">
-            <button @click="switch_language" @scroll.prevent>
+            <button class="unstyled" @click="switch_language" @scroll.prevent>
               <span :class="flag" />
             </button>
           </div>

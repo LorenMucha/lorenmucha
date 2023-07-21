@@ -46,11 +46,11 @@ export default {
               <img class="profile-icon" src="~assets/icon/mail.svg"></a>
           </div>
         </div>
-        <div class="hidden rounded-md shadow-sm mt-5 sm:inline-flex" role="group">
-          <button class="bg-blue-500 hover:bg-gray-800 text-white font-bold py-2 px-4 rounded mx-5" @click="scrollTo('work')">
+        <div class="hidden rounded-md shadow-sm mt-5 sm:inline-flex space-x-4 px-4" role="group">
+          <button @click="scrollTo('work')">
             Projekte
           </button>
-          <button class="bg-blue-500 hover:bg-gray-800 text-white font-bold py-2 px-4 rounded" @click="scrollTo('expertise')">
+          <button @click="scrollTo('expertise')">
             Skills & Tools
           </button>
         </div>
