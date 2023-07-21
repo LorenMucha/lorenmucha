@@ -43,8 +43,8 @@ export default {
       </div>
       <div>
         <img
-          src="~assets/images/author.png" loading="lazy" alt="me"
-          class="shadow-xl md:h-60 md:w-60 h-40 w-40 rounded-full hidden sm:block"
+          src="~assets/images/author.jpg" loading="lazy" alt="me"
+          class="shadow-xl md:h-60 md:w-60 h-40 w-40 rounded-full hidden sm:block object-cover"
         >
       </div>
     </div>

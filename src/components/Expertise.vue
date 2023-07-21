@@ -1,52 +1,5 @@
 <script>
-const languages = [
-  {
-    component: 'logos:typescript-icon',
-    title: 'Typescript',
-  },
-  {
-    component: 'logos:java',
-    title: 'Java',
-  },
-  {
-    component: 'logos:python',
-    title: 'Python',
-  },
-  {
-    component: 'logos:ruby',
-    title: 'Ruby',
-  },
-  {
-    component: 'logos:kotlin-icon',
-    title: 'Kotlin',
-  },
-]
-const frameWorks = [
-  {
-    component: 'logos:angular-icon',
-    title: 'Angular',
-  },
-  {
-    component: 'logos:spring-icon',
-    title: 'Spring',
-  },
-  {
-    component: 'logos:flask',
-    title: 'Flask',
-  },
-  {
-    component: 'logos:vue',
-    title: 'Vuejs',
-  },
-  {
-    component: 'logos:tailwindcss-icon',
-    title: 'TailwindCss',
-  },
-  {
-    component: 'logos:nuxt-icon',
-    title: 'Nuxt.js',
-  },
-]
+import { frameWorks, languages } from '~/constants'
 
 export default {
   data() {

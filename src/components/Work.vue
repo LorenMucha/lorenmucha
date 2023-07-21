@@ -1,40 +1,5 @@
 <script>
-const projects = [
-  {
-    header: 'work.ioer_monitor.header',
-    imageSrc: '/images/monitor/monitor.jpg',
-    intro: 'work.ioer_monitor.intro',
-    link: 'https://monitor.ioer.de/',
-    linkText: 'Website',
-  },
-  {
-    header: 'work.climbing_diary.header',
-    imageSrc: '/images/climbing_diary/climbing_diary.png',
-    intro: 'work.climbing_diary.intro',
-    link: '/ClimbingDiary',
-  },
-  {
-    header: 'work.max_jacob_theater.header',
-    imageSrc: '/images/max_jacob_theater/max_jacob_theater.png',
-    intro: 'work.max_jacob_theater.intro',
-    link: 'https://www.max-jacob-theater.de/',
-    linkText: 'Website',
-  },
-  {
-    header: 'work.monitor_api.header',
-    intro: 'work.monitor_api.intro',
-    imageSrc: '/images/monitor/rest_api.png',
-    link: 'https://ioer-dresden.github.io/monitor-api-doku/',
-    linkText: 'Doku',
-  },
-  {
-    header: 'work.land_use_monitor.header',
-    intro: 'work.land_use_monitor.intro',
-    imageSrc: '/images/monitor/land_use_monitor.png',
-    link: 'https://github.com/LorenMucha/IOER-Monitor-App',
-    linkText: 'Git Repository',
-  },
-]
+import { projects } from '~/constants'
 
 export default {
   name: 'Work',
