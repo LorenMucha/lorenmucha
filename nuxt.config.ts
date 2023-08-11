@@ -2,10 +2,10 @@ import svgLoader from 'vite-svg-loader'
 
 export default defineNuxtConfig({
   srcDir: 'src',
+  ssr: false,
   app: {
-    baseURL: '/',
+    baseURL: '/my_page/',
   },
-  target: 'static',
   modules: [
     '@vueuse/nuxt',
     '@nuxtjs/tailwindcss',

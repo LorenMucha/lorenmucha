@@ -10,6 +10,7 @@
     "generate": "nuxi generate",
     "start": "node .output/server/index.mjs",
     "lint": "eslint .",
+    "preview": "nuxt preview",
     "allupdate": "yarn upgrade-interactive",
     "deploy": "gh-pages --dotfiles -d .output/public"
   },
