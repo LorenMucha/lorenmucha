@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   srcDir: 'src',
   ssr: false,
   app: {
-    baseURL: '/my_page/',
+    baseURL: '/',
   },
   modules: [
     '@vueuse/nuxt',
