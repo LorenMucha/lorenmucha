@@ -13,7 +13,7 @@ export default {
 </script>
 
 <template>
-  <div :id="id" :ref="id" class="section h-screen">
+  <div :id="id" :ref="id" class="section">
     <div class="header">
       <div class="max-w-3xl mx-auto">
         <h2>

@@ -1,5 +1,5 @@
 <script lang="ts">
-import { frameWorks, languages } from '~/constants'
+import { frameWorks, languages, tools } from '~/constants'
 
 export default {
   data() {
@@ -8,6 +8,7 @@ export default {
       skillList: languages,
       frameWorks,
       languages,
+      tools,
     }
   },
 }
@@ -15,15 +16,15 @@ export default {
 
 <template>
   <!-- TODO: translation -->
-  <div :id="id" :ref="id" class="section h-screen flex justify-center items-center">
+  <div :id="id" class="section sm:h-screen">
     <div class="header">
-      <div class="max-w-3xl mx-auto">
+      <div class="max-w-3xl mx-auto py-5">
         <h2>
           Skills &amp; Tools
         </h2>
       </div>
       <div class="container">
-        <h3>Programmiersprachen</h3>
+        <h3>{{ $t("tools.languages") }}</h3>
         <ul class="flex flex-wrap items-center justify-center skill-list load-hidden v-scroll-reveal">
           <li
             v-for="(item, index) in languages" :key="index" class="p-4 rounded-lg flex items-end justify-center m-2"
@@ -54,17 +55,29 @@ export default {
           </li>
         </ul>
       </div>
+      <div class="container">
+        <h3>Tools</h3>
+        <ul class="flex flex-wrap items-center justify-center skill-list load-hidden v-scroll-reveal">
+          <li
+            v-for="(item, index) in tools" :key="index" class="p-4 rounded-lg flex items-end justify-center m-2"
+            :title="item.title"
+          >
+            <div>
+              <Icon :key="item.title" :name="item.component" size="3rem" class="w-auto mx-auto h-auto block" />
+              <span class="font-bold block mt-3 mb-1">
+                {{ item.title }}
+              </span>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
 
 <style scoped>
-#expertise .header button.highlighted{
-  @apply text-white bg-blue-500
-}
-
-#expertise .header button{
-  @apply py-4 px-5 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-full first:ml-0 last:rounded-r-full border font-medium bg-white text-gray-800 align-middle;
+#expertise .skill-list{
+  @apply py-5
 }
 #expertise .skill-list li{
   --tw-bg-opacity: 1;
@@ -77,5 +90,8 @@ export default {
 #expertise .skill-list svg{
   max-width: 3rem;
   max-height: 3rem;
+}
+#expertise h3{
+  @apply text-2xl mt-5 underline decoration-auto
 }
 </style>

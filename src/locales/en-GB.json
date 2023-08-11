@@ -5,7 +5,7 @@
     "contact": "Contact",
     "greet": "Hi! I'm Loren Mucha",
     "role": "Fullstack Software Developer",
-    "about": "As a software developer and architect I help to solve problems and implement projects in the front- and backend. Here I can draw on my wide range of experience. In my spare time I am a passionate climber and mtb rider."
+    "about": "I'm a Fullstack Software Developer with a passion for creative solutions. From user interfaces to backend architecture, I craft digital worlds. Explore my projects and the process behind the code right here. "
   },
   "cv": "Resume",
   "work": {
@@ -15,6 +15,21 @@
     },
     "climbing_diary": {
       "intro": "Virtual diary with statistical analysis of personal performance, as a native Android App."
+    },
+    "max_jacob_theater": {
+      "header": "Max Jacob Theater",
+      "intro": "Theaterwebsite of the traditional club 'Hohnsteiner Kasper e.V.' as a CMS system with ticket sales and program information."
+    },
+    "monitor_api": {
+      "header": "Monitor API",
+      "intro": "REST API for geodata processing within the <a class='active-link' href='https://http://sora.git.gesis.org' target='_blank'>Sora-research project</a> with user management."
+    },
+    "land_use_monitor": {
+      "header": "Land Use Monitor DE",
+      "intro": "It provides information on the area structure and its development, as well as comprehensive data on the quality across Germany, as a <b>app</b>."
     }
+  },
+  "tools":{
+    "languages": "Programming Languages"
   }
 }

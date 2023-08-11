@@ -10,7 +10,10 @@ export default {
   data() {
     return {
       isActive: false,
-      menuItems: { contact: 'mailto:"lorenmucha@gmail.com"' },
+      menuItems: [
+        // TODO: translate
+        { link: '/files/CV_DE.pdf', name: 'header.cv', target: '_blank' },
+        { link: 'mailto:lorenmucha@gmail.com', name: 'header.contact', target: '_blank' }],
     }
   },
   computed: {
@@ -44,14 +47,12 @@ export default {
           <!-- Primary Navbar items -->
           <div v-for="(value, key) in menuItems" :key="key" class="hidden md:flex items-center space-x-1">
             <a
-              :href="value"
+              :href="value.link" :target="value.target"
               class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300"
-            >{{
-              $t(`header.${key}`)
-            }}</a>
+            >{{ $t(value.name) }}</a>
           </div>
           <div class="hidden md:flex items-center">
-            <button class="unstyled" @click="switch_language" @scroll.prevent>
+            <button @click="switch_language" @scroll.prevent>
               <span :class="flag" />
             </button>
           </div>
@@ -78,8 +79,8 @@ export default {
     <div :class="[isActive ? 'active' : 'hidden']" class="mobile-menu">
       <ul>
         <li v-for="(value, key) in menuItems" :key="key">
-          <a :href="value" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">
-            {{ $t(`header.${key}`) }}
+          <a :href="value.link" :target="value.target" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">
+            {{ $t(value.name) }}
           </a>
         </li>
         <li>

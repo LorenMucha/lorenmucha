@@ -37,14 +37,9 @@ export const projects = [
     header: 'work.climbing_diary.header',
     imageSrc: '/images/climbing_diary/climbing_diary.png',
     intro: 'work.climbing_diary.intro',
-    link: '/ClimbingDiary',
-  },
-  {
-    header: 'work.max_jacob_theater.header',
-    imageSrc: '/images/max_jacob_theater/max_jacob_theater.png',
-    intro: 'work.max_jacob_theater.intro',
-    link: 'https://www.max-jacob-theater.de/',
-    linkText: 'Website',
+    // TODO: link: '/ClimbingDiary',
+    link: 'https://github.com/LorenMucha/Climbing-Diary-App',
+    linkText: 'Git Repository',
   },
   {
     header: 'work.monitor_api.header',
@@ -60,28 +55,39 @@ export const projects = [
     link: 'https://github.com/LorenMucha/IOER-Monitor-App',
     linkText: 'Git Repository',
   },
+  {
+    header: 'work.max_jacob_theater.header',
+    imageSrc: '/images/max_jacob_theater/max_jacob_theater.png',
+    intro: 'work.max_jacob_theater.intro',
+    link: 'https://www.max-jacob-theater.de/',
+    linkText: 'Website',
+  },
 ]
 
 export const languages = [
   {
-    component: 'logos:typescript-icon',
-    title: 'Typescript',
-  },
-  {
     component: 'logos:java',
     title: 'Java',
+  },
+  {
+    component: 'logos:kotlin-icon',
+    title: 'Kotlin',
   },
   {
     component: 'logos:python',
     title: 'Python',
   },
   {
-    component: 'logos:ruby',
-    title: 'Ruby',
+    component: 'logos:typescript-icon',
+    title: 'Typescript',
   },
   {
-    component: 'logos:kotlin-icon',
-    title: 'Kotlin',
+    component: 'bi:filetype-sql',
+    title: 'SQL',
+  },
+  {
+    component: 'logos:ruby',
+    title: 'Ruby',
   },
 ]
 
@@ -109,5 +115,28 @@ export const frameWorks = [
   {
     component: 'logos:nuxt-icon',
     title: 'Nuxt.js',
+  },
+]
+
+export const tools = [
+  {
+    component: 'logos:postgresql',
+    title: 'PostgreSQL',
+  },
+  {
+    component: 'logos:mysql',
+    title: 'MySQL',
+  },
+  {
+    component: 'simple-icons:esri',
+    title: 'ArcGIS',
+  },
+  {
+    component: 'simple-icons:qgis',
+    title: 'QGIS',
+  },
+  {
+    component: 'skill-icons:git',
+    title: 'GIT',
   },
 ]

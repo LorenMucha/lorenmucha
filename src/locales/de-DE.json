@@ -1,11 +1,10 @@
 {
   "header": {
-    "expertise": "Erfahrung",
     "cv": "Lebenslauf",
     "contact": "Kontakt",
     "greet": "Hallo! Ich bin Loren Mucha",
     "role": "Fullstack Software Entwickler",
-    "about": "ich komme aus Nürnberg und unterstütze oder setze vollständige Projekte in der Webwelt um. Durch meine langjährige Erfahrung in den vielfältigen Bereichen der Softwareentwicklung, bin ich in der Lage in vielen Bereichen tätig zu werden."
+    "about": "Ich bin Full Stack Software-Entwickler, mit einer Passion für kreative Lösungen. Von der Benutzeroberfläche bis zur Backend-Architektur - ich gestalte digitale Welten. Entdecken Sie hier meine Projekte und die Prozesse hinter dem Code."
   },
   "cv": "Lebenslauf",
   "work": {
@@ -30,5 +29,8 @@
       "header": "Land Use Monitor DE",
       "intro": "Stellt Informationen zur Flächenstruktur und deren Entwicklung sowie zur Qualität flächendeckend für die BRD als <b>App</b> bereit."
     }
+  },
+  "tools":{
+    "languages": "Programmiersprachen"
   }
 }
