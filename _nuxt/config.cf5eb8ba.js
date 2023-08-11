@@ -1,0 +1,1 @@
+import{o as n,d as o}from"./entry.3cf701ce.js";import{r as i}from"./swiper-vue.c7fbfdd7.js";const f={},t=n(f);function s(){const p=o();return p._appConfig||(p._appConfig=i(t)),p._appConfig}export{s as u};
