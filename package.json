@@ -11,7 +11,7 @@
     "start": "node .output/server/index.mjs",
     "lint": "eslint .",
     "allupdate": "yarn upgrade-interactive",
-    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+    "deploy": "gh-pages --dotfiles -d .output/public"
   },
   "dependencies": {
     "@nuxtjs/i18n": "8.0.0-beta.6",
@@ -22,6 +22,7 @@
     "@tailwindcss/typography": "0.5.9",
     "@vueuse/core": "^10.1.2",
     "flag-icons": "^6.6.6",
+    "gh-pages": "^6.0.0",
     "i": "^0.3.7",
     "nuxt-swiper": "^1.1.1",
     "pinia": "2.1.4",
