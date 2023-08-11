@@ -39,14 +39,14 @@ export default {
       <div class="section">
         <div class="inline-flex items-baseline">
           <h1>Climbing-Diary</h1>
-          <img class="h-12 w-12 ml-10" src="~assets/images/climbing_diary_launcher.png">
+          <img class="h-12 w-12 ml-10" src="/images/climbing_diary_launcher.png">
         </div>
         <div>
           Schöne & umfangreiche Tracking-App deiner Erfolge beim Klettern und
           Bouldern.
         </div>
         <button class="btn" href="#" title="Google Play">
-          <img class="h-24 w-48 object-cover" src="~assets/images/google_play.png">
+          <img class="h-24 w-48 object-cover" src="/images/google_play.png">
         </button>
         <PageSwiper :input-data="slides" />
       </div>
@@ -56,11 +56,11 @@ export default {
         <h2>Umfangreiche Funktionen</h2>
         <div class="grid grid-cols-2">
           <div class="container">
-            <img class="mx-auto h-24 rounded-lg object-cover" src="~assets/images/climbing.png">
+            <img class="mx-auto h-24 rounded-lg object-cover" src="/images/climbing.png">
             <p>Klettern</p>
           </div>
           <div class="container">
-            <img class="mx-auto h-24 rounded-lg object-cover" src="~assets/images/bouldering.png">
+            <img class="mx-auto h-24 rounded-lg object-cover" src="/images/bouldering.png">
             <p>Bouldern</p>
           </div>
         </div>

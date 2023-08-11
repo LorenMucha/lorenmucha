@@ -4,6 +4,7 @@ import { siteMetaInfo } from '~/constants'
 export default {
   data: () => {
     return {
+      authorImage: '/images/author.jpg',
       siteMetadata: siteMetaInfo,
     }
   },
@@ -57,7 +58,7 @@ export default {
       </div>
       <div>
         <img
-          src="~assets/images/author.jpg" loading="lazy" alt="me"
+          :src="authorImage" alt="me"
           class="shadow-xl md:h-60 md:w-60 h-40 w-40 rounded-full hidden sm:block object-cover"
         >
       </div>

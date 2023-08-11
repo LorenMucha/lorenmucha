@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   app: {
     baseURL: '/',
   },
+  target: 'static',
   modules: [
     '@vueuse/nuxt',
     '@nuxtjs/tailwindcss',
