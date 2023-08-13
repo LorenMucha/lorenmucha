@@ -12,7 +12,7 @@
     "lint": "eslint .",
     "preview": "nuxt preview",
     "allupdate": "yarn upgrade-interactive",
-    "deploy": "gh-pages --dotfiles -d .output/public"
+    "deploy": "nuxt generate && touch .output/public/.nojekyll && gh-pages --dotfiles -d .output/public"
   },
   "dependencies": {
     "@nuxtjs/i18n": "8.0.0-beta.6",

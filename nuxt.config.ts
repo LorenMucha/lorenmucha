@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   ssr: false,
   target: 'static',
   app: {
-    baseURL: '/',
+    baseURL: '/my_page/',
   },
   modules: [
     '@vueuse/nuxt',
