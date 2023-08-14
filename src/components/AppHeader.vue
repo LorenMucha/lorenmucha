@@ -1,4 +1,5 @@
 <script>
+import cv from 'public/files/CV_DE.pdf'
 import { useLanguageStore } from '~/store/languages'
 
 export default {
@@ -12,7 +13,7 @@ export default {
       isActive: false,
       menuItems: [
         // TODO: translate
-        { link: '/files/CV_DE.pdf', name: 'header.cv', target: '_blank' },
+        { link: cv, name: 'header.cv', target: '_blank' },
         { link: 'mailto:lorenmucha@gmail.com', name: 'header.contact', target: '_blank' }],
     }
   },

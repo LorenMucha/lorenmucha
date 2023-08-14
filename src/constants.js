@@ -1,3 +1,9 @@
+import climbingDiaryImage from 'public/images/climbing_diary/climbing_diary.png'
+import monitorImage from 'public/images/monitor/monitor.jpg'
+import apiImage from 'public/images/monitor/rest_api.png'
+import monitorAppImage from 'public/images/monitor/land_use_monitor.png'
+import maxJacobImage from 'public/images/max_jacob_theater/max_jacob_theater.png'
+
 export const siteMetaInfo = {
   title: 'Loren Mucha',
   author: 'Loren Mucha',
@@ -28,14 +34,14 @@ export const siteMetaInfo = {
 export const projects = [
   {
     header: 'work.ioer_monitor.header',
-    imageSrc: '/images/monitor/monitor.jpg',
+    imageSrc: monitorImage,
     intro: 'work.ioer_monitor.intro',
     link: 'https://monitor.ioer.de/',
     linkText: 'Website',
   },
   {
     header: 'work.climbing_diary.header',
-    imageSrc: '/images/climbing_diary/climbing_diary.png',
+    imageSrc: climbingDiaryImage,
     intro: 'work.climbing_diary.intro',
     // TODO: link: '/ClimbingDiary',
     link: 'https://github.com/LorenMucha/Climbing-Diary-App',
@@ -44,20 +50,20 @@ export const projects = [
   {
     header: 'work.monitor_api.header',
     intro: 'work.monitor_api.intro',
-    imageSrc: '/images/monitor/rest_api.png',
+    imageSrc: apiImage,
     link: 'https://ioer-dresden.github.io/monitor-api-doku/',
     linkText: 'Doku',
   },
   {
     header: 'work.land_use_monitor.header',
     intro: 'work.land_use_monitor.intro',
-    imageSrc: '/images/monitor/land_use_monitor.png',
+    imageSrc: monitorAppImage,
     link: 'https://github.com/LorenMucha/IOER-Monitor-App',
     linkText: 'Git Repository',
   },
   {
     header: 'work.max_jacob_theater.header',
-    imageSrc: '/images/max_jacob_theater/max_jacob_theater.png',
+    imageSrc: maxJacobImage,
     intro: 'work.max_jacob_theater.intro',
     link: 'https://www.max-jacob-theater.de/',
     linkText: 'Website',

@@ -1,10 +1,11 @@
 <script>
+import authorImage from 'public/images/author.jpg'
 import { siteMetaInfo } from '~/constants'
 
 export default {
   data: () => {
     return {
-      authorImage: '/images/author.jpg',
+      authorImage,
       siteMetadata: siteMetaInfo,
     }
   },
