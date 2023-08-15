@@ -3,9 +3,8 @@ import svgLoader from 'vite-svg-loader'
 export default defineNuxtConfig({
   srcDir: 'src',
   ssr: false,
-  target: 'static',
   app: {
-    baseURL: '/my_page/',
+    baseURL: '/',
   },
   modules: [
     '@vueuse/nuxt',
