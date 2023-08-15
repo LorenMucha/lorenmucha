@@ -32,6 +32,9 @@ export default defineNuxtConfig({
       ignore: ['/ClimbingDiary'],
     },
   },
+  site: {
+    url: 'https://lorenmucha.de',
+  },
   build: {
     transpile: ['swiper'],
   },
