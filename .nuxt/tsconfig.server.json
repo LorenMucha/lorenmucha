@@ -1,0 +1,88 @@
+{
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "jsx": "preserve",
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment",
+    "paths": {
+      "#imports": [
+        "/home/loren/Entwicklung/Web/lorenmucha/.nuxt/types/nitro-imports"
+      ],
+      "#paths": [
+        "/home/loren/Entwicklung/Web/lorenmucha/node_modules/nuxt/dist/core/runtime/nitro/paths"
+      ],
+      "~": [
+        "/home/loren/Entwicklung/Web/lorenmucha/src"
+      ],
+      "~/*": [
+        "/home/loren/Entwicklung/Web/lorenmucha/src/*"
+      ],
+      "@": [
+        "/home/loren/Entwicklung/Web/lorenmucha/src"
+      ],
+      "@/*": [
+        "/home/loren/Entwicklung/Web/lorenmucha/src/*"
+      ],
+      "~~": [
+        "/home/loren/Entwicklung/Web/lorenmucha"
+      ],
+      "~~/*": [
+        "/home/loren/Entwicklung/Web/lorenmucha/*"
+      ],
+      "@@": [
+        "/home/loren/Entwicklung/Web/lorenmucha"
+      ],
+      "@@/*": [
+        "/home/loren/Entwicklung/Web/lorenmucha/*"
+      ],
+      "assets": [
+        "/home/loren/Entwicklung/Web/lorenmucha/src/assets"
+      ],
+      "assets/*": [
+        "/home/loren/Entwicklung/Web/lorenmucha/src/assets/*"
+      ],
+      "public": [
+        "/home/loren/Entwicklung/Web/lorenmucha/src/public"
+      ],
+      "public/*": [
+        "/home/loren/Entwicklung/Web/lorenmucha/src/public/*"
+      ],
+      "pinia": [
+        "/home/loren/Entwicklung/Web/lorenmucha/node_modules/pinia/dist/pinia"
+      ],
+      "vue-i18n": [
+        "/home/loren/Entwicklung/Web/lorenmucha/node_modules/vue-i18n/dist/vue-i18n.runtime"
+      ],
+      "@intlify/shared": [
+        "/home/loren/Entwicklung/Web/lorenmucha/node_modules/@intlify/shared/dist/shared"
+      ],
+      "@intlify/vue-router-bridge": [
+        "/home/loren/Entwicklung/Web/lorenmucha/node_modules/@intlify/vue-router-bridge/lib/index"
+      ],
+      "@intlify/vue-i18n-bridge": [
+        "/home/loren/Entwicklung/Web/lorenmucha/node_modules/@intlify/vue-i18n-bridge/lib/index"
+      ],
+      "vue-i18n-routing": [
+        "/home/loren/Entwicklung/Web/lorenmucha/node_modules/vue-i18n-routing/dist/vue-i18n-routing"
+      ],
+      "#i18n": [
+        "/home/loren/Entwicklung/Web/lorenmucha/node_modules/@nuxtjs/i18n/dist/runtime/composables"
+      ],
+      "#content/server": [
+        "/home/loren/Entwicklung/Web/lorenmucha/node_modules/@nuxt/content/dist/runtime/server/index"
+      ]
+    }
+  },
+  "include": [
+    "/home/loren/Entwicklung/Web/lorenmucha/.nuxt/types/nitro-nuxt.d.ts",
+    "./types/nitro.d.ts",
+    "../**/*",
+    "../src/server/**/*"
+  ]
+}
