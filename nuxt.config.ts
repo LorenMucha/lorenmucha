@@ -3,8 +3,16 @@ import svgLoader from 'vite-svg-loader'
 export default defineNuxtConfig({
   srcDir: 'src',
   ssr: false,
+  routeRules: {
+    '/ClimbingDiary': { index: false },
+    '/gb/ClimbingDiary': { index: false },
+  },
   app: {
     baseURL: '/',
+    head: {
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+    },
   },
   modules: [
     '@vueuse/nuxt',
@@ -15,7 +23,15 @@ export default defineNuxtConfig({
     'nuxt-icon',
     '@nuxt/content',
     'nuxt-swiper',
+    'nuxt-simple-sitemap',
   ],
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ['/', 'sitemap.xml'],
+      ignore: ['/ClimbingDiary'],
+    },
+  },
   build: {
     transpile: ['swiper'],
   },
@@ -48,7 +64,6 @@ export default defineNuxtConfig({
       availableLocales: ['gb', 'de'],
     },
   },
-
   typescript: {
     tsConfig: {
       compilerOptions: {

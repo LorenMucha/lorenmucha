@@ -2,7 +2,6 @@ import climbingDiaryImage from 'public/images/climbing_diary/climbing_diary.png'
 import monitorImage from 'public/images/monitor/monitor.jpg'
 import apiImage from 'public/images/monitor/rest_api.png'
 import monitorAppImage from 'public/images/monitor/land_use_monitor.png'
-import maxJacobImage from 'public/images/max_jacob_theater/max_jacob_theater.png'
 
 export const siteMetaInfo = {
   title: 'Loren Mucha',
@@ -60,13 +59,6 @@ export const projects = [
     imageSrc: monitorAppImage,
     link: 'https://github.com/LorenMucha/IOER-Monitor-App',
     linkText: 'Git Repository',
-  },
-  {
-    header: 'work.max_jacob_theater.header',
-    imageSrc: maxJacobImage,
-    intro: 'work.max_jacob_theater.intro',
-    link: 'https://www.max-jacob-theater.de/',
-    linkText: 'Website',
   },
 ]
 

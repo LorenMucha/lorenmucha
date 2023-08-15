@@ -1,5 +1,6 @@
 <script>
-import cv from 'public/files/CV_DE.pdf'
+import CV_DE from 'public/files/CV_DE.pdf'
+import CV_EN from 'public/files/CV_EN.pdf'
 import { useLanguageStore } from '~/store/languages'
 
 export default {
@@ -11,10 +12,7 @@ export default {
   data() {
     return {
       isActive: false,
-      menuItems: [
-        // TODO: translate
-        { link: cv, name: 'header.cv', target: '_blank' },
-        { link: 'mailto:lorenmucha@gmail.com', name: 'header.contact', target: '_blank' }],
+      cv: CV_DE,
     }
   },
   computed: {
@@ -23,6 +21,10 @@ export default {
     },
   },
   methods: {
+    open_cv() {
+      const currentLang = this.$i18n.locale
+      this.cv = currentLang === 'de' ? CV_DE : CV_EN
+    },
     show_mobile_menu() {
       this.isActive = !this.isActive
     },
@@ -46,11 +48,18 @@ export default {
         </div>
         <div class="flex space-x-7">
           <!-- Primary Navbar items -->
-          <div v-for="(value, key) in menuItems" :key="key" class="hidden md:flex items-center space-x-1">
+          <div class="hidden md:flex items-center space-x-1">
             <a
-              :href="value.link" :target="value.target"
+              :href="cv"
+              target="_blank" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300"
+              @click="open_cv"
+            >{{ $t('header.cv') }}</a>
+          </div>
+          <div class="hidden md:flex items-center space-x-1">
+            <a
+              href="mailto:lorenmucha@gmail.com" target="_blank"
               class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300"
-            >{{ $t(value.name) }}</a>
+            >{{ $t('header.contact') }}</a>
           </div>
           <div class="hidden md:flex items-center">
             <button @click="switch_language" @scroll.prevent>
@@ -79,10 +88,18 @@ export default {
     <!-- mobile menu -->
     <div :class="[isActive ? 'active' : 'hidden']" class="mobile-menu">
       <ul>
-        <li v-for="(value, key) in menuItems" :key="key">
-          <a :href="value.link" :target="value.target" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">
-            {{ $t(value.name) }}
-          </a>
+        <li>
+          <a
+            :href="cv"
+            target="_blank" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300"
+            @click="open_cv"
+          >{{ $t('header.cv') }}</a>
+        </li>
+        <li>
+          <a
+            href="mailto:lorenmucha@gmail.com" target="_blank"
+            class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300"
+          >{{ $t('header.contact') }}</a>
         </li>
         <li>
           <a class="block text-sm px-2 py-4" @click="switch_language" @scroll.prevent><span :class="flag" /></a>

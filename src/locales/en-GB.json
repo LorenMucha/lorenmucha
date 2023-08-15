@@ -11,14 +11,12 @@
   "work": {
     "header": "Projects",
     "ioer_monitor": {
+      "header": "IÖR Monitor",
       "intro": "The <a class='active-link' href='https://monitor.ioer.de' target='_blank'>IÖR-Monitor</a> is a web GIS to intuitively answer questions about land use in Germany."
     },
     "climbing_diary": {
+      "header": "Climbing Diary",
       "intro": "Virtual diary with statistical analysis of personal performance, as a native Android App."
-    },
-    "max_jacob_theater": {
-      "header": "Max Jacob Theater",
-      "intro": "Theaterwebsite of the traditional club 'Hohnsteiner Kasper e.V.' as a CMS system with ticket sales and program information."
     },
     "monitor_api": {
       "header": "Monitor API",
