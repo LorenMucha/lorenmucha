@@ -7,9 +7,22 @@ export default defineNuxtConfig({
     '/ClimbingDiary': { index: false },
     '/gb/ClimbingDiary': { index: false },
   },
+  runtimeConfig: {
+    public: {
+      titleSeparator: '|',
+      siteUrl: 'https://lorenmucha.de',
+      pageTitle: 'Loren Mucha',
+      siteDescription: 'I\'m a Fullstack Software Developer with a passion for creative solutions. From user interfaces to backend architecture, I craft digital worlds. Explore my projects and the process behind the code right here.',
+      language: 'en-DE',
+    },
+  },
+  linkChecker: {
+    failOn404: true,
+  },
   app: {
     baseURL: '/',
     head: {
+      titleTemplate: '%pageTitle',
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
     },
@@ -17,23 +30,20 @@ export default defineNuxtConfig({
   modules: [
     '@vueuse/nuxt',
     '@nuxtjs/tailwindcss',
-    // pinia plugin - https://pinia.esm.dev
     '@pinia/nuxt',
     '@nuxtjs/i18n',
     'nuxt-icon',
     '@nuxt/content',
     'nuxt-swiper',
-    'nuxt-simple-sitemap',
+  ],
+  extends: [
+    'nuxt-seo-kit',
   ],
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ['/', 'sitemap.xml'],
       ignore: ['/ClimbingDiary'],
     },
-  },
-  site: {
-    url: 'https://lorenmucha.de',
   },
   build: {
     transpile: ['swiper'],
