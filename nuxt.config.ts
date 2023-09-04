@@ -22,6 +22,12 @@ export default defineNuxtConfig({
   app: {
     baseURL: '/',
     head: {
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://www.lorenmucha.de',
+        },
+      ],
       titleTemplate: '%pageTitle',
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
