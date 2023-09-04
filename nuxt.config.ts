@@ -10,7 +10,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       titleSeparator: '|',
-      siteUrl: 'https://lorenmucha.de',
+      siteUrl: 'https://www.lorenmucha.de',
       pageTitle: 'Loren Mucha',
       siteDescription: 'I\'m a Fullstack Software Developer with a passion for creative solutions. From user interfaces to backend architecture, I craft digital worlds. Explore my projects and the process behind the code right here.',
       language: 'en-DE',

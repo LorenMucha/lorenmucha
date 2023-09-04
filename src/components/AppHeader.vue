@@ -1,6 +1,7 @@
 <script>
 import CV_DE from 'public/files/CV_DE.pdf'
 import CV_EN from 'public/files/CV_EN.pdf'
+import { siteMetaInfo } from '~/constants'
 import { useLanguageStore } from '~/store/languages'
 
 export default {
@@ -12,6 +13,7 @@ export default {
   data() {
     return {
       isActive: false,
+      meta: siteMetaInfo,
       cv: CV_DE,
     }
   },
@@ -43,7 +45,7 @@ export default {
         <div>
           <!-- Website Logo -->
           <a class="flex items-center py-4 px-2">
-            <span class="font-semibold md:text-lg text-gray-800">Loren Mucha</span>
+            <span class="font-semibold md:text-lg text-gray-800">{{ meta.title }}</span>
           </a>
         </div>
         <div class="flex space-x-7">
@@ -57,7 +59,7 @@ export default {
           </div>
           <div class="hidden md:flex items-center space-x-1">
             <a
-              href="mailto:lorenmucha@gmail.com" target="_blank"
+              :href="`mailto:${meta.email}`" target="_blank"
               class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300"
             >{{ $t('header.contact') }}</a>
           </div>
@@ -97,7 +99,7 @@ export default {
         </li>
         <li>
           <a
-            href="mailto:lorenmucha@gmail.com" target="_blank"
+            :href="`mailto:${meta.email}`" target="_blank"
             class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300"
           >{{ $t('header.contact') }}</a>
         </li>
