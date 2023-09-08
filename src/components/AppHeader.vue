@@ -39,14 +39,16 @@ export default {
 </script>
 
 <template>
-  <nav class="bg-white shadow-lg fixed w-screen top-0 z-10">
+  <nav class="bg-white shadow-lg fixed w-screen top-0 z-10 px-3">
     <div class="max-w-6xl mx-auto px-4">
       <div class="flex justify-between">
-        <div>
+        <div class="inline-flex justify-center p-4">
           <!-- Website Logo -->
-          <a class="flex items-center py-4 px-2">
-            <span class="font-semibold md:text-lg text-gray-800">{{ meta.title }}</span>
+          <a>
+            <span class="font-semibold md:text-lg text-blue-500">{{ meta.title }}</span>
           </a>
+          <Icon name="uil:square" class="flex items-center rotate-45 text-gray-500 mr-2 ml-2 mt-1" />
+          <span class="md:text-lg text-gray-500 font-semibold">Softwareentwicklung</span>
         </div>
         <div class="flex space-x-7">
           <!-- Primary Navbar items -->

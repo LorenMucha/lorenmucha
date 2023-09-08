@@ -19,10 +19,10 @@ export default {
 </script>
 
 <template>
-  <div class="section h-screen flex justify-center items-center mt-10">
-    <div class="container grid md:grid-cols-3 grid-flow-col">
-      <div class="col-span-2">
-        <div class="pl-5 items-center">
+  <div class="lg:h-screen w-screen h-max section flex justify-center items-center mt-10">
+    <div class="container grid grid-cols-1 gap-3 lg:grid-flow-col lg:grid-cols-4">
+      <div class="md:col-span-3">
+        <div class="items-center">
           <p class="text-3xl text-gray-500">
             {{ $t("header.greet") }}
             <Icon name="twemoji:clapping-hands" />
@@ -48,7 +48,7 @@ export default {
               <img class="profile-icon" src="~assets/icon/mail.svg"></a>
           </div>
         </div>
-        <div class="hidden rounded-md shadow-sm mt-5 sm:inline-flex space-x-4 px-4" role="group">
+        <div class="rounded-md shadow-sm mt-5 space-x-4 hidden lg:inline-flex" role="group">
           <button @click="scrollTo('work')">
             Projekte
           </button>
@@ -57,10 +57,10 @@ export default {
           </button>
         </div>
       </div>
-      <div>
+      <div class="row-start-1 p-5">
         <img
           :src="authorImage" alt="me"
-          class="shadow-xl md:h-60 md:w-60 h-40 w-40 rounded-full hidden sm:block object-cover"
+          class="shadow-xl md:h-60 md:w-60 h-40 w-40 rounded-full block object-cover"
         >
       </div>
     </div>

@@ -1,11 +1,11 @@
 {
-  "header":{
-    "expertise" : "Expertise",
+  "header": {
+    "expertise": "Expertise",
     "cv": "Resume",
     "contact": "Contact",
     "greet": "Hi! I'm Loren Mucha",
     "role": "Fullstack Software Developer",
-    "about": "I'm a Software Crafter with a passion for creative solutions. From user interfaces to backend architecture, I craft digital worlds. Explore my projects and the process behind the code right here. "
+    "about": "As a passionate Software Crafter, I have extensive experience in developing robust and scalable web applications. My technical expertise spans from frontend development using modern frameworks like Nuxt and Angular to backend development with languages such as Java, Python, and Ruby on Rails. With a solid understanding of database design and management, including SQL and NoSQL, I am capable of crafting holistic solutions.<br/><br/>My goal is to create innovative software solutions that help businesses stay competitive and achieve their objectives. If you are in search of a Full Stack Engineer, I am at your service."
   },
   "cv": "Resume",
   "work": {
@@ -27,7 +27,7 @@
       "intro": "It provides information on the area structure and its development, as well as comprehensive data on the quality across Germany, as a <b>app</b>."
     }
   },
-  "tools":{
+  "tools": {
     "languages": "Programming Languages"
   }
 }

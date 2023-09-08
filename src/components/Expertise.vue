@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 import { frameWorks, languages, tools } from '~/constants'
 
 export default {
@@ -15,7 +15,6 @@ export default {
 </script>
 
 <template>
-  <!-- TODO: translation -->
   <div :id="id" class="section sm:h-screen">
     <div class="header">
       <div class="max-w-3xl mx-auto py-5">
@@ -24,7 +23,7 @@ export default {
         </h2>
       </div>
       <div class="container">
-        <h3>{{ $t("tools.languages") }}</h3>
+        <h3>{{ $t('tools.languages') }}</h3>
         <ul class="flex flex-wrap items-center justify-center skill-list load-hidden v-scroll-reveal">
           <li
             v-for="(item, index) in languages" :key="index" class="p-4 rounded-lg flex items-end justify-center m-2"

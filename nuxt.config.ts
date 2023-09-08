@@ -9,6 +9,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
+      gtagId: 'G-PVK3KS37KJ',
       titleSeparator: '|',
       siteUrl: 'https://www.lorenmucha.de',
       pageTitle: 'Loren Mucha',
@@ -22,15 +23,15 @@ export default defineNuxtConfig({
   app: {
     baseURL: '/',
     head: {
+      titleTemplate: '%pageTitle',
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
       link: [
         {
           rel: 'canonical',
           href: 'https://www.lorenmucha.de',
         },
       ],
-      titleTemplate: '%pageTitle',
-      charset: 'utf-8',
-      viewport: 'width=device-width, initial-scale=1',
     },
   },
   modules: [
