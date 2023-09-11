@@ -42,13 +42,13 @@ export default {
   <nav class="bg-white shadow-lg fixed w-screen top-0 z-10 px-3">
     <div class="max-w-6xl mx-auto px-4">
       <div class="flex justify-between">
-        <div class="inline-flex justify-center p-4">
+        <div class="inline-flex justify-center md:p-4 mb-1 mt-1 md:mt-0 md:mb-0">
           <!-- Website Logo -->
           <a>
             <span class="font-semibold md:text-lg text-blue-500">{{ meta.title }}</span>
           </a>
-          <Icon name="uil:square" class="flex items-center rotate-45 text-gray-500 mr-2 ml-2 mt-1" />
-          <span class="md:text-lg text-gray-500 font-semibold">Softwareentwicklung</span>
+          <Icon name="uil:square" class="flex items-center rotate-45 text-gray-500 mr-1 ml-1 md:mr-2 md:ml-2 mt-1" />
+          <span class="md:text-lg text-gray-500 font-semibold">Software Engineering</span>
         </div>
         <div class="flex space-x-7">
           <!-- Primary Navbar items -->

@@ -9,7 +9,6 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      gtagId: 'G-PVK3KS37KJ',
       titleSeparator: '|',
       siteUrl: 'https://www.lorenmucha.de',
       pageTitle: 'Loren Mucha',
