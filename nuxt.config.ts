@@ -2,17 +2,17 @@ import svgLoader from 'vite-svg-loader'
 
 export default defineNuxtConfig({
   srcDir: 'src',
-  ssr: false,
   routeRules: {
     '/ClimbingDiary': { index: false },
     '/gb/ClimbingDiary': { index: false },
   },
   runtimeConfig: {
     public: {
+      // Doku: https://github.com/harlan-zw/nuxt-seo-kit
       titleSeparator: '|',
       siteUrl: 'https://www.lorenmucha.de',
       pageTitle: 'Loren Mucha',
-      siteDescription: 'I\'m a Fullstack Software Developer with a passion for creative solutions. From user interfaces to backend architecture, I craft digital worlds. Explore my projects and the process behind the code right here.',
+      siteDescription: 'Freelancer als Full Stack Entwickler in Nürnberg',
       language: 'en-DE',
     },
   },
@@ -48,7 +48,7 @@ export default defineNuxtConfig({
   ],
   nitro: {
     prerender: {
-      crawlLinks: true,
+      crawlLinks: false,
       ignore: ['/ClimbingDiary'],
     },
   },

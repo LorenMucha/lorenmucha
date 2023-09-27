@@ -59,7 +59,7 @@ export default {
       </div>
       <div class="row-start-1 p-5">
         <img
-          :src="authorImage" alt="me"
+          :src="authorImage" alt="Author"
           class="shadow-xl md:h-60 md:w-60 h-40 w-40 rounded-full block object-cover"
         >
       </div>
