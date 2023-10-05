@@ -2,9 +2,9 @@ import climbingDiaryImage from 'public/images/climbing_diary/climbing_diary.png'
 import monitorImage from 'public/images/monitor/monitor.jpg'
 import apiImage from 'public/images/monitor/rest_api.png'
 import monitorAppImage from 'public/images/monitor/land_use_monitor.png'
+import verticalLifeImage from 'public/images/vertical_life/vertical_life.jpg'
 
 export const siteMetaInfo = {
-  title: 'Loren Mucha',
   author: 'Loren Mucha',
   author_image: '/author.png',
   position: 'Full Stack Developer',
@@ -29,6 +29,14 @@ export const siteMetaInfo = {
 }
 
 export const projects = [
+  // TODO:
+  // {
+  //   header: 'work.vertical_life.header',
+  //   imageSrc: verticalLifeImage,
+  //   intro: 'work.vertical_life.intro',
+  //   link: 'https://www.vertical-life.info/',
+  //   linkText: 'Website',
+  // },
   {
     header: 'work.ioer_monitor.header',
     imageSrc: monitorImage,

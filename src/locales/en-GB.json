@@ -25,6 +25,10 @@
     "land_use_monitor": {
       "header": "Land Use Monitor DE",
       "intro": "It provides information on the area structure and its development, as well as comprehensive data on the quality across Germany, as a <b>app</b>."
+    },
+    "vertical_life": {
+      "header": "Vertical Life",
+      "intro": "Vertical Life is a <b>app</b> for climbers to find and share climbing spots."
     }
   },
   "tools": {

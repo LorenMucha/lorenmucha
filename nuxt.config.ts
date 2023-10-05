@@ -11,8 +11,8 @@ export default defineNuxtConfig({
       // Doku: https://github.com/harlan-zw/nuxt-seo-kit
       titleSeparator: '|',
       siteUrl: 'https://www.lorenmucha.de',
-      pageTitle: 'Loren Mucha',
-      siteDescription: 'Freelancer als Full Stack Entwickler in Nürnberg',
+      pageTitle: 'Loren Mucha | Software Engineering',
+      siteDescription: 'Als erfahrener Softwareentwickler biete ich maßgeschneiderte Lösungen für Ihre technologischen Herausforderungen. Kontaktieren Sie mich heute, um Ihr Projekt zum Erfolg zu führen.',
       language: 'en-DE',
     },
   },
@@ -22,7 +22,6 @@ export default defineNuxtConfig({
   app: {
     baseURL: '/',
     head: {
-      title: 'Loren Mucha',
       titleTemplate: '%pageTitle',
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
