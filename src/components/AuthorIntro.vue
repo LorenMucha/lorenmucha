@@ -29,8 +29,28 @@ export default {
           </p>
           <h1 class="text-bold text-5xl" v-html="$t('header.role')" />
           <div class="xl:mr-10 lg:mr-10 sm:mr-0">
-            <hr class="my-1 h-1 bg-blue-500 rounded border-0 md:my-6 dark:bg-gray-700">
-            <p class="mt-8 mb-4 dark:bg-gray-800 dark:text-blue-200 text-justify text-xl" v-html="$t('header.about')" />
+            <hr class="my-1 h-1 bg-blue-700 rounded border-0 md:my-6 dark:bg-gray-700">
+            <div class="flex space-x-10 w-full mx-5">
+              <div class="block text-center">
+                <Icon class="text-6xl text-blue-700" name="mdi:design" />
+                <h3 class="mt-2">
+                  {{ $t("header.services.architecture") }}
+                </h3>
+              </div>
+              <div class="block text-center">
+                <Icon class="text-6xl text-blue-700" name="carbon:development" />
+                <h3 class="mt-2">
+                  {{ $t("header.services.development") }}
+                </h3>
+              </div>
+              <div class="block text-center">
+                <Icon class="text-6xl text-blue-700" name="nonicons:tmux-16" />
+                <h3 class="mt-2">
+                  {{ $t("header.services.ux") }}
+                </h3>
+              </div>
+            </div>
+            <p class="mb-4 dark:bg-gray-800 dark:text-blue-200 text-justify text-xl" v-html="$t('header.about')" />
           </div>
           <div class="flex mb-3 space-x-4 w-fit">
             <a

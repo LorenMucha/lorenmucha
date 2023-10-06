@@ -3,8 +3,13 @@
     "expertise": "Expertise",
     "cv": "Resume",
     "contact": "Contact",
-    "greet": "Hi! I'm Loren Mucha",
+    "greet": "Welcome",
     "role": "Fullstack Software Developer",
+    "services": {
+      "architecture": "Architecture",
+      "development": "Development",
+      "ux": "UX Design"
+    },
     "about": "As a passionate software crafter, I have extensive experience in developing robust and scalable web applications. My technical know-how ranges from front-end development with Nuxt and Angular to back-end development with Java and Python. With in-depth knowledge of software architecture, I am able to develop holistic solutions."
   },
   "cv": "Resume",

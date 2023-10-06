@@ -11,7 +11,7 @@ export default defineNuxtConfig({
       // Doku: https://github.com/harlan-zw/nuxt-seo-kit
       titleSeparator: '|',
       siteUrl: 'https://www.lorenmucha.de',
-      pageTitle: 'Loren Mucha | Software Engineering',
+      pageTitle: 'Mucha | Software Engineering',
       siteDescription: 'Als erfahrener Softwareentwickler biete ich maßgeschneiderte Lösungen für Ihre technologischen Herausforderungen. Kontaktieren Sie mich heute, um Ihr Projekt zum Erfolg zu führen.',
       language: 'en-DE',
     },
