@@ -65,11 +65,11 @@ export default {
               class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300"
             >{{ $t('header.contact') }}</a>
           </div>
-          <!-- <div class="hidden md:flex items-center">
+          <div class="hidden md:flex items-center">
             <button @click="switch_language" @scroll.prevent>
               <span :class="flag" />
             </button>
-          </div> -->
+          </div>
         </div>
         <!-- Mobile menu button -->
         <div class="md:hidden flex items-center">
