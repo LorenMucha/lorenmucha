@@ -1,9 +1,10 @@
 <template>
   <div class="dark:bg-gray-900">
-    <AuthorIntro />
+    <AuthorIntro/>
     <Work />
-    <Expertise />
+    <Expertise/>
     <!-- <TimeLine/> -->
-    <Contact />
+    <Contact/> -->
   </div>
 </template>
+

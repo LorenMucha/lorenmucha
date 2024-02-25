@@ -28,6 +28,7 @@ export default {
       <h1>{{ $t('header.contact') }}</h1>
       <div class="flex justify-center items-center">
         <div class="block p-6 rounded-lg shadow-lg bg-white w-screen">
+          <form>
             <div class="form-group mb-6">
               <input
                 v-model="nameMsg" type="text" class="
@@ -131,6 +132,7 @@ export default {
             >
               Send
             </button>
+          </form>
         </div>
       </div>
       <CalendlyInlineWidget v-bind="options" />

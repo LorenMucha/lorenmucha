@@ -5,29 +5,30 @@ export default {
       nameMsg: '',
       emailMsg: '',
       messageMsg: '',
-      options: {
-        url: 'https://calendly.com/lorenmucha/30-minute-meeting',
-      },
     }
   },
   methods: {
-    sendEmail() {
-      this.$mail.send({
-        from: 'John Doe',
-        subject: 'Incredible',
-        text: 'This is an incredible test message',
-      })
-    },
+    sendEmail() { },
   },
 }
+
+const calendly = useCalendly()
+const rootElement = ref()
+
+calendly.initBadgeWidget({
+  url: url.value,
+  text: 'Schedule time with me',
+  rootElement: rootElement.value,
+})
 </script>
 
 <template>
   <div id="contact" class="section">
     <div>
       <h1>{{ $t('header.contact') }}</h1>
-      <div class="flex justify-center items-center">
+      <!-- TODO <div class="flex justify-center items-center">
         <div class="block p-6 rounded-lg shadow-lg bg-white w-screen">
+          <form>
             <div class="form-group mb-6">
               <input
                 v-model="nameMsg" type="text" class="
@@ -105,7 +106,7 @@ export default {
               />
             </div>
             <button
-              class="
+              type="submit" class="
                 w-full
                 px-6
                 py-2.5
@@ -127,13 +128,13 @@ export default {
                 duration-150
                 ease-in-out
               "
-              @click="sendEmail"
             >
               Send
             </button>
+          </form>
         </div>
-      </div>
-      <CalendlyInlineWidget v-bind="options" />
+      </div> -->
+      <CalendlyPopupButton v-bind="options" :root-element="rootElement" />
     </div>
   </div>
 </template>

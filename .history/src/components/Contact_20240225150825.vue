@@ -1,4 +1,6 @@
 <script>
+const mail = useMail()
+
 export default {
   data() {
     return {
@@ -12,7 +14,7 @@ export default {
   },
   methods: {
     sendEmail() {
-      this.$mail.send({
+      mail.send({
         from: 'John Doe',
         subject: 'Incredible',
         text: 'This is an incredible test message',
@@ -28,6 +30,7 @@ export default {
       <h1>{{ $t('header.contact') }}</h1>
       <div class="flex justify-center items-center">
         <div class="block p-6 rounded-lg shadow-lg bg-white w-screen">
+          <form>
             <div class="form-group mb-6">
               <input
                 v-model="nameMsg" type="text" class="
@@ -105,6 +108,7 @@ export default {
               />
             </div>
             <button
+            @click="sendEmail"
               class="
                 w-full
                 px-6
@@ -127,10 +131,10 @@ export default {
                 duration-150
                 ease-in-out
               "
-              @click="sendEmail"
             >
               Send
             </button>
+          </form>
         </div>
       </div>
       <CalendlyInlineWidget v-bind="options" />

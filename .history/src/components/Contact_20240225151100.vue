@@ -131,6 +131,7 @@ export default {
             >
               Send
             </button>
+          </form>
         </div>
       </div>
       <CalendlyInlineWidget v-bind="options" />

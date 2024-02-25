@@ -75,9 +75,6 @@ export default {
           <button @click="scrollTo('expertise')">
             Skills & Tools
           </button>
-          <button @click="scrollTo('contact')">
-            Kontakt
-          </button>
         </div>
       </div>
       <div class="row-start-1 p-5">

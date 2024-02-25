@@ -93,4 +93,3 @@ sw.*
 node_modules
 
 #config
-src/nuxt.config.ts

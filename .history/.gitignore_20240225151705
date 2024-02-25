@@ -92,5 +92,4 @@ sw.*
 *.swp
 node_modules
 
-#config
-src/nuxt.config.ts
+#

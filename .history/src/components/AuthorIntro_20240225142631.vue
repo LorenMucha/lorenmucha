@@ -76,7 +76,7 @@ export default {
             Skills & Tools
           </button>
           <button @click="scrollTo('contact')">
-            Kontakt
+            Skills & Tools
           </button>
         </div>
       </div>
