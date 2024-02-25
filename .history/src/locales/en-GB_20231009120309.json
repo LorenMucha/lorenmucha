@@ -15,10 +15,6 @@
   "cv": "Resume",
   "work": {
     "header": "Projects",
-    "addigo": {
-      "header": "Addigo",
-      "intro": "ADDIGO Service Report is a digital, flexible tool for optimizing administrative workflows, especially in the area of logging, documentation, Employee management/control, appointment management and billing."
-    },
     "ioer_monitor": {
       "header": "IÖR Monitor",
       "intro": "The <a class='active-link' href='https://monitor.ioer.de' target='_blank'>IÖR-Monitor</a> is a web GIS to intuitively answer questions about land use in Germany."

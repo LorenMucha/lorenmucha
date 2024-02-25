@@ -20,7 +20,7 @@ export default {
           {{ $t("work.header") }}
         </h2>
       </div>
-    </div>
+ Ipsum mollit minim labore sunt non in nisi eu reprehenderit sint nostrud incididunt veniam.   </div>
     <div class="mx-auto content-center">
       <div class="grid grid-col-3 gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 place-items-center">
         <ClientOnly placeholder="Loading...">
@@ -35,7 +35,7 @@ export default {
                   {{ $t(item.header) }}
                 </h5>
                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400" v-html="$t(item.intro)" />
-                <p v-html="item.description ? $t(item.description) : ''"></p>
+                <p></p>
                 <button>
                   {{ item.linkText ? item.linkText : 'Read More' }}
                   <svg

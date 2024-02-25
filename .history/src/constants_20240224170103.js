@@ -2,8 +2,7 @@ import climbingDiaryImage from 'public/images/climbing_diary/climbing_diary.png'
 import monitorImage from 'public/images/monitor/monitor.jpg'
 import apiImage from 'public/images/monitor/rest_api.png'
 import monitorAppImage from 'public/images/monitor/land_use_monitor.png'
-import verticalLifeImage from 'public/images/vertical_life/vertical_life.jpeg'
-import addigoImage from 'public/images/addigo/addigo.png'
+import verticalLifeImage from 'public/images/vertical_life/vertical_life.jpg'
 
 export const siteMetaInfo = {
   author: 'Loren Mucha',
@@ -30,15 +29,7 @@ export const siteMetaInfo = {
 }
 
 export const projects = [
-  // TODO
-  {
-    header: 'work.addigo.header',
-    imageSrc: addigoImage,
-    intro: 'work.addigo.intro',
-    description: 'work.addigo.description',
-    link: 'https://addigo.de/en/_start-english/',
-    linkText: 'Website',
-  },
+  //TODO
   {
     header: 'work.vertical_life.header',
     imageSrc: verticalLifeImage,

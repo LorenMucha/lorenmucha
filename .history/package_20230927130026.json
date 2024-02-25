@@ -5,7 +5,7 @@
     "node": "^16.11.0 || ^17.0.0 || || ^18.0.0"
   },
   "scripts": {
-    "dev": "nuxi dev --hot",
+    "dev": "nuxi dev",
     "build": "nuxi build",
     "generate": "nuxi generate",
     "start": "node .output/server/index.mjs",

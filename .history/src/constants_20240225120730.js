@@ -35,7 +35,7 @@ export const projects = [
     header: 'work.addigo.header',
     imageSrc: addigoImage,
     intro: 'work.addigo.intro',
-    description: 'work.addigo.description',
+    description: 'work.addigo.description'
     link: 'https://addigo.de/en/_start-english/',
     linkText: 'Website',
   },
