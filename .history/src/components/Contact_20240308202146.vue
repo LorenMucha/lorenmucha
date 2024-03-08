@@ -21,11 +21,7 @@ export default {
         subject: emailSubject,
         text: this.messageMsg,
       })
-      // TODO: Timer welches send Email kurz einblendet und wieder ausblendet
-      this.mailSend = true
-      this.nameMsg = ''
-      this.emailMsg = ''
-      this.messageMsg = ''
+      this.showModal = true
     },
     toggleEmail() {
       this.scheduleActive = false

@@ -21,11 +21,7 @@ export default {
         subject: emailSubject,
         text: this.messageMsg,
       })
-      // TODO: Timer welches send Email kurz einblendet und wieder ausblendet
-      this.mailSend = true
-      this.nameMsg = ''
-      this.emailMsg = ''
-      this.messageMsg = ''
+      this.showModal = true
     },
     toggleEmail() {
       this.scheduleActive = false
@@ -54,10 +50,11 @@ export default {
       <div v-if="scheduleActive">
         <CalendlyInlineWidget v-bind="options" />
       </div>
-      <div class="flex justify-center items-center mt-12" />
-      <div v-if="mailSend">
+      <div class="flex justify-center items-center mt-6" />
+      <div
+        v-if="mailSend"
+      >
         <Icon name="ooui:success" size="8rem" class="w-auto mx-auto h-auto block text-blue-600" />
-        <div>Email versendet</div>
       </div>
     </div>
     <div v-if="emailActive" class="pt-2">

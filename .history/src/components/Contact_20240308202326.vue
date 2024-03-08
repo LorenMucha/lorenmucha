@@ -21,7 +21,7 @@ export default {
         subject: emailSubject,
         text: this.messageMsg,
       })
-      // TODO: Timer welches send Email kurz einblendet und wieder ausblendet
+      //TODO
       this.mailSend = true
       this.nameMsg = ''
       this.emailMsg = ''

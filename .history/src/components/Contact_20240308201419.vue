@@ -1,8 +1,10 @@
 <script>
+
 export default {
   data() {
     return {
-      mailSend: true,
+      showModal: false,
+      modalMalShow: false,
       emailActive: false,
       scheduleActive: false,
       nameMsg: '',
@@ -21,11 +23,7 @@ export default {
         subject: emailSubject,
         text: this.messageMsg,
       })
-      // TODO: Timer welches send Email kurz einblendet und wieder ausblendet
-      this.mailSend = true
-      this.nameMsg = ''
-      this.emailMsg = ''
-      this.messageMsg = ''
+      this.showModal = true
     },
     toggleEmail() {
       this.scheduleActive = false
@@ -54,18 +52,12 @@ export default {
       <div v-if="scheduleActive">
         <CalendlyInlineWidget v-bind="options" />
       </div>
-      <div class="flex justify-center items-center mt-12" />
-      <div v-if="mailSend">
-        <Icon name="ooui:success" size="8rem" class="w-auto mx-auto h-auto block text-blue-600" />
-        <div>Email versendet</div>
-      </div>
-    </div>
-    <div v-if="emailActive" class="pt-2">
-      <div class="flex justify-center items-center">
-        <div class="block p-6 rounded-lg shadow-lg bg-white w-screen">
-          <div class="form-group mb-6">
-            <input
-              v-model="nameMsg" type="text" class="
+      <div v-if="emailActive" class="pt-2">
+        <div class="flex justify-center items-center">
+          <div class="block p-6 rounded-lg shadow-lg bg-white w-screen">
+            <div class="form-group mb-6">
+              <input
+                v-model="nameMsg" type="text" class="
                   form-control
                   block
                   w-full
@@ -85,11 +77,11 @@ export default {
                   focus:border-blue-600
                   focus:outline-none
                 " placeholder="Name"
-            >
-          </div>
-          <div class="form-group mb-6">
-            <input
-              id="email" v-model="emailMsg" type="email" name="email" required class="
+              >
+            </div>
+            <div class="form-group mb-6">
+              <input
+                id="email" v-model="emailMsg" type="email" name="email" required class="
                   form-control
                   block
                   peer
@@ -110,14 +102,14 @@ export default {
                   focus:border-blue-600
                   focus:outline-none
                 " placeholder="Email address"
-            >
-            <p class="invisible peer-invalid:visible text-red-700 font-light">
-              Please enter a valid email address
-            </p>
-          </div>
-          <div class="form-group mb-6">
-            <textarea
-              v-model="messageMsg" class="
+              >
+              <p class="invisible peer-invalid:visible text-red-700 font-light">
+                Please enter a valid email address
+              </p>
+            </div>
+            <div class="form-group mb-6">
+              <textarea
+                v-model="messageMsg" class="
                   form-control
                   block
                   w-full
@@ -137,10 +129,10 @@ export default {
                   focus:border-blue-600
                   focus:outline-none
                 " rows="3" placeholder="Message"
-            />
-          </div>
-          <button
-            class="
+              />
+            </div>
+            <button
+              class="
                 w-full
                 px-6
                 py-2.5
@@ -162,12 +154,17 @@ export default {
                 duration-150
                 ease-in-out
               "
-            @click="sendEmail"
-          >
-            Send
-          </button>
+              @click="sendEmail"
+            >
+              Send
+            </button>
+          </div>
         </div>
       </div>
     </div>
+  </div>
+  <div
+    v-if="showModal">
+    <Icon :key="item.title" :name="item.component" size="3rem" class="w-auto mx-auto h-auto block" />
   </div>
 </template>
