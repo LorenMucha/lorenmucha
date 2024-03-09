@@ -13,6 +13,7 @@ export default {
       },
     }
   },
+  setup
   methods: {
     sendEmail() {
       const emailSubject = `Nachricht von lorenmucha.de || ${this.nameMsg} || ${this.emailMsg}`
@@ -164,6 +165,6 @@ export default {
         </div>
       </div>
     </div>
-    <Dialog :showModal="true" />
+    <Dialog />
   </div>
 </template>

@@ -1,4 +1,7 @@
 <script>
+
+import Dialog from './Dia'
+
 export default {
   data() {
     return {
@@ -164,6 +167,6 @@ export default {
         </div>
       </div>
     </div>
-    <Dialog :showModal="true" />
   </div>
+  <Dialog></Dialog>
 </template>

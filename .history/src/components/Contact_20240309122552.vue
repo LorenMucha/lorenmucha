@@ -1,5 +1,8 @@
 <script>
 export default {
+  setup(props, ctx) {
+    
+  },
   data() {
     return {
       mailSend: true,
@@ -164,6 +167,6 @@ export default {
         </div>
       </div>
     </div>
-    <Dialog :showModal="true" />
+    <Dialog :showModal="isOpen" />/>
   </div>
 </template>

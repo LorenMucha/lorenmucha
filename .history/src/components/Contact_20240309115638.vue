@@ -1,5 +1,9 @@
 <script>
-export default {
+import Dialog from './Dialog.vue'
+
+export default {{
+  
+}
   data() {
     return {
       mailSend: true,
@@ -164,6 +168,6 @@ export default {
         </div>
       </div>
     </div>
-    <Dialog :showModal="true" />
+    <Dialog />
   </div>
 </template>

@@ -2,6 +2,7 @@
 export default {
   data() {
     return {
+      isOpen: true,
       mailSend: true,
       emailActive: false,
       scheduleActive: false,
@@ -164,6 +165,6 @@ export default {
         </div>
       </div>
     </div>
-    <Dialog :showModal="true" />
+    <Dialog :showModal="isOpen" />
   </div>
 </template>

@@ -1,4 +1,6 @@
 <script>
+const mailSend = true
+
 export default {
   data() {
     return {
@@ -164,6 +166,6 @@ export default {
         </div>
       </div>
     </div>
-    <Dialog :showModal="true" />
   </div>
+  <
 </template>

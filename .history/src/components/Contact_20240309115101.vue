@@ -1,4 +1,7 @@
 <script>
+
+import Dialog from './Dialog.vue'
+
 export default {
   data() {
     return {
@@ -6,7 +9,9 @@ export default {
       emailActive: false,
       scheduleActive: false,
       nameMsg: '',
-      emailMsg: '',
+     
+import Dialog from './Dialog.vue'
+ emailMsg: '',
       messageMsg: '',
       options: {
         url: 'https://calendly.com/lorenmucha/30-minute-meeting',
@@ -164,6 +169,6 @@ export default {
         </div>
       </div>
     </div>
-    <Dialog :showModal="true" />
   </div>
+  <Dialog></Dialog>
 </template>

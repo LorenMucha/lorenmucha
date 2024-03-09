@@ -1,4 +1,6 @@
 <script>
+import Dialog from './Dialog.vue'
+
 export default {
   data() {
     return {
@@ -164,6 +166,5 @@ export default {
         </div>
       </div>
     </div>
-    <Dialog :showModal="true" />
   </div>
 </template>

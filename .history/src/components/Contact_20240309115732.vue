@@ -164,6 +164,6 @@ export default {
         </div>
       </div>
     </div>
-    <Dialog :showModal="true" />
+    <Dialog />
   </div>
 </template>
