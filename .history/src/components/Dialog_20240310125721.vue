@@ -1,4 +1,4 @@
-<script>
+<script type="ts">
 export default {
   props: {
     showModal: {
@@ -30,12 +30,15 @@ export default {
       <div
         class="border border-green-900 w-[900px] rounded-lg shadow-lg relative flex flex-col bg-white outline-none focus:outline-none !overflow-auto"
       >
-        <!-- header -->
-        <div class="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t" />
-        <!-- body -->
-        <div class="flex justify-center p-5" />
-        <!-- footer -->
-        <div class="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
+        <div class="flex justify-center p-5 flex-col">
+          <div>
+            <Icon name="ooui:success" size="8rem" class="w-auto mx-auto h-auto block text-blue-600" />
+          </div>
+          <div class="w-full">
+            Email versendet
+          </div>
+        </div>
+        <div class="flex items-center justify-end p-6">
           <button
             type="button" class="g-transparent hover:bg-green-100 text-blue-600 font-semibold hover:text-black py-2 px-4 border border-blue-600 hover:border-transparent rounded"
             @click="toggleModal"
