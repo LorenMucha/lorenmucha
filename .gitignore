@@ -2,6 +2,7 @@
 ### Node template
 # build
 .output
+.history
 # Logs
 /logs
 *.log
@@ -91,8 +92,5 @@ sw.*
 # Vim swap files
 *.swp
 node_modules
-
-#config
-nuxt.config.ts
 
 .env.*
