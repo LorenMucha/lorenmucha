@@ -122,6 +122,10 @@ export const frameWorks = [
     title: 'Flask',
   },
   {
+    component: 'logos:vue',
+    title: 'Vuejs',
+  },
+  {
     component: 'logos:tailwindcss-icon',
     title: 'TailwindCss',
   },
@@ -130,8 +134,8 @@ export const frameWorks = [
     title: 'Nuxt.js',
   },
   {
-    component: 'logos:laravel',
-    title: 'Laravel',
+    component: 'logos:php',
+    title: 'PHP',
   },
 ]
 
@@ -139,14 +143,6 @@ export const tools = [
   {
     component: 'logos:postgresql',
     title: 'PostgreSQL',
-  },
-  {
-    component: 'logos:mongodb',
-    title: 'MongoDB',
-  },
-  {
-    component: 'logos:kafka',
-    title: 'Kafka',
   },
   {
     component: 'logos:mysql',

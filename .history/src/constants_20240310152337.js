@@ -103,9 +103,8 @@ export const languages = [
     title: 'Ruby',
   },
   {
-    component: 'logos:php',
-    title: 'PHP',
-  },
+    co
+  }
 ]
 
 export const frameWorks = [
@@ -122,6 +121,10 @@ export const frameWorks = [
     title: 'Flask',
   },
   {
+    component: 'logos:vue',
+    title: 'Vuejs',
+  },
+  {
     component: 'logos:tailwindcss-icon',
     title: 'TailwindCss',
   },
@@ -129,24 +132,12 @@ export const frameWorks = [
     component: 'logos:nuxt-icon',
     title: 'Nuxt.js',
   },
-  {
-    component: 'logos:laravel',
-    title: 'Laravel',
-  },
 ]
 
 export const tools = [
   {
     component: 'logos:postgresql',
     title: 'PostgreSQL',
-  },
-  {
-    component: 'logos:mongodb',
-    title: 'MongoDB',
-  },
-  {
-    component: 'logos:kafka',
-    title: 'Kafka',
   },
   {
     component: 'logos:mysql',

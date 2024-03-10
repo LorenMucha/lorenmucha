@@ -69,7 +69,7 @@ export default {
           <button @click="$scrollTo('expertise')">
             Skills & Tools
           </button>
-          <button @click="$scrollTo('contact')">
+          <button @click="scrollTo('contact')">
             Kontakt
           </button>
         </div>

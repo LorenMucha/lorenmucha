@@ -63,13 +63,13 @@ export default {
           </div>
         </div>
         <div class="rounded-md shadow-sm mt-5 space-x-4 hidden lg:inline-flex" role="group">
-          <button @click="$scrollTo('work')">
+          <button @click="scrollTo('work')">
             Projekte
           </button>
-          <button @click="$scrollTo('expertise')">
+          <button @click="scrollTo('expertise')">
             Skills & Tools
           </button>
-          <button @click="$scrollTo('contact')">
+          <button @click="scrollTo('contact')">
             Kontakt
           </button>
         </div>

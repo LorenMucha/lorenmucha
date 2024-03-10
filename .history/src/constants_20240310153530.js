@@ -131,7 +131,7 @@ export const frameWorks = [
   },
   {
     component: 'logos:laravel',
-    title: 'Laravel',
+    title: 'PHP',
   },
 ]
 
@@ -139,14 +139,6 @@ export const tools = [
   {
     component: 'logos:postgresql',
     title: 'PostgreSQL',
-  },
-  {
-    component: 'logos:mongodb',
-    title: 'MongoDB',
-  },
-  {
-    component: 'logos:kafka',
-    title: 'Kafka',
   },
   {
     component: 'logos:mysql',

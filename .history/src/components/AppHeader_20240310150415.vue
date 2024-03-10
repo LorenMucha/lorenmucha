@@ -61,7 +61,7 @@ export default {
           </div>
           <div class="hidden md:flex items-center space-x-1">
             <a
-              href="#contact"
+              :href="`mailto:${meta.email}`" target="_blank"
               class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300"
             >{{ $t('header.contact') }}</a>
           </div>
@@ -101,7 +101,7 @@ export default {
         </li>
         <li>
           <a
-            href="#contact"
+            :href="#contact" target="_blank"
             class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300"
           >{{ $t('header.contact') }}</a>
         </li>

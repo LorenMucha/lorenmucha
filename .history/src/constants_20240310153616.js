@@ -145,8 +145,8 @@ export const tools = [
     title: 'MongoDB',
   },
   {
-    component: 'logos:kafka',
-    title: 'Kafka',
+    component: 'logos:mongodb',
+    title: 'MongoDB',
   },
   {
     component: 'logos:mysql',

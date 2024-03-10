@@ -5,14 +5,15 @@
     "node": "^16.11.0 || ^17.0.0 || || ^18.0.0"
   },
   "scripts": {
-    "dev": "nuxi dev --hot --dotenv .env.local",
+    "dev": "nuxi dev --hot --dotenv .env.local
+    ",
     "build": "nuxi build",
     "generate": "nuxi generate",
     "start": "node .output/server/index.mjs",
     "lint": "eslint .",
     "preview": "nuxt preview",
     "allupdate": "yarn upgrade-interactive",
-    "deploy": "nuxt generate --dotenv .env.production && touch .output/public/.nojekyll && gh-pages --dotfiles -d .output/public"
+    "deploy": "nuxt generate && touch .output/public/.nojekyll && gh-pages --dotfiles -d .output/public"
   },
   "dependencies": {
     "@nuxtjs/i18n": "8.0.0-beta.6",
@@ -26,7 +27,6 @@
     "gh-pages": "^6.0.0",
     "i": "^0.3.7",
     "mitt": "^3.0.1",
-    "nuxt-lazy-load": "^3.0.4",
     "nuxt-mail": "^4.0.3",
     "nuxt-swiper": "^1.1.1",
     "pinia": "2.1.4",

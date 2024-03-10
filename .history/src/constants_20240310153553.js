@@ -142,11 +142,7 @@ export const tools = [
   },
   {
     component: 'logos:mongodb',
-    title: 'MongoDB',
-  },
-  {
-    component: 'logos:kafka',
-    title: 'Kafka',
+    title: 'PostgreSQL',
   },
   {
     component: 'logos:mysql',

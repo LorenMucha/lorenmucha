@@ -130,8 +130,8 @@ export const frameWorks = [
     title: 'Nuxt.js',
   },
   {
-    component: 'logos:laravel',
-    title: 'Laravel',
+    component: 'logos:php',
+    title: 'PHP',
   },
 ]
 
@@ -139,14 +139,6 @@ export const tools = [
   {
     component: 'logos:postgresql',
     title: 'PostgreSQL',
-  },
-  {
-    component: 'logos:mongodb',
-    title: 'MongoDB',
-  },
-  {
-    component: 'logos:kafka',
-    title: 'Kafka',
   },
   {
     component: 'logos:mysql',
