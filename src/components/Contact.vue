@@ -8,8 +8,8 @@ export default {
   data() {
     return {
       mailSend: false,
-      emailActive: false,
-      scheduleActive: true,
+      emailActive: true,
+      scheduleActive: false,
       nameMsg: '',
       emailMsg: '',
       messageMsg: '',
