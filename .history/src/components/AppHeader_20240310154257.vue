@@ -40,7 +40,7 @@ export default {
 
 <template>
   <nav class="bg-white shadow-lg fixed w-screen top-0 z-10 px-3">
-    <div class="max-w-6xl mx-auto">
+    <div class="max-w-6xl mx-auto px-4">
       <div class="flex justify-between">
         <div class="inline-flex justify-center md:p-4 mb-1 mt-1 md:mt-0 md:mb-0">
           <!-- Website Logo -->

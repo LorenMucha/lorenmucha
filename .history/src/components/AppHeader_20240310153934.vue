@@ -40,7 +40,7 @@ export default {
 
 <template>
   <nav class="bg-white shadow-lg fixed w-screen top-0 z-10 px-3">
-    <div class="max-w-6xl mx-auto">
+    <div class="max-w-6xl mx-auto px-4">
       <div class="flex justify-between">
         <div class="inline-flex justify-center md:p-4 mb-1 mt-1 md:mt-0 md:mb-0">
           <!-- Website Logo -->
@@ -50,7 +50,7 @@ export default {
           <Icon name="uil:square" class="flex items-center rotate-45 text-gray-500 mr-1 ml-1 md:mr-2 md:ml-2 mt-1" />
           <span class="md:text-lg text-gray-500 font-semibold">Software Engineering</span>
         </div>
-        <div class="flex space-x-7">
+        <div class="flex space-x-7 float-right">
           <!-- Primary Navbar items -->
           <div class="hidden md:flex items-center space-x-1">
             <a
