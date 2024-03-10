@@ -4,7 +4,9 @@ import PageSwiper from '../components/PageSwiper.vue'
 definePageMeta({
   layout: false,
 })
+/*
 
+*/
 export default {
   name: 'ClimbingDiary',
   components: { PageSwiper },

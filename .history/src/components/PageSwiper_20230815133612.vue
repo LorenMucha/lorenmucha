@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 export default {
   name: 'PageSlider',
   props: { inputData: Object },
@@ -21,7 +21,7 @@ export default {
     >
       <SwiperSlide v-for="(image, idx) in inputData" :key="idx">
         <div class="center">
-          <div v-html="image.img" />
+          <div v-html="image.img"/>
           <p class="mt-5 text-base">
             {{ image.text }}
           </p>

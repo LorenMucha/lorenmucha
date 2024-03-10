@@ -1,10 +1,12 @@
-<script>
+<script lang="ts">
 import PageSwiper from '../components/PageSwiper.vue'
 
 definePageMeta({
   layout: false,
 })
+/*
 
+*/
 export default {
   name: 'ClimbingDiary',
   components: { PageSwiper },
@@ -67,7 +69,7 @@ export default {
     <section class="bg-red-100">
       <div class="section">
         <h2>Deine Daten deine Kontrolle</h2>
-      </div>
+      </div>>
     </section>
   </div>
 </template>
