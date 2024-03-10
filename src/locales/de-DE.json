@@ -3,7 +3,7 @@
     "cv": "Lebenslauf",
     "contact": "Kontakt",
     "greet": "Wilkommen, ich bin Loren Mucha",
-    "role": "Selbständiger Software Entwickler und </br> Architekt",
+    "role": "Selbständiger Software- Entwickler und </br> Architekt",
     "services": {
       "architecture": "Architektur",
       "development": "Entwicklung",
@@ -20,8 +20,8 @@
     },
     "addigo": {
       "header": "Addigo",
-      "intro": "ADDIGO Servicereport ist ein digitales, flexibles Werkzeug für die Optimierung administrativer Arbeitsabläufe besonders im Bereich Protokollierung, Dokumentation, Mitarbeitersteuerung, Terminverwaltung und Abrechnung.",
-      "description": "Dieses Projekt leitete ich als Softwarearchitekt, mit dem Ziel einer erfolgreichen Online Bereitstellung des Produktes für die Kunden. </br></br> Was habe ich gemacht ?"
+      "intro": "ADDIGO Servicereport ist ein digitales, flexibles Werkzeug für die Optimierung administrativer Arbeitsabläufe besonders im Bereich Protokollierung, Dokumentation, Mitarbeitersteuerung, Terminverwaltung und Abrechnung. Hierbei werden dem Kunden eine App und Webanwendung zur Verfügung gestellt.",
+      "description": "Dieses Projekt leitete ich als Softwarearchitekt, mit dem Ziel einer erfolgreichen Online Bereitstellung des Produktes. Der Fokus meiner Arbeit erstreckte sich von den DevOps bis hin zur Teamleitung und Security Analyse."
     },
     "climbing_diary": {
       "header": "Climbing Diary",
