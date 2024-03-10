@@ -42,25 +42,11 @@ export default defineNuxtConfig({
     'nuxt-icon',
     '@nuxt/content',
     'nuxt-swiper',
-    'nuxt-mail',
     'nuxt-lazy-load',
   ],
   extends: [
     'nuxt-seo-kit',
   ],
-  mail: {
-    message: {
-      to: process.env.USER_MAIL,
-    },
-    smtp: {
-      host: 'smtp.strato.de',
-      port: 465,
-      auth: {
-        user: process.env.USER_MAIL,
-        pass: process.env.SMTP_PASS,
-      },
-    },
-  },
   nitro: {
     prerender: {
       crawlLinks: false,

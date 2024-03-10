@@ -7,7 +7,7 @@ export default {
   },
   data() {
     return {
-      mailSend: false,
+      modalState: { show: false, type: 'error' },
       emailActive: true,
       scheduleActive: false,
       nameMsg: '',
@@ -19,8 +19,8 @@ export default {
     }
   },
   computed: {
-    showModal() {
-      return this.mailSend
+    modal() {
+      return this.modalState
     },
   },
   mounted() {
@@ -29,14 +29,24 @@ export default {
     })
   },
   methods: {
-    sendEmail() {
-      const emailSubject = `Nachricht von lorenmucha.de || ${this.nameMsg} || ${this.emailMsg}`
-      this.$mail.send({
-        from: email,
-        subject: emailSubject,
-        text: this.messageMsg,
+    async sendEmail() {
+      await $fetch('https://formspree.io/f/mnqezbnb', {
+        method: 'post',
+        headers: {
+          Accept: 'application/json',
+        },
+        body: {
+          name: this.nameMsg,
+          from: this.emailMsg,
+          _subject: `${this.nameMsg} | Nachricht von lorenmucha.de`,
+          message: this.messageMsg,
+        },
+      }).then((request) => {
+        if (request.ok)
+          this.modalState = { show: true, type: 'sucess' }
+      }).catch(() => {
+        this.modalState = { show: true, type: 'error' }
       })
-      this.mailSend = true
     },
     toggleEmail() {
       this.scheduleActive = false
@@ -153,7 +163,6 @@ export default {
           </div>
           <button
             class="
-                w-full
                 px-6
                 py-2.5
                 bg-blue-600
@@ -176,11 +185,11 @@ export default {
               "
             @click="sendEmail"
           >
-            Send
+            Senden
           </button>
         </div>
       </div>
     </div>
-    <Modal :show-modal="showModal" />
+    <Modal :modal-state="modal" />
   </div>
 </template>

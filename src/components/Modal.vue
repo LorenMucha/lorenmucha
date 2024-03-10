@@ -1,26 +1,25 @@
 <script>
 export default {
   props: {
-    showModal: {
-      type: Boolean,
+    modalState: {
+      type: Object,
       required: true,
-      default: false,
     },
   },
   emit: ['success'],
   data() {
     return {
-      show: this.showModal,
+      state: this.modalState,
     }
   },
   watch: {
-    showModal(newValue) {
-      this.show = newValue
+    modalState(newType) {
+      this.state = newType
     },
   },
   methods: {
     toggleModal() {
-      this.show = !this.show
+      this.state.show = false
       this.$bus.$emit('success')
     },
   },
@@ -29,7 +28,7 @@ export default {
 
 <template>
   <div
-    v-if="show"
+    v-if="state.show"
     class="fixed inset-0 z-[1000] outline-none focus:outline-none justify-center items-center flex !overflow-hidden"
   >
     <div>
@@ -38,16 +37,30 @@ export default {
         class="border w-auto rounded-lg shadow-lg relative flex flex-col bg-white outline-none focus:outline-none pl-10 pr-10 pt-10"
       >
         <div class="flex justify-center p-5 flex-col items-center">
-          <div>
+          <div v-if="state.type === 'sucess'">
             <Icon name="ooui:success" size="8rem" class="animate-bounce w-auto mx-auto h-auto block text-blue-600" />
           </div>
-          <div>
+          <div v-else>
+            <Icon name="mdi:error" size="8rem" class="animate-bounce w-auto mx-auto h-auto block text-red-600" />
+          </div>
+          <div v-if="state.type === 'sucess'" class="font-bold">
             Email versendet
+          </div>
+          <div v-else class="font-bold text-red-600">
+            Uups.....es ist ein Fehler aufgetreten
           </div>
         </div>
         <div class="flex items-center justify-end p-6">
           <button
+            v-if="state.type === 'sucess'"
             type="button" class="g-transparent hover:bg-green-100 text-blue-600 font-semibold hover:text-black py-2 px-4 border border-blue-600 hover:border-transparent rounded"
+            @click="toggleModal"
+          >
+            Schließen
+          </button>
+          <button
+            v-else
+            type="button" class="g-transparent hover:bg-green-100 text-red-600 font-semibold hover:text-black py-2 px-4 border border-red-600 hover:border-transparent rounded !bg-red-600"
             @click="toggleModal"
           >
             Schließen
