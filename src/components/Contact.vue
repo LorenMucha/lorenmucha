@@ -1,6 +1,8 @@
 <script>
 import Modal from './Modal.vue'
 
+const calendly = useCalendly()
+
 export default {
   components: {
     Modal,
@@ -54,7 +56,7 @@ export default {
     },
     toggleSchedule() {
       this.emailActive = false
-      this.scheduleActive = !this.scheduleActive
+      this.scheduleActive = !this.scheduleActiveya
     },
     cleanMailForm() {
       // TODO: Timer welches send Email kurz einblendet und wieder ausblendet

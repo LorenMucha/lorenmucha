@@ -77,7 +77,7 @@ export default {
             <i class="bx bx-menu text-3xl mt-1" />
           </button>
         </div>
-        <div class="md:hidden flex items-center">
+       <!--  <div class="md:hidden flex items-center">
           <button class="outline-none mobile-menu-button" @click="show_mobile_menu">
             <svg
               class=" w-6 h-6 text-gray-500 hover:text-blue-500 " x-show="!showMenu" fill="none"
@@ -86,7 +86,7 @@ export default {
               <path d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
-        </div>
+        </div> -->
       </div>
     </div>
     <!-- mobile menu -->

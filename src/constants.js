@@ -31,6 +31,13 @@ export const siteMetaInfo = {
 
 export const projects = [
   {
+    header: 'work.addigo.header',
+    imageSrc: addigoImage,
+    intro: 'work.addigo.intro',
+    link: 'https://addigo.de/',
+    linkText: 'Website',
+  },
+  {
     header: 'work.ioer_monitor.header',
     imageSrc: monitorImage,
     intro: 'work.ioer_monitor.intro',
