@@ -1,7 +1,7 @@
 <template>
   <div class="dark:bg-gray-900">
     <AuthorIntro />
-    <Feedback />
+    <!-- <Feedback /> -->
     <Work />
     <Expertise />
     <!-- <TimeLine/> -->

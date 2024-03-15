@@ -72,7 +72,7 @@ export default {
   <div id="contact" class="section">
     <div>
       <h1>{{ $t('header.contact') }}</h1>
-      <div class="rounded-md shadow-sm mt-5 space-x-4 hidden lg:inline-flex" role="group">
+      <div class="rounded-md shadow-sm mt-5 space-x-4 inline-flex" role="group">
         <button @click="toggleSchedule()">
           Termin vereinbaren
         </button>
