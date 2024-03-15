@@ -35,7 +35,12 @@ export default {
                   {{ $t(item.header) }}
                 </h5>
                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400" v-html="$t(item.intro)" />
-                <p v-html="item.description ? $t(item.description) : ''"></p>
+                <p v-html="item.description ? $t(item.description) : ''" />
+                <hr class="hr mt-2">
+                <div v-for="(logo, index) in item.technology" :key="index" class="w-full mt-2 mb-2 flex justify-between">
+                  <!--- FIXME: nicht in einer Linie --->
+                  <Icon :name="logo" size="3rem" />
+                </div>
                 <button>
                   {{ item.linkText ? item.linkText : 'Read More' }}
                   <svg

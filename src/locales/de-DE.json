@@ -16,11 +16,11 @@
     "header": "Projekte",
     "ioer_monitor": {
       "header": "IÖR Monitor",
-      "intro": "Der IÖR-Monitor ist ein Web GIS um intuitiv Fragen zur Flächennutzung in Deutschland zu beantworten."
+      "intro": "<i>Der IÖR-Monitor ist ein Web GIS um intuitiv Fragen zur Flächennutzung in Deutschland zu beantworten.</i></br></br>Dieses Projekt setzte ich im Rahmen meiner Tätigkeit für das <a class='active-link' href='https://ioer.de' target='_blank'>IÖR Dresden</a> als Architekt und Entwickler um. Hierbei entstand ein WebGIS, welches sich intuitiv mit jedem Endgerät steuern lässt und eine performante Darstellung bis auf die Gemeindeebene bietet. Darüber hinaus können über die bereitgestellten Werkzeuge umfangreiche Analaysen durchgeführt werden"
     },
     "addigo": {
       "header": "Addigo",
-      "intro": "ADDIGO Servicereport ist ein digitales, flexibles Werkzeug für die Optimierung administrativer Arbeitsabläufe besonders im Bereich Protokollierung, Dokumentation, Mitarbeitersteuerung, Terminverwaltung und Abrechnung. Hierbei werden dem Kunden eine App und Webanwendung zur Verfügung gestellt.",
+      "intro": "<i>ADDIGO Servicereport ist ein digitales, flexibles Werkzeug für die Optimierung administrativer Arbeitsabläufe besonders im Bereich Protokollierung, Dokumentation, Mitarbeitersteuerung, Terminverwaltung und Abrechnung. Hierbei werden dem Kunden eine App und Webanwendung zur Verfügung gestellt.</i></br></br>In diesem Projekt war ich als verantwortlicher Architekt tätig und für einen erfolgreichen Release des Produktes verantwortlich.",
       "description": "Dieses Projekt leitete ich als Softwarearchitekt, mit dem Ziel einer erfolgreichen Online Bereitstellung des Produktes. Der Fokus meiner Arbeit erstreckte sich von den DevOps bis hin zur Teamleitung und Security Analyse."
     },
     "climbing_diary": {
@@ -37,7 +37,7 @@
     },
     "vertical_life": {
       "header": "Vertical Life",
-      "intro": "Vertical Life is a <b>app</b> for climbers to find and share climbing spots."
+      "intro": "<i>Vertical Life ist eine Plattform für Kletterer, um Klettergebiete zu finden und zu teilen.</i>"
     }
   },
   "tools": {

@@ -2,8 +2,8 @@ import climbingDiaryImage from 'public/images/climbing_diary/climbing_diary.png'
 import monitorImage from 'public/images/monitor/monitor.jpg'
 import apiImage from 'public/images/monitor/rest_api.png'
 import monitorAppImage from 'public/images/monitor/land_use_monitor.png'
-import verticalLifeImage from 'public/images/vertical_life/vertical_life.jpeg'
-import addigoImage from 'public/images/addigo/addigo.png'
+import verticalLifeImage from 'public/images/vertical_life/vl_content.jpg'
+import addigoImage from 'public/images/addigo/addigo.jpg'
 
 export const siteMetaInfo = {
   author: 'Loren Mucha',
@@ -30,13 +30,21 @@ export const siteMetaInfo = {
 }
 
 export const projects = [
-  /* {
+  {
     header: 'work.addigo.header',
     imageSrc: addigoImage,
     intro: 'work.addigo.intro',
     link: 'https://addigo.de/',
     linkText: 'Website',
-  }, */
+    technology: ['logos:laravel', 'logos:postgresql'],
+  },
+  {
+    header: 'work.vertical_life.header',
+    imageSrc: verticalLifeImage,
+    intro: 'work.vertical_life.intro',
+    link: 'https://8a.nu/',
+    linkText: 'Website',
+  },
   {
     header: 'work.ioer_monitor.header',
     imageSrc: monitorImage,
