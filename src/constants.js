@@ -5,19 +5,6 @@ import monitorAppImage from 'public/images/monitor/land_use_monitor.png'
 import verticalLifeImage from 'public/images/vertical_life/vl_content.jpg'
 import addigoImage from 'public/images/addigo/addigo.jpg'
 
-export const siteMetaInfo = {
-  position: 'Full Stack Developer',
-  location: 'Nürnberg, Germany',
-  slogan: 'always stay in the moment',
-  language: 'en-DE',
-  theme: 'system', // system, dark or light
-  siteUrl: 'https://www.lorenmucha.de',
-  siteRepo: '#',
-  siteLogo: '../assets/author.png',
-  image: '~/assets/author.png',
-  githubUser: 'lorenmucha',
-}
-
 export const projects = [
   {
     header: 'work.addigo.header',

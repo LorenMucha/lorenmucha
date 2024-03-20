@@ -5,9 +5,6 @@ export default {
   data: () => {
     return {
       authorImage,
-      userMail: process.env.USER_MAIL,
-      github: process.env.GITHUB,
-      linkedin: process.env.LINKEDIN,
     }
   },
 }
@@ -47,30 +44,15 @@ export default {
             <hr class="my-1 h-1 bg-blue-700 rounded border-0 md:my-6 dark:bg-gray-700">
             <p class="mb-4 dark:bg-gray-800 dark:text-blue-200 text-justify text-xl" v-html="$t('header.about')" />
           </div>
-          <div class="flex mb-3 space-x-4 w-fit">
-            <a
-              class="text-sm text-gray-500 transition hover:text-gray-600" target="_blank" rel="noopener noreferrer"
-              :href="github"
-            ><span class="sr-only">github</span>
-              <img class="profile-icon" src="~assets/icon/github_new.svg"> </a><a
-              class="text-sm text-gray-500 transition hover:text-gray-600" target="_blank" rel="noopener noreferrer"
-              :href="linkedin"
-            ><span class="sr-only">Linkedin</span>
-              <img class="profile-icon" src="~assets/icon/linkeding.svg"> </a><a
-              class="text-sm text-gray-500 transition hover:text-gray-600" rel="noopener noreferrer"
-              :href="`mailto:${userMail}`"
-            ><span class="sr-only">mail</span>
-              <img class="profile-icon" src="~assets/icon/mail.svg"></a>
-          </div>
         </div>
         <div class="rounded-md shadow-sm mt-5 space-x-4 hidden lg:inline-flex" role="group">
-          <button @click="$scrollTo('work')">
+          <button class="content_button" @click="$scrollTo('work')">
             Projekte
           </button>
-          <button @click="$scrollTo('expertise')">
+          <button class="content_button" @click="$scrollTo('expertise')">
             Skills & Tools
           </button>
-          <button @click="$scrollTo('contact')">
+          <button class="content_button" @click="$scrollTo('contact')">
             Kontakt
           </button>
         </div>
@@ -85,7 +67,7 @@ export default {
   </div>
 </template>
 
-<style lang="postcss" scoped>
+<style scoped>
 .profile-icon {
   @apply w-16 h-16
 }
@@ -97,5 +79,8 @@ export default {
 }
 .offer-container  .offer-text{
   @apply mt-2 text-2xl
+}
+.content_button{
+  @apply text-lg
 }
 </style>

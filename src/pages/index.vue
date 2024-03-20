@@ -4,7 +4,8 @@
     <Feedback />
     <Work />
     <Expertise />
-    <!-- <TimeLine/> -->
+    <!-- <TimeLine /> -->
     <Contact />
+    <FloatingButton />
   </div>
 </template>
