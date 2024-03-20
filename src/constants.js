@@ -6,11 +6,8 @@ import verticalLifeImage from 'public/images/vertical_life/vl_content.jpg'
 import addigoImage from 'public/images/addigo/addigo.jpg'
 
 export const siteMetaInfo = {
-  author: 'Loren Mucha',
-  author_image: '/author.png',
   position: 'Full Stack Developer',
   location: 'Nürnberg, Germany',
-  headerTitle: 'Md Rathik',
   slogan: 'always stay in the moment',
   language: 'en-DE',
   theme: 'system', // system, dark or light
@@ -18,15 +15,7 @@ export const siteMetaInfo = {
   siteRepo: '#',
   siteLogo: '../assets/author.png',
   image: '~/assets/author.png',
-  socialBanner: '/static/images/twitter-card.png',
-  email: process.env.USER_MAIL,
-  github: 'https://github.com/lorenmucha',
   githubUser: 'lorenmucha',
-  twitter: '#',
-  twitter_user: 'MDRT83716131',
-  stackoverflow: '#',
-  youtube: '#',
-  linkedin: 'https://www.linkedin.com/in/lorenmucha/',
 }
 
 export const projects = [

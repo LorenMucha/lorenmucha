@@ -1,8 +1,6 @@
 <script>
 import Modal from './Modal.vue'
 
-const calendly = useCalendly()
-
 export default {
   components: {
     Modal,
@@ -10,14 +8,12 @@ export default {
   data() {
     return {
       modalState: { show: false, type: 'error' },
+      calendlyLink: process.env.CALENDLY,
       emailActive: true,
       scheduleActive: false,
       nameMsg: '',
       emailMsg: '',
       messageMsg: '',
-      options: {
-        url: 'https://calendly.com/lorenmucha/30-minute-meeting',
-      },
     }
   },
   computed: {
@@ -29,6 +25,8 @@ export default {
     this.$bus.$on('success', () => {
       this.cleanMailForm()
     })
+
+    useCalendly().initInlineWidget()
   },
   methods: {
     async sendEmail() {
@@ -80,11 +78,11 @@ export default {
           E-Mail schreiben
         </button>
       </div>
-      <div v-if="scheduleActive">
-        <CalendlyInlineWidget v-bind="options" />
+      <div :class="{ active: scheduleActive, hidden: !scheduleActive }">
+        <div class="calendly-inline-widget" :data-url="calendlyLink" style="min-width: 320px; height: 630px;" />
       </div>
     </div>
-    <div v-if="emailActive" class="pt-2">
+    <div :class="{ active: emailActive, hidden: !emailActive }" class="pt-2">
       <div class="flex justify-center items-center">
         <div class="block p-6 rounded-lg shadow-lg bg-white w-screen">
           <div class="form-group mb-6">

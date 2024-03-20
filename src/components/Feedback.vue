@@ -17,7 +17,7 @@ export default {
 </script>
 
 <template>
-  <div id="contact" class="section">
+  <div id="feedback" class="section">
     <div class="header">
       <div class="max-w-3xl mx-auto">
         <h2>

@@ -1,12 +1,13 @@
 <script>
 import authorImage from 'public/images/author.jpg'
-import { siteMetaInfo } from '~/constants'
 
 export default {
   data: () => {
     return {
       authorImage,
-      siteMetadata: siteMetaInfo,
+      userMail: process.env.USER_MAIL,
+      github: process.env.GITHUB,
+      linkedin: process.env.LINKEDIN,
     }
   },
 }
@@ -22,23 +23,23 @@ export default {
             <Icon name="twemoji:clapping-hands" />
           </p>
           <h1 class="text-bold text-5xl" v-html="$t('header.role')" />
-          <div class="xl:mr-10 lg:mr-10 sm:mr-0">
-            <div class="grid grid-cols-3 font-bold mt-4 md:w-1/3">
-              <div class="block text-center">
-                <Icon class="text-6xl text-blue-700" name="mdi:design" />
-                <div class="mt-2">
+          <div class="pt-5">
+            <div class="grid grid-cols-3 font-bold mt-4 items-start">
+              <div class="offer-container">
+                <Icon class="offer-icons" name="mdi:design" />
+                <div class="offer-text">
                   {{ $t("header.services.architecture") }}
                 </div>
               </div>
-              <div class="block text-center">
-                <Icon class="text-6xl text-blue-700" name="carbon:development" />
-                <div class="mt-2">
+              <div class="offer-container">
+                <Icon class="offer-icons" name="carbon:development" />
+                <div class="offer-text">
                   {{ $t("header.services.development") }}
                 </div>
               </div>
-              <div class="block text-center">
-                <Icon class="text-6xl text-blue-700" name="nonicons:tmux-16" />
-                <div class="mt-2">
+              <div class="offer-container">
+                <Icon class="offer-icons" name="nonicons:tmux-16" />
+                <div class="offer-text">
                   {{ $t("header.services.ux") }}
                 </div>
               </div>
@@ -49,15 +50,15 @@ export default {
           <div class="flex mb-3 space-x-4 w-fit">
             <a
               class="text-sm text-gray-500 transition hover:text-gray-600" target="_blank" rel="noopener noreferrer"
-              :href="siteMetadata.github"
+              :href="github"
             ><span class="sr-only">github</span>
               <img class="profile-icon" src="~assets/icon/github_new.svg"> </a><a
               class="text-sm text-gray-500 transition hover:text-gray-600" target="_blank" rel="noopener noreferrer"
-              :href="siteMetadata.linkedin"
+              :href="linkedin"
             ><span class="sr-only">Linkedin</span>
               <img class="profile-icon" src="~assets/icon/linkeding.svg"> </a><a
-              class="text-sm text-gray-500 transition hover:text-gray-600" target="_blank" rel="noopener noreferrer"
-              :href="`mailto:${siteMetadata.email}`"
+              class="text-sm text-gray-500 transition hover:text-gray-600" rel="noopener noreferrer"
+              :href="`mailto:${userMail}`"
             ><span class="sr-only">mail</span>
               <img class="profile-icon" src="~assets/icon/mail.svg"></a>
           </div>
@@ -87,5 +88,14 @@ export default {
 <style lang="postcss" scoped>
 .profile-icon {
   @apply w-16 h-16
+}
+.offer-container {
+  @apply block text-center hover:animate-pulse
+}
+.offer-container .offer-icons {
+  @apply text-8xl text-blue-700
+}
+.offer-container  .offer-text{
+  @apply mt-2 text-2xl
 }
 </style>
