@@ -8,7 +8,7 @@ export default {
   data() {
     return {
       modalState: { show: false, type: 'error' },
-      calendlyLink: process.env.CALENDLY,
+      calendlyLink: useRuntimeConfig().public.calendlyLink,
       emailActive: true,
       scheduleActive: false,
       nameMsg: '',
@@ -30,7 +30,7 @@ export default {
   },
   methods: {
     async sendEmail() {
-      await $fetch('https://formspree.io/f/mnqezbnb', {
+      await $fetch(useRuntimeConfig().public.formspree, {
         method: 'post',
         headers: {
           Accept: 'application/json',
