@@ -15,10 +15,6 @@ export default {
     <div class="container grid grid-cols-1 gap-3 lg:grid-flow-col lg:grid-cols-4">
       <div class="md:col-span-3">
         <div class="items-center">
-          <p class="text-3xl text-gray-500">
-            {{ $t("header.greet") }}
-            <Icon name="twemoji:clapping-hands" />
-          </p>
           <h1 class="text-bold text-5xl" v-html="$t('header.role')" />
           <div class="pt-5">
             <div class="grid grid-cols-3 font-bold mt-4 items-start">
@@ -78,7 +74,7 @@ export default {
   @apply text-8xl text-blue-700
 }
 .offer-container  .offer-text{
-  @apply mt-2 text-2xl
+  @apply mt-2 md:text-2xl 
 }
 .content_button{
   @apply text-lg

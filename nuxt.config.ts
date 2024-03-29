@@ -14,7 +14,7 @@ export default defineNuxtConfig({
       siteUrl: 'https://www.lorenmucha.de',
       formspree: process.env.FORMSPREE,
       pageTitle: 'Mucha | Software Engineering',
-      siteDescription: 'Als erfahrener Softwareentwickler biete ich maßgeschneiderte Lösungen für Ihre technologischen Herausforderungen. Kontaktieren Sie mich heute, um Ihr Projekt zum Erfolg zu führen.',
+      siteDescription: 'Selbständiger Software- Entwickler und Architekt, ihr Partner für die Architektur und Umsetzung langlebiger Softwareprodukte.',
       language: 'en-DE',
     },
   },

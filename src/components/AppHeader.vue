@@ -57,7 +57,7 @@ export default {
           </div> -->
         </div>
         <!-- Mobile menu button -->
-        <div class="md:hidden flex items-center">
+        <!--         <div class="md:hidden flex items-center">
           <button class="mobile-menu-button focus:outline-none">
             <i class="bx bx-menu text-3xl mt-1" />
           </button>
@@ -74,13 +74,14 @@ export default {
         </div>
       </div>
     </div>
-    <!-- mobile menu -->
     <div :class="[isActive ? 'active' : 'hidden']" class="mobile-menu">
       <ul>
         <li>
           <a class="block text-sm px-2 py-4" @click="switch_language" @scroll.prevent><span :class="flag" /></a>
         </li>
       </ul>
+    </div> -->
+      </div>
     </div>
   </nav>
 </template>

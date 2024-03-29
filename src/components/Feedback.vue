@@ -25,7 +25,7 @@ export default {
         </h2>
       </div>
     </div>
-    <div class="w-auto mx-auto">
+    <div class="w-auto mx-auto align-middle">
       <Swiper
         :loop="true" :navigation="true" :modules="[
           SwiperAutoplay,
