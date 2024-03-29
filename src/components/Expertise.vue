@@ -15,7 +15,7 @@ export default {
 </script>
 
 <template>
-  <div :id="id" class="section sm:h-screen">
+  <div :id="id" class="section">
     <div class="header">
       <div class="max-w-3xl mx-auto py-5">
         <h2>

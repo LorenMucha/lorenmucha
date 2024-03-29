@@ -9,19 +9,35 @@
       "development": "Entwicklung",
       "ux": "UX Design"
     },
-    "about": "Als leidenschaftlicher Software Crafter verfüge ich über umfangreiche Erfahrung in der Entwicklung von robusten und skalierbaren Webanwendungen. Mein technisches Know-how erstreckt sich von der Frontend-Entwicklung mit Nuxt und Angular bis zur Backend-Entwicklung mit Java und Python. Mit fundierten Kenntnissen in der Softwarearchitektur bin ich in der Lage, ganzheitliche Lösungen zu entwickeln."
+    "about": "Als leidenschaftlicher Software Crafter verfüge ich über umfangreiche Erfahrung in der Entwicklung von robusten und skalierbaren Softwarelösungen. Mein technisches Know-how erstreckt sich von der Frontend-Entwicklung mit Nuxt und Angular bis zur Backend-Entwicklung mit Java und Python. Mit fundierten Kenntnissen in der Softwarearchitektur bin ich in der Lage, ganzheitliche Lösungen zu entwickeln oder bestehende Projekten gezielt voran zu bringen."
   },
   "cv": "Lebenslauf",
   "work": {
     "header": "Projekte",
+    "regio_kontext": {
+      "header": "Zu und Fortzüge für Berlin Simulation",
+      "intro": "<i>Dieses Tool ermöglicht es dem Nutzer auf interactiver Art un Weise die Zu und Fortzüge von Brandenburg nach Berlin zu visualisieren.</i>",
+      "description": "Dieses Projekt wurde von mir konzipiert und umgesetzt und wurde dem Kunden über Github Pages bereitgestellt. Die Anwendung ermöglicht es dem Nutzer, Indikatoren durch interaktive Tabellen und Kartenansichten anschaulich zu visualisieren. Durch Diagramme und Vergleichsmöglichkeiten können zeitliche Verläufe anschaulich dargestellt werden. Der Code wurde als <a href='https://github.com/LorenMucha/ShowCaseRegioKontext' target='_blank' class='active-link'>OpenSource</a> über Github zur Verfügung gestellt."
+    },
     "ioer_monitor": {
       "header": "IÖR Monitor",
-      "intro": "Der IÖR-Monitor ist ein Web GIS um intuitiv Fragen zur Flächennutzung in Deutschland zu beantworten."
+      "intro": "<i>Der IÖR-Monitor ist ein Web GIS um intuitiv Fragen zur Flächennutzung in Deutschland zu beantworten.</i>",
+      "description": "Dieses Projekt setzte ich im Rahmen meiner Tätigkeit für das <a class='active-link' href='https://ioer.de' target='_blank'>IÖR Dresden</a> als Architekt und Entwickler um. Hierbei entstand ein WebGIS, welches sich intuitiv mit jedem Endgerät steuern lässt und eine performante Darstellung bis auf die Gemeindeebene bietet. Darüber hinaus können über die bereitgestellten Werkzeuge umfangreiche Analaysen durchgeführt werden"
     },
     "addigo": {
       "header": "Addigo",
-      "intro": "ADDIGO Servicereport ist ein digitales, flexibles Werkzeug für die Optimierung administrativer Arbeitsabläufe besonders im Bereich Protokollierung, Dokumentation, Mitarbeitersteuerung, Terminverwaltung und Abrechnung. Hierbei werden dem Kunden eine App und Webanwendung zur Verfügung gestellt.",
+      "intro": "<i>ADDIGO Servicereport ist ein digitales, flexibles Werkzeug für die Optimierung administrativer Arbeitsabläufe. Hierbei werden dem Kunden eine App und Webanwendung zur Verfügung gestellt.</i>",
       "description": "Dieses Projekt leitete ich als Softwarearchitekt, mit dem Ziel einer erfolgreichen Online Bereitstellung des Produktes. Der Fokus meiner Arbeit erstreckte sich von den DevOps bis hin zur Teamleitung und Security Analyse."
+    },
+    "vertical_life": {
+      "header": "Vertical Life",
+      "intro": "<i>Vertical Life ist eine Plattform für Kletterer, um Klettergebiete zu finden und zu teilen.</i>",
+      "description": "In meiner Rolle als Full Stack Entwickler arbeite ich daran, die beiden bestehenden monolithischen Anwendungen <b>8a.nu</b> und <b>Vertical-life</b> in einer einheitlichen Oberfläche zu vereinen. Ein weiterer Schwerpunkt meiner Tätigkeit liegt auf der Einführung von Test-driven Design sowie der Architektur und Implementierung einer leistungsfähigen DevOps-Umgebung."
+    },
+    "noq": {
+      "header": "No-Q Signature Pad",
+      "intro": "Plattform zur Verwaltung von Warteschlangen und Terminen, um physische Warteschlangen zu eliminieren und den Kundenservice zu verbessern.",
+      "description": "In diesem Projekt leitete ich die Implementierung und Architektur des Signature Pad zur digitalen Unterschrift von Corona Tests. Durch eine sehr hohe Last zu Stoßzeiten musste die Software bis zu 50 Tsd. Aufrufe gleichzeitig handhaben können. Ein weiterer Punkt war die Sicherheit der Patientendaten, welche nach den höchsten Standards gewährleistet werden musste."
     },
     "climbing_diary": {
       "header": "Climbing Diary",
@@ -29,15 +45,12 @@
     },
     "monitor_api": {
       "header": "Monitor API",
-      "intro": "REST API zur Geodatenprocessierung innerhalb für das <a class='active-link' href='https://http://sora.git.gesis.org' target='_blank'>Sora-Forschungsprojektes</a> mit Usermanagement."
+      "intro": "REST API zur Geodatenprocessierung für das <a class='active-link' href='https://sora.git.gesis.org' target='_blank'>Sora-Forschungsprojektes</a>.",
+      "description": "Als Lead-Entwickler und Architekt war ich für die Implementierung dieser Geoprocessierung-API verantwortlich, die es den Clients ermöglicht, umfangreiche Algorithmen für ihre Daten zu nutzen. Ein weiterer Schwerpunkt meiner Arbeit lag in der Verwaltung von Nutzerdaten und Rollen, was es ermöglichte, den Zugriff auf die API zu steuern. Zusätzlich gehörten DevOps und die Gewährleistung des reibungslosen Betriebs zu meinen Aufgabenbereichen."
     },
     "land_use_monitor": {
       "header": "Land Use Monitor DE",
       "intro": "Stellt Informationen zur Flächenstruktur und deren Entwicklung sowie zur Qualität flächendeckend für die BRD als <b>App</b> bereit."
-    },
-    "vertical_life": {
-      "header": "Vertical Life",
-      "intro": "Vertical Life is a <b>app</b> for climbers to find and share climbing spots."
     }
   },
   "tools": {

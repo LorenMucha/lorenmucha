@@ -1,7 +1,6 @@
 <script>
 import CV_DE from 'public/files/CV_DE.pdf'
 import CV_EN from 'public/files/CV_EN.pdf'
-import { siteMetaInfo } from '~/constants'
 import { useLanguageStore } from '~/store/languages'
 
 export default {
@@ -13,8 +12,9 @@ export default {
   data() {
     return {
       isActive: false,
-      meta: siteMetaInfo,
       cv: CV_DE,
+      linkedIn: process.env.LINKEDIN,
+      github: process.env.GITHUB,
     }
   },
   computed: {
@@ -53,17 +53,27 @@ export default {
         <div class="flex space-x-7">
           <!-- Primary Navbar items -->
           <div class="hidden md:flex items-center space-x-1">
+            <div class="hidden md:flex items-center space-x-1">
+              <a
+                :href="linkedIn" target="_blank"
+                class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300"
+              ><Icon size="1.5rem" name="skill-icons:linkedin" /></a>
+            </div>
+            <div class="hidden md:flex items-center space-x-1">
+              <a
+                :href="github" target="_blank"
+                class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300"
+              >
+                <Icon size="1.5rem" name="mdi:github" />
+              </a>
+            </div>
             <a
               :href="cv"
               target="_blank" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300"
               @click="open_cv"
-            >{{ $t('header.cv') }}</a>
-          </div>
-          <div class="hidden md:flex items-center space-x-1">
-            <a
-              href="#contact"
-              class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300"
-            >{{ $t('header.contact') }}</a>
+            >
+              <Icon size="1.5rem" name="academicons:cv-square" />
+            </a>
           </div>
           <!-- <div class="hidden md:flex items-center">
             <button @click="switch_language" @scroll.prevent>
@@ -72,12 +82,12 @@ export default {
           </div> -->
         </div>
         <!-- Mobile menu button -->
-        <div class="md:hidden flex items-center">
+        <!--         <div class="md:hidden flex items-center">
           <button class="mobile-menu-button focus:outline-none">
             <i class="bx bx-menu text-3xl mt-1" />
           </button>
         </div>
-       <!--  <div class="md:hidden flex items-center">
+       <div class="md:hidden flex items-center">
           <button class="outline-none mobile-menu-button" @click="show_mobile_menu">
             <svg
               class=" w-6 h-6 text-gray-500 hover:text-blue-500 " x-show="!showMenu" fill="none"
@@ -86,29 +96,17 @@ export default {
               <path d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
-        </div> -->
+        </div>
       </div>
     </div>
-    <!-- mobile menu -->
     <div :class="[isActive ? 'active' : 'hidden']" class="mobile-menu">
       <ul>
-        <li>
-          <a
-            :href="cv"
-            target="_blank" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300"
-            @click="open_cv"
-          >{{ $t('header.cv') }}</a>
-        </li>
-        <li>
-          <a
-            href="#contact"
-            class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300"
-          >{{ $t('header.contact') }}</a>
-        </li>
         <li>
           <a class="block text-sm px-2 py-4" @click="switch_language" @scroll.prevent><span :class="flag" /></a>
         </li>
       </ul>
+    </div> -->
+      </div>
     </div>
   </nav>
 </template>

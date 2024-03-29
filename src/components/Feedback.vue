@@ -17,7 +17,7 @@ export default {
 </script>
 
 <template>
-  <div id="contact" class="section">
+  <div id="feedback" class="section">
     <div class="header">
       <div class="max-w-3xl mx-auto">
         <h2>
@@ -25,7 +25,7 @@ export default {
         </h2>
       </div>
     </div>
-    <div class="w-auto mx-auto">
+    <div class="w-auto mx-auto align-middle">
       <Swiper
         :loop="true" :navigation="true" :modules="[
           SwiperAutoplay,
