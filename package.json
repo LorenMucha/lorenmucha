@@ -1,8 +1,5 @@
 {
   "private": true,
-  "engines": {
-    "node": "^16.11.0 || ^17.0.0 || || ^18.0.0"
-  },
   "scripts": {
     "dev": "nuxi dev --hot --dotenv .env.local",
     "build": "nuxi build",
@@ -32,6 +29,7 @@
     "vite-svg-loader": "^4.0.0"
   },
   "devDependencies": {
+    "@intlify/shared": "^9.7.1",
     "@antfu/eslint-config": "0.39.7",
     "@gtm-support/vue-gtm": "^2.1.0",
     "@nuxt/content": "^2.5.2",
