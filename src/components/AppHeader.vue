@@ -13,6 +13,8 @@ export default {
     return {
       isActive: false,
       cv: CV_DE,
+      linkedIn: process.env.LINKEDIN,
+      github: process.env.GITHUB,
     }
   },
   computed: {
@@ -50,6 +52,29 @@ export default {
         </div>
         <div class="flex space-x-7">
           <!-- Primary Navbar items -->
+          <div class="hidden md:flex items-center space-x-1">
+            <div class="hidden md:flex items-center space-x-1">
+              <a
+                :href="linkedIn" target="_blank"
+                class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300"
+              ><Icon size="1.5rem" name="skill-icons:linkedin" /></a>
+            </div>
+            <div class="hidden md:flex items-center space-x-1">
+              <a
+                :href="github" target="_blank"
+                class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300"
+              >
+                <Icon size="1.5rem" name="mdi:github" />
+              </a>
+            </div>
+            <a
+              :href="cv"
+              target="_blank" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300"
+              @click="open_cv"
+            >
+              <Icon size="1.5rem" name="academicons:cv-square" />
+            </a>
+          </div>
           <!-- <div class="hidden md:flex items-center">
             <button @click="switch_language" @scroll.prevent>
               <span :class="flag" />

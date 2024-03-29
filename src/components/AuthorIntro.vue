@@ -74,7 +74,7 @@ export default {
   @apply text-8xl text-blue-700
 }
 .offer-container  .offer-text{
-  @apply mt-2 md:text-2xl 
+  @apply mt-2 md:text-2xl
 }
 .content_button{
   @apply text-lg
