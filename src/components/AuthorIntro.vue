@@ -38,7 +38,7 @@ export default {
               </div>
             </div>
             <hr class="my-1 h-1 bg-blue-700 rounded border-0 md:my-6 dark:bg-gray-700">
-            <p class="mb-4 dark:bg-gray-800 dark:text-blue-200 text-justify text-xl" v-html="$t('header.about')" />
+            <p class="mb-4 dark:bg-gray-800 dark:text-blue-200 sm:text-justify text-xl" v-html="$t('header.about')" />
           </div>
         </div>
         <div class="rounded-md shadow-sm mt-5 space-x-4 hidden lg:inline-flex" role="group">

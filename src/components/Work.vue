@@ -13,7 +13,7 @@ export default {
 </script>
 
 <template>
-  <div :id="id" :ref="id" class="section">
+  <div :id="id" :ref="id" class="section overflow-x-hidden">
     <div class="header">
       <div class="max-w-3xl mx-auto">
         <h2>
@@ -26,7 +26,7 @@ export default {
         <ClientOnly placeholder="Loading...">
           <div v-for="(item, index) in workList" :key="index" class="flex flex-wrap items-center justify-center">
             <NuxtLink :to="item.link" target="_blank">
-              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 p-5">
+              <div class="max-w-[70%] md:max-w-[95%] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 p-5">
                 <img
                   class="mx-auto rounded-t-lg object-cover h-32 sm:h-48 md:h-64 pb-5" :src="item.imageSrc" loading="lazy"
                   :alt="$t(item.header)"
