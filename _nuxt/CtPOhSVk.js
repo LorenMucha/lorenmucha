@@ -1,1 +1,0 @@
-import{_ as r}from"./BC-nnlbd.js";import{I as o,J as t,ah as a}from"./BQiTnWAx.js";const s={};function n(e,c){return o(),t("table",null,[a(e.$slots,"default")])}const _=r(s,[["render",n]]);export{_ as default};
