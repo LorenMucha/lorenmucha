@@ -9,15 +9,20 @@
       "development": "Entwicklung",
       "ux": "UX Design"
     },
-    "about": "Als leidenschaftlicher Software Crafter verfüge ich über umfangreiche Erfahrung in der Entwicklung von robusten und skalierbaren Softwarelösungen. Mein technisches Know-how erstreckt sich von der Frontend-Entwicklung mit Nuxt und Angular bis zur Backend-Entwicklung mit Java und Python. Mit fundierten Kenntnissen in der Softwarearchitektur bin ich in der Lage, ganzheitliche Lösungen zu entwickeln oder bestehende Projekten gezielt voran zu bringen."
+    "about": "Als leidenschaftlicher Software Crafter verfüge ich über umfangreiche Erfahrung in der Entwicklung von robusten und skalierbaren Softwarelösungen. Mein technisches Know-how erstreckt sich von der Frontend-Entwicklung mit React und Angular bis zur Backend-Entwicklung mit Java und Python. Mit fundierten Kenntnissen in der Softwarearchitektur bin ich in der Lage, ganzheitliche Lösungen zu entwickeln oder bestehende Projekten gezielt voran zu bringen."
   },
   "cv": "Lebenslauf",
   "work": {
     "header": "Projekte",
+    "fsd": {
+      "header": "Projekt Ervast",
+      "intro": "Projekt ErVast zielt darauf ab, die Verkehrssicherheit durch die Einführung automatisierter und vernetzter Fahrfunktionen zu erhöhen. Dazu werden Prüftechnologien und -werkzeuge entwickelt, die eine umfassende Untersuchung dieser Systeme im Rahmen der Hauptuntersuchung über die gesamte Lebensdauer des Fahrzeugs ermöglichen. Die Untersuchungen umfassen die Ausführung, den Zustand, die Funktion und die Wirkung der automatisierten und vernetzten Assistenz- und Fahrfunktionen, um sicherzustellen, dass diese Systeme dauerhaft sicher und effektiv arbeiten.",
+      "description": "Im Projekt war ich verantwortlich für die Umsetzung und Entwicklung des Frontends mit React sowie für die Architektur und Implementierung von Backend-Features. Im Frontend lag mein Schwerpunkt auf der Gestaltung moderner, benutzerfreundlicher Interfaces, die eine optimale User Experience bieten. Gleichzeitig habe ich Backend-Funktionen entwickelt und strukturiert, um eine reibungslose und effiziente Kommunikation zwischen Frontend und Backend sicherzustellen. Durch die Kombination meiner Frontend- und Backend-Kompetenzen konnte ich eine ganzheitliche und performante Lösung liefern, die den Projektanforderungen entsprach."
+    },
     "regio_kontext": {
       "header": "Zu und Fortzüge für Berlin Simulation",
-      "intro": "<i>Dieses Tool ermöglicht es dem Nutzer auf interactiver Art un Weise die Zu und Fortzüge von Brandenburg nach Berlin zu visualisieren.</i>",
-      "description": "Dieses Projekt wurde von mir konzipiert und umgesetzt und wurde dem Kunden über Github Pages bereitgestellt. Die Anwendung ermöglicht es dem Nutzer, Indikatoren durch interaktive Tabellen und Kartenansichten anschaulich zu visualisieren. Durch Diagramme und Vergleichsmöglichkeiten können zeitliche Verläufe anschaulich dargestellt werden. Der Code wurde als <a href='https://github.com/LorenMucha/ShowCaseRegioKontext' target='_blank' class='active-link'>OpenSource</a> über Github zur Verfügung gestellt."
+      "intro": "<i>Dieses Tool ermöglicht es dem Nutzer auf interactiver Art und Weise die Zu und Fortzüge von Brandenburg nach Berlin zu visualisieren.</i>",
+      "description": "Dieses Projekt wurde von mir konzipiert und umgesetzt und dem Kunden über <a href='https://github.com/LorenMucha/ShowCaseRegioKontext' target='_blank' class='active-link'>Github Pages</a> bereitgestellt, da ein eigenes Hosting nicht in Frage kam. Die Anwendung ermöglicht es dem Nutzer, Indikatoren durch interaktive Tabellen und Kartenansichten anschaulich zu visualisieren. Durch Diagramme und Vergleichsmöglichkeiten können zeitliche Verläufe anschaulich dargestellt werden."
     },
     "ioer_monitor": {
       "header": "IÖR Monitor",

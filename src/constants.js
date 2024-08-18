@@ -4,8 +4,41 @@ import verticalLifeImage from 'public/images/vertical_life/vl_content.jpg'
 import addigoImage from 'public/images/addigo/addigo.jpg'
 import regioKontext from 'public/images/regio_kontext/regio_kontext.png'
 import noQ from 'public/images/no-q/clipboard.jpg'
+import ervastImage from 'public/images/ervast/ervast.png'
 
 export const projects = [
+  {
+    header: 'work.fsd.header',
+    imageSrc: ervastImage,
+    intro: 'work.fsd.intro',
+    link: 'https://www.ervast-projekt.de/projekt.html',
+    linkText: 'Website',
+    customer: 'Fahrzeugsystemdaten GmbH',
+    description: 'work.fsd.description',
+    technology: [{ icon: 'logos:python', name: 'Python' },
+      { icon: 'logos:postgresql', name: 'PostgreSQL' },
+      { icon: 'logos:gitlab', name: 'Gitlab CI' },
+      { icon: 'logos:android-icon', name: 'Android' },
+      { icon: 'mdi:react', name: 'React' },
+      { icon: 'devicon:docker', name: 'Docker' },
+    ],
+  },
+  {
+    header: 'work.addigo.header',
+    imageSrc: addigoImage,
+    intro: 'work.addigo.intro',
+    link: 'https://addigo.de/',
+    linkText: 'Website',
+    customer: 'Deutscher Tele Markt GmbH',
+    description: 'work.addigo.description',
+    technology: [{ icon: 'logos:laravel', name: 'Laravel' },
+      { icon: 'logos:mysql', name: 'MySQL' },
+      { icon: 'logos:gitlab', name: 'Gitlab CI' },
+      { icon: 'logos:android-icon', name: 'Android' },
+      { icon: 'mdi:design', name: 'Software Architektur' },
+      { icon: 'carbon:development', name: 'Lead Entwickler' },
+    ],
+  },
   {
     header: 'work.addigo.header',
     imageSrc: addigoImage,
@@ -142,10 +175,6 @@ export const languages = [
   {
     component: 'bi:filetype-sql',
     title: 'SQL',
-  },
-  {
-    component: 'logos:ruby',
-    title: 'Ruby',
   },
   {
     component: 'logos:php',
