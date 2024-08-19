@@ -4,12 +4,12 @@ import verticalLifeImage from 'public/images/vertical_life/vl_content.jpg'
 import addigoImage from 'public/images/addigo/addigo.jpg'
 import regioKontext from 'public/images/regio_kontext/regio_kontext.png'
 import noQ from 'public/images/no-q/clipboard.jpg'
-import ervastImage from 'public/images/ervast/ervast.png'
+import fsdImage from 'public/images/fsd/banner.jpeg'
 
 export const projects = [
   {
     header: 'work.fsd.header',
-    imageSrc: ervastImage,
+    imageSrc: fsdImage,
     intro: 'work.fsd.intro',
     link: 'https://www.ervast-projekt.de/projekt.html',
     linkText: 'Website',
@@ -194,10 +194,6 @@ export const frameWorks = [
   {
     component: 'logos:laravel',
     title: 'Laravel',
-  },
-  {
-    component: 'mdi:language-ruby-on-rails',
-    title: 'Ruby on Rails',
   },
 ]
 

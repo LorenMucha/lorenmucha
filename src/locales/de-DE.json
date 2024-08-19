@@ -15,8 +15,8 @@
   "work": {
     "header": "Projekte",
     "fsd": {
-      "header": "Projekt Ervast",
-      "intro": "Projekt ErVast zielt darauf ab, die Verkehrssicherheit durch die Einführung automatisierter und vernetzter Fahrfunktionen zu erhöhen. Dazu werden Prüftechnologien und -werkzeuge entwickelt, die eine umfassende Untersuchung dieser Systeme im Rahmen der Hauptuntersuchung über die gesamte Lebensdauer des Fahrzeugs ermöglichen.",
+      "header": "Projekt DynamX",
+      "intro": "Projekt DynamX zielt darauf ab, die Verkehrssicherheit durch die Einführung automatisierter und vernetzter Fahrfunktionen zu erhöhen. Dazu werden Prüftechnologien und -werkzeuge entwickelt, die eine umfassende Untersuchung dieser Systeme im Rahmen der Hauptuntersuchung über die gesamte Lebensdauer des Fahrzeugs ermöglichen.",
       "description": "Im Projekt war ich verantwortlich für die Umsetzung und Entwicklung des Frontends mit React sowie für die Architektur und Implementierung von Backend-Features. Durch die Kombination meiner Frontend- und Backend-Kompetenzen konnte ich eine ganzheitliche und performante Lösung liefern, die den Projektanforderungen entsprach."
     },
     "regio_kontext": {
