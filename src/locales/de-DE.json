@@ -9,15 +9,15 @@
       "development": "Entwicklung",
       "ux": "UX Design"
     },
-    "about": "Als leidenschaftlicher Software Crafter verfüge ich über umfangreiche Erfahrung in der Entwicklung von robusten und skalierbaren Softwarelösungen. Mein technisches Know-how erstreckt sich von der Frontend-Entwicklung mit React und Angular bis zur Backend-Entwicklung mit Java und Python. Mit fundierten Kenntnissen in der Softwarearchitektur bin ich in der Lage, ganzheitliche Lösungen zu entwickeln oder bestehende Projekten gezielt voran zu bringen."
+    "about": "Als leidenschaftlicher Softwareentwickler bringe ich tiefgehende Erfahrung in der Entwicklung robuster und skalierbarer Lösungen mit. Meine Expertise reicht von der Frontend-Entwicklung mit React und Angular bis hin zur Backend-Entwicklung mit Java und Python. Mit meiner fundierten Kenntnis in Softwarearchitektur kann ich Projekte von Grund auf entwickeln oder bestehende Vorhaben effizient weiterentwickeln und optimieren."
   },
   "cv": "Lebenslauf",
   "work": {
     "header": "Projekte",
     "fsd": {
       "header": "Projekt DynamX",
-      "intro": "Projekt DynamX zielt darauf ab, die Verkehrssicherheit durch die Einführung automatisierter und vernetzter Fahrfunktionen zu erhöhen. Dazu werden Prüftechnologien und -werkzeuge entwickelt, die eine umfassende Untersuchung dieser Systeme im Rahmen der Hauptuntersuchung über die gesamte Lebensdauer des Fahrzeugs ermöglichen.",
-      "description": "Im Projekt war ich verantwortlich für die Umsetzung und Entwicklung des Frontends mit React sowie für die Architektur und Implementierung von Backend-Features. Durch die Kombination meiner Frontend- und Backend-Kompetenzen konnte ich eine ganzheitliche und performante Lösung liefern, die den Projektanforderungen entsprach."
+      "intro": "<i>DynamX strebt an, die Verkehrssicherheit durch automatisierte und vernetzte Fahrfunktionen zu erhöhen und entwickelt dafür Prüfmethoden für die Fahrzeuguntersuchung während der gesamten Nutzungsdauer.</i>",
+      "description": "Als Teil eines Teams war ich für die Entwicklung des Frontends mit React sowie die Backend-Integration verantwortlich."
     },
     "regio_kontext": {
       "header": "Zu und Fortzüge für Berlin Simulation",
@@ -35,7 +35,7 @@
       "description": "Dieses Projekt leitete ich als Softwarearchitekt, mit dem Ziel einer erfolgreichen Online Bereitstellung des Produktes. Der Fokus meiner Arbeit erstreckte sich von den DevOps bis hin zur Teamleitung und Security Analyse."
     },
     "vertical_life": {
-      "header": "Vertical Life",
+      "header": "8a.nu)",
       "intro": "<i>Vertical Life ist eine Plattform für Kletterer, um Klettergebiete zu finden und zu teilen.</i>",
       "description": "In meiner Rolle als Full Stack Entwickler arbeite ich daran, die beiden bestehenden monolithischen Anwendungen <b>8a.nu</b> und <b>Vertical-life</b> in einer einheitlichen Oberfläche zu vereinen. Ein weiterer Schwerpunkt meiner Tätigkeit liegt auf der Einführung von Test-driven Design sowie der Architektur und Implementierung einer leistungsfähigen DevOps-Umgebung."
     },

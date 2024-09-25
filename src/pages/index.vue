@@ -1,8 +1,8 @@
 <template>
   <div class="dark:bg-gray-900">
     <AuthorIntro />
-    <Work />
     <Feedback />
+    <Work />
     <Expertise />
     <!-- <TimeLine /> -->
     <Contact />
