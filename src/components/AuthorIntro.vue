@@ -15,7 +15,7 @@ export default {
     <div class="container grid grid-cols-1 gap-3 lg:grid-flow-col lg:grid-cols-4">
       <div class="md:col-span-3">
         <div class="items-center">
-          <h1 class="text-bold text-5xl" v-html="$t('header.role')" />
+          <h1 class="text-bold sm-text-4xl w-auto" v-html="$t('header.role')" />
           <div class="pt-5">
             <div class="grid grid-cols-3 font-bold mt-4 items-start">
               <div class="offer-container">
