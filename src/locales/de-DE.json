@@ -3,24 +3,24 @@
     "cv": "Lebenslauf",
     "contact": "Kontakt",
     "greet": "Wilkommen, ich bin Loren Mucha",
-    "role": "Selbständiger Software- Entwickler und </br> Architekt",
+    "role": "Selbständiger Full Stack Entwickler und Softwarearchitekt",
     "services": {
       "architecture": "Architektur",
       "development": "Entwicklung",
-      "ux": "UX Design"
+      "devOps": "DevOps"
     },
-    "about": "<b>Maßgeschneiderte Software von Frontend bis Backend.</b> Mit React, Angular, Java und Python realisiere ich Projekte von Grund auf oder optimiere bestehende Lösungen."
+    "about": "Ich entwickle ganzheitliche Softwarelösungen – von der ersten Idee bis zur finalen Umsetzung. Dabei konzipiere ich neue Anwendungen oder optimiere bestehende Systeme, stets mit Fokus auf <b>Effizienz, Skalierbarkeit und Benutzerfreundlichkeit.</b>"
   },
   "cv": "Lebenslauf",
   "work": {
-    "header": "Projekte",
+    "header": "Portfolio",
     "fsd": {
       "header": "Projekt DynamX",
       "intro": "<i>DynamX strebt an, die Verkehrssicherheit durch automatisierte und vernetzte Fahrfunktionen zu erhöhen und entwickelt dafür Prüfmethoden für die Fahrzeuguntersuchung während der gesamten Nutzungsdauer.</i>",
       "description": "Als Teil eines Teams war ich für die Entwicklung des Frontends mit React sowie die Backend-Integration verantwortlich."
     },
     "regio_kontext": {
-      "header": "Zu und Fortzüge für Berlin Simulation",
+      "header": "Showcase als Simulation der Zu- und Fortzüge für Berlin",
       "intro": "<i>Dieses Tool ermöglicht es dem Nutzer auf interactiver Art und Weise die Zu und Fortzüge von Brandenburg nach Berlin zu visualisieren.</i>",
       "description": "Dieses Projekt wurde von mir konzipiert und umgesetzt und dem Kunden über <a href='https://github.com/LorenMucha/ShowCaseRegioKontext' target='_blank' class='active-link'>Github Pages</a> bereitgestellt, da ein eigenes Hosting nicht in Frage kam. Die Anwendung ermöglicht es dem Nutzer, Indikatoren durch interaktive Tabellen und Kartenansichten anschaulich zu visualisieren. Durch Diagramme und Vergleichsmöglichkeiten können zeitliche Verläufe anschaulich dargestellt werden."
     },
@@ -35,7 +35,7 @@
       "description": "Dieses Projekt leitete ich als Softwarearchitekt, mit dem Ziel einer erfolgreichen Online Bereitstellung des Produktes. Der Fokus meiner Arbeit erstreckte sich von den DevOps bis hin zur Teamleitung und Security Analyse."
     },
     "vertical_life": {
-      "header": "8a.nu)",
+      "header": "8a.nu",
       "intro": "<i>Vertical Life ist eine Plattform für Kletterer, um Klettergebiete zu finden und zu teilen.</i>",
       "description": "In meiner Rolle als Full Stack Entwickler arbeite ich daran, die beiden bestehenden monolithischen Anwendungen <b>8a.nu</b> und <b>Vertical-life</b> in einer einheitlichen Oberfläche zu vereinen. Ein weiterer Schwerpunkt meiner Tätigkeit liegt auf der Einführung von Test-driven Design sowie der Architektur und Implementierung einer leistungsfähigen DevOps-Umgebung."
     },

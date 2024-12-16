@@ -115,7 +115,7 @@ export default {
         </div>
       </div>
       <div :class="[isActive ? 'active' : 'hidden']" class="mobile-menu">
-        <hr class="m-2"/>
+        <hr class="m-2">
         <ul class="space-y-2">
           <li>
             <!-- <a class="block text-sm px-2 py-4" @click="switch_language" @scroll.prevent><span :class="flag" /></a> -->
@@ -142,7 +142,7 @@ export default {
             </a>
           </li>
           <li class="ml-1">
-            <a :href="freelancerMap" target="_blank" >
+            <a :href="freelancerMap" target="_blank">
               <img :src="freelanceMapLogo" alt="Freelancer Map Logo" class="object-cover object-left h-6 w-20">
             </a>
           </li>

@@ -31,9 +31,9 @@ export default {
                 </div>
               </div>
               <div class="offer-container">
-                <Icon class="offer-icons" name="nonicons:tmux-16" />
+                <Icon class="offer-icons" name="carbon:continuous-integration" />
                 <div class="offer-text">
-                  {{ $t("header.services.ux") }}
+                  {{ $t("header.services.devOps") }}
                 </div>
               </div>
             </div>
@@ -43,7 +43,7 @@ export default {
         </div>
         <div class="rounded-md shadow-sm mt-5 space-x-4 hidden lg:inline-flex" role="group">
           <button class="content_button" @click="$scrollTo('work')">
-            Projekte
+            Portfolio
           </button>
           <button class="content_button" @click="$scrollTo('expertise')">
             Skills & Tools
