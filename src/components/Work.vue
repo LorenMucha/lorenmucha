@@ -13,7 +13,7 @@ export default {
 </script>
 
 <template>
-  <div :id="id" :ref="id" class="section overflow-x-hidden">
+  <div :id="id" class="section">
     <div class="header">
       <div class="max-w-3xl mx-auto">
         <h2>
@@ -38,7 +38,7 @@ export default {
                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400" v-html="$t(item.intro)" />
                 <p v-html="item.description ? $t(item.description) : ''" />
                 <div class="flex mt-2 mb-2 items-start overflow-x-auto pb-2">
-                  <div v-for="(ob, index) in item.technology" :key="index">
+                  <div v-for="(ob, _index) in item.technology" :key="_index">
                     <div class="pl-2" :title="ob.name">
                       <Icon :name="ob.icon" size="2rem" />
                     </div>
