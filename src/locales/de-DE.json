@@ -19,6 +19,11 @@
       "intro": "<i>DynamX strebt an, die Verkehrssicherheit durch automatisierte und vernetzte Fahrfunktionen zu erhöhen und entwickelt dafür Prüfmethoden für die Fahrzeuguntersuchung während der gesamten Nutzungsdauer.</i>",
       "description": "Als Teil eines Teams war ich für die Entwicklung des Frontends mit React sowie die Backend-Integration verantwortlich."
     },
+    "wohnkontexte": {
+      "header": "Befragungstool WohnKontexte",
+      "intro": "Wie viel Wohnraum wird gebraucht und was fehlt? Das Befragungstool WohnKontexte erhebt Bedarfe direkt bei der Mieter:innenschaft – als Grundlage für fundierte Entscheidungen im Wohnungsbau.",
+      "description": "Dockerisierte LimeSurvey-Instanz (self-hosted) mit API-Anbindung zur automatisierten Erhebung, Verwaltung und Analyse der Umfragedaten; ETL-Integration für die Weiterverarbeitung."
+    },
     "regio_kontext": {
       "header": "Showcase als Simulation der Zu- und Fortzüge für Berlin",
       "intro": "<i>Dieses Tool ermöglicht es dem Nutzer auf interactiver Art und Weise die Zu und Fortzüge von Brandenburg nach Berlin zu visualisieren.</i>",

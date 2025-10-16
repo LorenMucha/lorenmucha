@@ -5,8 +5,26 @@ import addigoImage from 'public/images/addigo/addigo.jpg'
 import regioKontext from 'public/images/regio_kontext/regio_kontext.png'
 import noQ from 'public/images/no-q/clipboard.jpg'
 import fsdImage from 'public/images/fsd/banner.jpeg'
+import wohnkontexteImage from 'public/images/wohnkontexte/wohnkontexte.png'
 
+// Icon sources: https://icon-sets.iconify.design
 export const projects = [
+  {
+    header: 'work.wohnkontexte.header',
+    imageSrc: wohnkontexteImage,
+    intro: 'work.wohnkontexte.intro',
+    link: 'https://wohnkontexte.de/index.php/573595',
+    linkText: 'Website',
+    customer: 'RegioKontext GmbH',
+    description: 'work.wohnkontexte.description',
+    technology: [{ icon: 'logos:python', name: 'Python' },
+      { icon: 'logos:postgresql', name: 'PostgreSQL' },
+      { icon: 'simple-icons:limesurvey', name: 'LimeSurvey' },
+      { icon: 'logos:gitlab', name: 'Gitlab CI' },
+      { icon: 'mdi:react', name: 'React' },
+      { icon: 'devicon:docker', name: 'Docker' },
+    ],
+  },
   {
     header: 'work.fsd.header',
     imageSrc: fsdImage,

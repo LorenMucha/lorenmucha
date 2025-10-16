@@ -20,6 +20,11 @@
       "intro": "The ErVast project aims to enhance road safety through the introduction of automated and connected driving functions. To achieve this, testing technologies and tools are being developed to enable comprehensive assessments of these systems during vehicle inspections throughout the vehicle's entire lifecycle. The assessments cover the performance, condition, functionality, and impact of the automated and connected driver assistance systems to ensure that these systems operate safely and effectively in the long term.",
       "description": "In the project, I was responsible for the implementation and development of the frontend using React, as well as for the architecture and implementation of backend features. My focus in the frontend was on designing modern, user-friendly interfaces that provide an optimal user experience. At the same time, I developed and structured backend functions to ensure smooth and efficient communication between the frontend and backend. By combining my frontend and backend expertise, I was able to deliver a comprehensive and high-performance solution that met the project requirements."
     },
+    "wohnkontexte": {
+      "header": "Survey Tool WohnKontexte",
+      "intro": "How much living space is needed, and what is missing? The WohnKontexte survey tool collects housing needs directly from tenants – providing a solid basis for informed decisions in residential construction.",
+      "description": "Dockerized, self-hosted LimeSurvey instance with API integration for automated survey collection, management, and analysis; includes ETL integration for further data processing."
+    },
     "addigo": {
       "header": "Addigo",
       "intro": "ADDIGO Service Report is a digital, flexible tool for optimizing administrative workflows, especially in the area of logging, documentation, Employee management/control, appointment management and billing."
