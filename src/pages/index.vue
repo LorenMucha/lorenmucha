@@ -1,11 +1,9 @@
 <template>
-  <div class="dark:bg-gray-900">
+  <div>
     <AuthorIntro />
-    <Feedback />
     <Work />
+    <Feedback />
     <Expertise />
-    <!-- <TimeLine /> -->
     <Contact />
-    <FloatingButton />
   </div>
 </template>

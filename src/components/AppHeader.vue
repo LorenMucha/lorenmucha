@@ -42,116 +42,83 @@ export default {
 </script>
 
 <template>
-  <nav class="bg-white shadow-lg fixed w-screen top-0 z-10 px-10">
-    <div class="">
-      <div class="flex justify-between">
-        <div class="inline-flex justify-center md:p-4 mb-1 mt-1 md:mt-0 md:mb-0">
-          <NuxtLink to="/">
-            <!-- Website Logo -->
-            <a>
-              <span class="font-semibold md:text-lg text-blue-700">Mucha</span>
-            </a>
-            <Icon name="uil:square" class="flex items-center rotate-45 text-gray-500 mr-1 ml-1 md:mr-2 md:ml-2 mt-1" />
-            <span class="md:text-lg text-gray-500 font-semibold">Software Engineering</span>
+  <nav class="fixed top-0 z-50 w-full">
+    <div class="mx-auto max-w-6xl px-6">
+      <div class="surface mt-4 rounded-[28px] border border-white/80 px-6 py-3">
+        <div class="flex items-center justify-between">
+          <NuxtLink to="/" class="flex items-center gap-3">
+            <span class="font-display text-lg font-semibold text-ink-900">Loren Mucha</span>
+            <span class="hidden text-sm font-semibold text-ink-500 md:inline">{{ $t('nav.tagline') }}</span>
           </NuxtLink>
-        </div>
-        <div class="flex">
-          <!-- Primary Navbar items -->
-          <div class="hidden md:flex items-center">
-            <div class="hidden md:flex items-center">
-              <a
-                :href="linkedIn" target="_blank"
-                class="py-2 px-2 text-gray-500 font-semibold hover:animate-pulse transition duration-300"
-              ><Icon size="1.5rem" name="skill-icons:linkedin" /></a>
-            </div>
-            <div class="hidden md:flex items-center">
-              <a
-                :href="github" target="_blank"
-                class="px-2 py-2 text-gray-500 font-semibold hover:animate-pulse transition duration-300"
-              >
-                <Icon size="1.5rem" name="mdi:github" />
-              </a>
-            </div>
+          <div class="hidden items-center gap-6 md:flex">
+            <NuxtLink to="/#work" class="text-sm font-semibold text-ink-600 hover:text-ink-900">{{ $t('nav.portfolio') }}</NuxtLink>
+            <NuxtLink to="/#expertise" class="text-sm font-semibold text-ink-600 hover:text-ink-900">{{ $t('nav.skills') }}</NuxtLink>
+            <NuxtLink to="/#contact" class="text-sm font-semibold text-ink-600 hover:text-ink-900">{{ $t('nav.contact') }}</NuxtLink>
             <a
-              :href="cv"
-              target="_blank" class="py-2 px-2 text-gray-500 font-semibold hover:animate-pulse transition duration-300"
+              :href="cv" target="_blank" class="btn-ghost"
               @click="open_cv"
             >
-              <Icon size="1.5rem" name="academicons:cv-square" />
+              <Icon size="1.2rem" name="academicons:cv-square" />
+              CV
             </a>
-          </div>
-          <div class="hidden md:flex items-center">
-            <a :href="freelancerMap" target="_blank" class="pr-2 hover:animate-pulse transition duration-300">
-              <img :src="freelanceMapLogo" alt="Freelancer Map Logo" class="object-cover object-center h-6 w-20">
+            <a
+              :href="linkedIn" target="_blank" class="text-ink-500 hover:text-ink-900"
+            >
+              <Icon size="1.5rem" name="skill-icons:linkedin" />
             </a>
-          </div>
-          <div class="hidden md:flex items-center text-sm text-gray-500 font-semibold">
-            <NuxtLink to="/Impressum" class="pr-2">
-              Impressum
+            <a
+              :href="github" target="_blank" class="text-ink-500 hover:text-ink-900"
+            >
+              <Icon size="1.4rem" name="mdi:github" />
+            </a>
+            <a
+              :href="freelancerMap" target="_blank" class="hidden lg:flex items-center"
+            >
+              <img :src="freelanceMapLogo" alt="Freelancer Map Logo" class="h-5 w-20 object-contain">
+            </a>
+            <NuxtLink to="/#contact" class="btn-primary">
+              {{ $t('nav.request') }}
+              <Icon name="material-symbols:arrow-forward" />
             </NuxtLink>
           </div>
-          <!--  <div class="hidden md:flex items-center">
-            <button @click="switch_language" @scroll.prevent>
-              <span :class="flag" />
-            </button>
-          </div>
-        </div> -->
-          <!-- Mobile menu button -->
-          <div class="md:hidden flex items-center">
-            <button class="mobile-menu-button focus:outline-none">
-              <i class="bx bx-menu text-3xl mt-1" />
-            </button>
-          </div>
-          <div class="md:hidden flex items-center">
-            <button class="outline-none mobile-menu-button" @click="show_mobile_menu">
-              <svg
-                class=" w-6 h-6 text-gray-500 hover:text-blue-500 " x-show="!showMenu" fill="none"
-                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"
-              >
-                <path d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
-          </div>
+          <button class="md:hidden" aria-label="Menü öffnen" @click="show_mobile_menu">
+            <Icon size="1.6rem" name="material-symbols:menu-rounded" class="text-ink-700" />
+          </button>
         </div>
       </div>
-      <div :class="[isActive ? 'active' : 'hidden']" class="mobile-menu">
-        <hr class="m-2">
-        <ul class="space-y-2">
-          <li>
-            <!-- <a class="block text-sm px-2 py-4" @click="switch_language" @scroll.prevent><span :class="flag" /></a> -->
-            <a
-              :href="linkedIn" target="_blank"
-              class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300"
-            ><Icon size="1.5rem" name="skill-icons:linkedin" /></a>
-          </li>
-          <li>
-            <a
-              :href="github" target="_blank"
-              class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300"
-            >
-              <Icon size="1.5rem" name="mdi:github" />
-            </a>
-          </li>
-          <li>
-            <a
-              :href="cv"
-              target="_blank" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300"
-              @click="open_cv"
-            >
-              <Icon size="1.5rem" name="academicons:cv-square" />
-            </a>
-          </li>
-          <li class="ml-1">
-            <a :href="freelancerMap" target="_blank">
-              <img :src="freelanceMapLogo" alt="Freelancer Map Logo" class="object-cover object-left h-6 w-20">
-            </a>
-          </li>
-          <li class="pb-2">
-            <NuxtLink to="/Impressum" class="py-4 px-2">
-              Impressum
+      <div v-if="isActive" class="md:hidden">
+        <div class="surface mt-3 rounded-3xl p-5">
+          <div class="flex flex-col gap-4">
+            <NuxtLink to="/#work" class="text-sm font-semibold text-ink-600" @click="show_mobile_menu">{{ $t('nav.portfolio') }}</NuxtLink>
+            <NuxtLink to="/#expertise" class="text-sm font-semibold text-ink-600" @click="show_mobile_menu">{{ $t('nav.skills') }}</NuxtLink>
+            <NuxtLink to="/#contact" class="text-sm font-semibold text-ink-600" @click="show_mobile_menu">{{ $t('nav.contact') }}</NuxtLink>
+            <div class="flex flex-wrap items-center gap-3">
+              <a
+                :href="cv" target="_blank" class="btn-ghost"
+                @click="open_cv"
+              >
+                <Icon size="1.2rem" name="academicons:cv-square" />
+                CV
+              </a>
+              <a :href="linkedIn" target="_blank" class="btn-ghost">
+                <Icon size="1.2rem" name="skill-icons:linkedin" />
+                LinkedIn
+              </a>
+              <a :href="github" target="_blank" class="btn-ghost">
+                <Icon size="1.2rem" name="mdi:github" />
+                GitHub
+              </a>
+              <a :href="freelancerMap" target="_blank" class="btn-ghost">
+                Freelancer Map
+              </a>
+            </div>
+            <NuxtLink to="/#contact" class="btn-primary" @click="show_mobile_menu">
+              {{ $t('nav.request') }}
+              <Icon name="material-symbols:arrow-forward" />
             </NuxtLink>
-          </li>
-        </ul>
+            <NuxtLink to="/Impressum" class="text-xs font-semibold text-ink-500">Impressum</NuxtLink>
+          </div>
+        </div>
       </div>
     </div>
   </nav>

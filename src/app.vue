@@ -1,8 +1,8 @@
 <template>
   <NuxtLayout>
-    <section class="antialiased bg-white">
+    <div class="min-h-screen">
       <SeoKit />
       <NuxtPage />
-    </section>
+    </div>
   </NuxtLayout>
 </template>

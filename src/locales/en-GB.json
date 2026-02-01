@@ -1,56 +1,112 @@
 {
   "header": {
-    "expertise": "Expertise",
     "cv": "Resume",
     "contact": "Contact",
-    "greet": "Welcome, I'm Loren Mucha",
-    "role": "Fullstack Software Developer",
+    "role": "Software engineering & architecture · available for side projects",
+    "availability": "Available part-time",
+    "focus": "Focus: web apps & data platforms",
+    "location": "Remote or Nuremberg",
+    "primaryCta": "Request a project",
+    "secondaryCta": "View projects",
     "services": {
-      "architecture": "Architecture",
-      "development": "Development",
-      "ux": "UX Design"
+      "architecture": "Product & system architecture",
+      "architectureDesc": "Clear structure, robust interfaces, scalable systems.",
+      "development": "Full-stack delivery",
+      "developmentDesc": "From UI to API — fast, testable, sustainable.",
+      "devOps": "Operations & quality",
+      "devOpsDesc": "CI/CD, monitoring and safe deployments."
     },
-    "about": "As a passionate software crafter, I have extensive experience in developing robust and scalable web applications. My technical know-how ranges from front-end development with Nuxt and Angular to back-end development with Java and Python. With in-depth knowledge of software architecture, I am able to develop holistic solutions."
+    "about": "I help teams make complex systems clear and build robust web products. From architecture to operations I deliver pragmatic solutions that stay maintainable over time.",
+    "highlights": {
+      "scopeTitle": "Best for",
+      "scopeText": "MVPs, modernization, architecture checks or focused feature packages.",
+      "capacityTitle": "Capacity",
+      "capacityText": "Part-time with defined time windows — ideal for focused deliverables."
+    }
+  },
+  "nav": {
+    "portfolio": "Portfolio",
+    "skills": "Skills",
+    "contact": "Contact",
+    "request": "Request project",
+    "tagline": "Software Engineering"
   },
   "cv": "Resume",
+  "expertise": {
+    "title": "Skills & tools",
+    "subtitle": "Tech stack and delivery style that ships to production reliably.",
+    "languagesTitle": "Languages",
+    "languagesHint": "Proven in production systems and data pipelines.",
+    "frameworksTitle": "Frameworks",
+    "frameworksHint": "Reliable frameworks for scalable web products.",
+    "toolsTitle": "Platforms",
+    "toolsHint": "Databases, cloud and infrastructure for stable operations."
+  },
+  "feedback": {
+    "title": "Client feedback",
+    "subtitle": "Highlights from projects and long-term collaborations."
+  },
   "work": {
-    "header": "Projects",
+    "header": "Selected work",
+    "subheader": "Focused selection of digital products, platforms and data systems.",
+    "impactLabel": "Outcome",
     "fsd": {
-      "header": "Project ErVast",
-      "intro": "The ErVast project aims to enhance road safety through the introduction of automated and connected driving functions. To achieve this, testing technologies and tools are being developed to enable comprehensive assessments of these systems during vehicle inspections throughout the vehicle's entire lifecycle. The assessments cover the performance, condition, functionality, and impact of the automated and connected driver assistance systems to ensure that these systems operate safely and effectively in the long term.",
-      "description": "In the project, I was responsible for the implementation and development of the frontend using React, as well as for the architecture and implementation of backend features. My focus in the frontend was on designing modern, user-friendly interfaces that provide an optimal user experience. At the same time, I developed and structured backend functions to ensure smooth and efficient communication between the frontend and backend. By combining my frontend and backend expertise, I was able to deliver a comprehensive and high-performance solution that met the project requirements."
+      "header": "Project DynamX",
+      "intro": "Testing methods for automated driving functions across the full lifecycle.",
+      "description": "Frontend architecture, reliable backend integration and close team alignment."
     },
     "wohnkontexte": {
-      "header": "Survey Tool WohnKontexte",
-      "intro": "How much living space is needed, and what is missing? The WohnKontexte survey tool collects housing needs directly from tenants – providing a solid basis for informed decisions in residential construction.",
-      "description": "Dockerized, self-hosted LimeSurvey instance with API integration for automated survey collection, management, and analysis; includes ETL integration for further data processing."
-    },
-    "addigo": {
-      "header": "Addigo",
-      "intro": "ADDIGO Service Report is a digital, flexible tool for optimizing administrative workflows, especially in the area of logging, documentation, Employee management/control, appointment management and billing."
+      "header": "Housing survey tool",
+      "intro": "Collects housing needs directly from tenants to inform better planning.",
+      "description": "Self-hosted survey platform with API integration and automated analysis."
     },
     "ioer_monitor": {
       "header": "IÖR Monitor",
-      "intro": "The <a class='active-link' href='https://monitor.ioer.de' target='_blank'>IÖR-Monitor</a> is a web GIS to intuitively answer questions about land use in Germany."
+      "intro": "Web GIS to analyze land use and spatial indicators across Germany.",
+      "description": "Designed a high-performance geo front end with a stable data pipeline."
     },
-    "climbing_diary": {
-      "header": "Climbing Diary",
-      "intro": "Virtual diary with statistical analysis of personal performance, as a native Android App."
-    },
-    "monitor_api": {
-      "header": "Monitor API",
-      "intro": "REST API for geodata processing within the <a class='active-link' href='https://http://sora.git.gesis.org' target='_blank'>Sora-research project</a> with user management."
-    },
-    "land_use_monitor": {
-      "header": "Land Use Monitor DE",
-      "intro": "It provides information on the area structure and its development, as well as comprehensive data on the quality across Germany, as a <b>app</b>."
+    "addigo": {
+      "header": "Addigo Service Suite",
+      "intro": "Digital service reports and mobile workflows for field and office teams.",
+      "description": "Architecture for offline-first processes, role models and stable releases."
     },
     "vertical_life": {
-      "header": "Vertical Life",
-      "intro": "Vertical Life is a <b>app</b> for climbers to find and share climbing spots."
+      "header": "8a.nu",
+      "intro": "Platform for climbers to research and share climbing areas.",
+      "description": "System integration and DevOps to operate 8a.nu and Vertical-Life consistently."
+    },
+    "noq": {
+      "header": "No-Q Signature Pad",
+      "intro": "Digital queue and appointment management with secure signatures.",
+      "description": "Privacy-first signature solution with high availability and resilient ops."
     }
   },
   "tools": {
-    "languages": "Programming Languages"
+    "languages": "Programming languages"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "No-strings inquiry — I reply with a quick effort estimate and next step.",
+    "note": "Part-time",
+    "response": "Typically replies within 48h",
+    "heading": "Sketch your project idea",
+    "detail": "I support MVPs, modernization or targeted extensions. Clear goals and tight scopes work best.",
+    "emailCta": "Send an email",
+    "callCta": "Book a short call",
+    "scopeLabel": "Suitable formats",
+    "scopeText": "MVPs, modernization, architecture reviews, feature packages.",
+    "stackLabel": "Stack",
+    "stackText": "Frontend, backend, APIs, DevOps — end to end.",
+    "formTab": "Contact form",
+    "scheduleTab": "Schedule",
+    "formName": "Name",
+    "formEmail": "Email",
+    "formEmailHint": "Please enter a valid email address.",
+    "formMessage": "Short project brief",
+    "formSubmit": "Send message",
+    "scheduleInfo": "Pick a slot for a quick intro call."
+  },
+  "footer": {
+    "tagline": "Software engineering · available part-time"
   }
 }
