@@ -12,7 +12,7 @@ export default {
 </script>
 
 <template>
-  <footer class="section pt-10">
+  <footer class="mt-auto px-6 pt-10 pb-3 md:px-10 lg:px-14">
     <div class="mx-auto max-w-6xl">
       <div class="surface rounded-[28px] px-6 py-8">
         <div class="flex flex-wrap items-center justify-between gap-6">

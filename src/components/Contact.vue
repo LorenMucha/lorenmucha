@@ -26,7 +26,8 @@ export default {
       this.cleanMailForm()
     })
 
-    useCalendly().initInlineWidget()
+    if (this.scheduleActive)
+      this.$nextTick(() => useCalendly().initInlineWidget())
   },
   methods: {
     async sendEmail() {
@@ -55,6 +56,10 @@ export default {
     toggleSchedule() {
       this.emailActive = false
       this.scheduleActive = true
+      this.$nextTick(() => {
+        if (this.calendlyLink)
+          useCalendly().initInlineWidget()
+      })
     },
     cleanMailForm() {
       this.nameMsg = ''
@@ -66,7 +71,7 @@ export default {
 </script>
 
 <template>
-  <section id="contact" class="section">
+  <section id="contact" class="section reveal-section" data-reveal>
     <div class="section-header text-left">
       <h2>{{ $t('contact.title') }}</h2>
       <p>{{ $t('contact.subtitle') }}</p>

@@ -21,14 +21,14 @@ export default {
 </script>
 
 <template>
-  <section id="feedback" class="section">
+  <section id="feedback" class="section reveal-section flex flex-col justify-center" data-reveal>
     <div class="section-header text-center mx-auto">
       <h2>{{ $t('feedback.title') }}</h2>
       <p>{{ $t('feedback.subtitle') }}</p>
     </div>
-    <div class="mx-auto max-w-5xl">
+    <div class="mx-auto max-w-5xl text-center">
       <Swiper
-        class="feedback-swiper"
+        class="feedback-swiper text-left"
         :loop="true"
         :centered-slides="true"
         :slides-per-view="1.15"
@@ -57,8 +57,8 @@ export default {
         }"
       >
         <SwiperSlide v-for="(text, idx) in texts" :key="idx">
-          <div class="card card-interactive feedback-card">
-            <div class="flex items-center gap-3 text-brand-700">
+          <div class="card card-interactive feedback-card text-center">
+            <div class="flex items-center justify-center gap-3 text-brand-700">
               <Icon name="material-symbols:format-quote" size="2rem" />
               <span class="card-label">Feedback</span>
             </div>

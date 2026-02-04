@@ -13,7 +13,7 @@ export default {
 </script>
 
 <template>
-  <section :id="id" class="section">
+  <section :id="id" class="section reveal-section" data-reveal>
     <div class="section-header text-left">
       <h2>{{ $t('work.header') }}</h2>
       <p>{{ $t('work.subheader') }}</p>

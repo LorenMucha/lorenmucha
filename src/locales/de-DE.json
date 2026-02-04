@@ -12,17 +12,22 @@
       "architecture": "Produkt- & Systemarchitektur",
       "architectureDesc": "Klare Strukturen, robuste Schnittstellen, skalierbare Systeme.",
       "development": "Full-Stack Umsetzung",
-      "developmentDesc": "Von UI bis API — schnell, testbar, nachhaltig.",
-      "devOps": "Betrieb & Qualität",
-      "devOpsDesc": "CI/CD, Monitoring und sichere Deployments."
+      "developmentDesc": "Von UI bis API — schnell, testbar, nachhaltig."
     },
-    "about": "Freelancer für Softwarearchitektur und Full Stack. Ich entwerfe skalierbare Web-Plattformen, führe Teams und liefere von der Idee bis zum stabilen Betrieb.",
+    "about": "Freelancer für Softwarearchitektur und Full Stack. Ich entwerfe skalierbare Web-Plattformen, führe Teams und liefere von der Idee bis zum Release.",
     "highlights": {
       "scopeTitle": "Geeignet für",
       "scopeText": "MVPs, Modernisierung, Architektur-Checks oder klar abgegrenzte Feature-Pakete.",
       "capacityTitle": "Kapazität",
       "capacityText": "Nebenberuflich mit festen Zeitfenstern – ideal für fokussierte Deliverables."
     }
+  },
+  "about": {
+    "title": "About",
+    "subtitle": "Kurzprofil",
+    "body1": "Als zertifizierter Softwarearchitekt (iSAQB CPSA‑F) mag ich klare Strukturen: saubere Schnittstellen, nachvollziehbare Architektur und Software, die im Alltag zuverlässig läuft.",
+    "body2": "Ich habe quer durch Branchen und Systemlandschaften gearbeitet. Mein Hintergrund ist Geoinformatik aus Dresden; in Projekten verbinde ich Produktdenken mit pragmatischer Umsetzung.",
+    "body3": "Nebenberuflich unterstütze ich Teams bei klar abgegrenzten Vorhaben, Architekturreviews oder fokussierten Feature‑Paketen. Hauptberuflich bin ich Specialist bei der Alten GmbH. In der Freizeit bin ich leidenschaftlich auf dem Rad unterwegs und klettere im schönen Frankenjura."
   },
   "nav": {
     "portfolio": "Portfolio",
@@ -40,7 +45,9 @@
     "frameworksTitle": "Frameworks",
     "frameworksHint": "Bewährte Frameworks für skalierbare Web-Produkte.",
     "toolsTitle": "Plattformen",
-    "toolsHint": "Datenbanken, Cloud und Infrastruktur, die den Betrieb sichern."
+    "toolsHint": "Datenbanken, Cloud und Infrastruktur, die den Betrieb sichern.",
+    "certificationsTitle": "Zertifikate",
+    "certificationsHint": "Nachweise für Architekturkompetenz."
   },
   "feedback": {
     "title": "Kundenstimmen",
@@ -73,7 +80,7 @@
     "vertical_life": {
       "header": "8a.nu",
       "intro": "Plattform für Kletterer zur Recherche und zum Teilen von Klettergebieten.",
-      "description": "Systemintegration und DevOps, um 8a.nu und Vertical-Life konsistent zu betreiben."
+      "description": "Systemintegration, um 8a.nu und Vertical-Life konsistent zu betreiben."
     },
     "noq": {
       "header": "No-Q Signature Pad",
@@ -96,7 +103,7 @@
     "scopeLabel": "Geeignete Projektformen",
     "scopeText": "MVPs, Modernisierung, Architektur-Checks, Feature-Pakete.",
     "stackLabel": "Stack",
-    "stackText": "Frontend, Backend, APIs, DevOps — entlang des gesamten Produktzyklus.",
+    "stackText": "Frontend, Backend, APIs — entlang des gesamten Produktzyklus.",
     "formTab": "Kontaktformular",
     "scheduleTab": "Termin",
     "formName": "Name",

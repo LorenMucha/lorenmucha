@@ -1,6 +1,7 @@
 <template>
   <div>
     <AuthorIntro />
+    <AboutMe />
     <Work />
     <Feedback />
     <Expertise />

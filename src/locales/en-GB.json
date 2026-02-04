@@ -12,17 +12,22 @@
       "architecture": "Product & system architecture",
       "architectureDesc": "Clear structure, robust interfaces, scalable systems.",
       "development": "Full-stack delivery",
-      "developmentDesc": "From UI to API — fast, testable, sustainable.",
-      "devOps": "Operations & quality",
-      "devOpsDesc": "CI/CD, monitoring and safe deployments."
+      "developmentDesc": "From UI to API — fast, testable, sustainable."
     },
-    "about": "Freelance software architect and full-stack developer. I design scalable web platforms, lead teams and deliver from idea to reliable operations.",
+    "about": "Freelance software architect and full-stack developer. I design scalable web platforms, lead teams and deliver from idea to release.",
     "highlights": {
       "scopeTitle": "Best for",
       "scopeText": "MVPs, modernization, architecture checks or focused feature packages.",
       "capacityTitle": "Capacity",
       "capacityText": "Part-time with defined time windows — ideal for focused deliverables."
     }
+  },
+  "about": {
+    "title": "About",
+    "subtitle": "Short profile",
+    "body1": "As a certified software architect (iSAQB CPSA‑F), I like clear structures: clean interfaces, understandable architecture, and software that runs reliably day to day.",
+    "body2": "I’ve worked across a wide range of industries and system landscapes. My background is geoinformatics, studied in Dresden; in projects, I combine product thinking with pragmatic delivery.",
+    "body3": "I support teams part-time with well-scoped initiatives, architecture reviews, or focused feature packages. Full-time, I’m a Specialist at Alten GmbH. Outside work, I’m passionate about cycling and climbing in the beautiful Frankenjura."
   },
   "nav": {
     "portfolio": "Portfolio",
@@ -40,7 +45,9 @@
     "frameworksTitle": "Frameworks",
     "frameworksHint": "Reliable frameworks for scalable web products.",
     "toolsTitle": "Platforms",
-    "toolsHint": "Databases, cloud and infrastructure for stable operations."
+    "toolsHint": "Databases, cloud and infrastructure for stable operations.",
+    "certificationsTitle": "Certifications",
+    "certificationsHint": "Evidence of architecture expertise."
   },
   "feedback": {
     "title": "Client feedback",
@@ -73,7 +80,7 @@
     "vertical_life": {
       "header": "8a.nu",
       "intro": "Platform for climbers to research and share climbing areas.",
-      "description": "System integration and DevOps to operate 8a.nu and Vertical-Life consistently."
+      "description": "System integration to run 8a.nu and Vertical-Life consistently."
     },
     "noq": {
       "header": "No-Q Signature Pad",
@@ -96,7 +103,7 @@
     "scopeLabel": "Suitable formats",
     "scopeText": "MVPs, modernization, architecture reviews, feature packages.",
     "stackLabel": "Stack",
-    "stackText": "Frontend, backend, APIs, DevOps — end to end.",
+    "stackText": "Frontend, backend, APIs — end to end.",
     "formTab": "Contact form",
     "scheduleTab": "Schedule",
     "formName": "Name",
