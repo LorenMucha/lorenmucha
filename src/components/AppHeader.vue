@@ -1,7 +1,6 @@
 <script>
 import CV_DE from 'public/files/CV_DE.pdf'
 import CV_EN from 'public/files/CV_EN.pdf'
-import freelancer from 'public/images/freelancermap.png'
 import { useLanguageStore } from '~/store/languages'
 
 export default {
@@ -12,7 +11,6 @@ export default {
   },
   data() {
     return {
-      freelanceMapLogo: freelancer,
       isActive: false,
       cv: CV_DE,
       linkedIn: process.env.LINKEDIN,
@@ -23,6 +21,9 @@ export default {
   computed: {
     flag() {
       return `fi fi-${this.languages.opposite}`
+    },
+    languageLabel() {
+      return this.languages.get === 'de' ? 'Auf Englisch wechseln' : 'Switch to German'
     },
   },
   methods: {
@@ -48,41 +49,46 @@ export default {
         <div class="flex items-center justify-between">
           <NuxtLink to="/" class="flex items-center gap-3">
             <span class="font-display text-lg font-semibold text-ink-900">Loren Mucha</span>
-            <span class="hidden text-sm font-semibold text-ink-500 md:inline">{{ $t('nav.tagline') }}</span>
           </NuxtLink>
-          <div class="hidden items-center gap-6 md:flex">
+          <div class="hidden items-center gap-4 md:flex">
             <NuxtLink to="/#work" class="text-sm font-semibold text-ink-600 hover:text-ink-900">{{ $t('nav.portfolio') }}</NuxtLink>
             <NuxtLink to="/#expertise" class="text-sm font-semibold text-ink-600 hover:text-ink-900">{{ $t('nav.skills') }}</NuxtLink>
             <NuxtLink to="/#contact" class="text-sm font-semibold text-ink-600 hover:text-ink-900">{{ $t('nav.contact') }}</NuxtLink>
             <a
-              :href="cv" target="_blank" class="btn-ghost"
+              :href="cv" target="_blank" rel="noopener noreferrer" class="btn-ghost px-3"
+              :aria-label="$t('cv')" :title="$t('cv')"
               @click="open_cv"
             >
-              <Icon size="1.2rem" name="academicons:cv-square" />
-              CV
+              <Icon size="1.25rem" name="mdi:file-document-outline" />
             </a>
             <a
-              :href="linkedIn" target="_blank" class="text-ink-500 hover:text-ink-900"
+              :href="linkedIn" target="_blank" rel="noopener noreferrer" class="btn-ghost px-3"
+              aria-label="LinkedIn" title="LinkedIn"
             >
-              <Icon size="1.5rem" name="skill-icons:linkedin" />
+              <Icon size="1.25rem" name="mdi:linkedin" />
             </a>
             <a
-              :href="github" target="_blank" class="text-ink-500 hover:text-ink-900"
+              :href="github" target="_blank" rel="noopener noreferrer" class="btn-ghost px-3"
+              aria-label="GitHub" title="GitHub"
             >
-              <Icon size="1.4rem" name="mdi:github" />
+              <Icon size="1.25rem" name="mdi:github" />
             </a>
             <a
-              :href="freelancerMap" target="_blank" class="hidden lg:flex items-center"
+              :href="freelancerMap" target="_blank" rel="noopener noreferrer" class="btn-ghost px-3"
+              aria-label="FreelancerMap" title="FreelancerMap"
             >
-              <img :src="freelanceMapLogo" alt="Freelancer Map Logo" class="h-5 w-20 object-contain">
+              <Icon size="1.25rem" name="mdi:briefcase-outline" />
             </a>
-            <NuxtLink to="/#contact" class="btn-primary">
-              {{ $t('nav.request') }}
-              <Icon name="material-symbols:arrow-forward" />
-            </NuxtLink>
+            <button
+              type="button" class="btn-ghost px-3"
+              :aria-label="languageLabel" :title="languageLabel"
+              @click="switch_language"
+            >
+              <span :class="[flag, 'text-lg rounded-sm shadow-sm']" aria-hidden="true" />
+            </button>
           </div>
           <button class="md:hidden" aria-label="Menü öffnen" @click="show_mobile_menu">
-            <Icon size="1.6rem" name="material-symbols:menu-rounded" class="text-ink-700" />
+            <Icon size="1.5rem" name="mdi:menu" class="text-ink-700" />
           </button>
         </div>
       </div>
@@ -94,28 +100,38 @@ export default {
             <NuxtLink to="/#contact" class="text-sm font-semibold text-ink-600" @click="show_mobile_menu">{{ $t('nav.contact') }}</NuxtLink>
             <div class="flex flex-wrap items-center gap-3">
               <a
-                :href="cv" target="_blank" class="btn-ghost"
+                :href="cv" target="_blank" rel="noopener noreferrer" class="btn-ghost px-3"
+                :aria-label="$t('cv')" :title="$t('cv')"
                 @click="open_cv"
               >
-                <Icon size="1.2rem" name="academicons:cv-square" />
-                CV
+                <Icon size="1.25rem" name="mdi:file-document-outline" />
               </a>
-              <a :href="linkedIn" target="_blank" class="btn-ghost">
-                <Icon size="1.2rem" name="skill-icons:linkedin" />
-                LinkedIn
+              <a
+                :href="linkedIn" target="_blank" rel="noopener noreferrer" class="btn-ghost px-3"
+                aria-label="LinkedIn" title="LinkedIn"
+              >
+                <Icon size="1.25rem" name="mdi:linkedin" />
               </a>
-              <a :href="github" target="_blank" class="btn-ghost">
-                <Icon size="1.2rem" name="mdi:github" />
-                GitHub
+              <a
+                :href="github" target="_blank" rel="noopener noreferrer" class="btn-ghost px-3"
+                aria-label="GitHub" title="GitHub"
+              >
+                <Icon size="1.25rem" name="mdi:github" />
               </a>
-              <a :href="freelancerMap" target="_blank" class="btn-ghost">
-                Freelancer Map
+              <a
+                :href="freelancerMap" target="_blank" rel="noopener noreferrer" class="btn-ghost px-3"
+                aria-label="FreelancerMap" title="FreelancerMap"
+              >
+                <Icon size="1.25rem" name="mdi:briefcase-outline" />
               </a>
+              <button
+                type="button" class="btn-ghost px-3"
+                :aria-label="languageLabel" :title="languageLabel"
+                @click="switch_language"
+              >
+                <span :class="[flag, 'text-lg rounded-sm shadow-sm']" aria-hidden="true" />
+              </button>
             </div>
-            <NuxtLink to="/#contact" class="btn-primary" @click="show_mobile_menu">
-              {{ $t('nav.request') }}
-              <Icon name="material-symbols:arrow-forward" />
-            </NuxtLink>
             <NuxtLink to="/Impressum" class="text-xs font-semibold text-ink-500">Impressum</NuxtLink>
           </div>
         </div>
