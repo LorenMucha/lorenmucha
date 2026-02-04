@@ -1,1 +1,0 @@
-import{_ as r}from"./BpknRVuq.js";import{I as o,J as t,al as n}from"./Gaanpa4-.js";const s={};function a(e,c){return o(),t("strong",null,[n(e.$slots,"default")])}const _=r(s,[["render",a]]);export{_ as default};
