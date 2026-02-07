@@ -1,1 +1,0 @@
-import{_ as o}from"./C-JUZ33S.js";import{I as r,J as n,al as t}from"./Gaanpa4-.js";const s={};function c(e,a){return r(),n("code",null,[t(e.$slots,"default")])}const _=o(s,[["render",c]]);export{_ as default};
