@@ -1,1 +1,0 @@
-import{_ as o}from"./B2paZdQB.js";import{I as r,J as t,al as c}from"./Gaanpa4-.js";const s={};function l(e,n){return r(),t("blockquote",null,[c(e.$slots,"default")])}const _=o(s,[["render",l]]);export{_ as default};
