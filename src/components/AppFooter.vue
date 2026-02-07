@@ -2,10 +2,11 @@
 export default {
   name: 'AppFooter',
   data: () => {
+    const publicConfig = useRuntimeConfig().public
     return {
-      github: process.env.GITHUB,
-      userMail: process.env.USER_MAIL,
-      linkedin: process.env.LINKEDIN,
+      github: publicConfig.github,
+      userMail: publicConfig.userMail,
+      linkedin: publicConfig.linkedin,
     }
   },
 }
@@ -24,23 +25,26 @@ export default {
             <a
               class="btn-ghost" target="_blank" rel="noopener noreferrer"
               :href="github"
+              aria-label="GitHub"
             >
               <Icon name="mdi:github" size="1.2rem" />
-              GitHub
+              <span class="hidden sm:inline">GitHub</span>
             </a>
             <a
               class="btn-ghost" target="_blank" rel="noopener noreferrer"
               :href="linkedin"
+              aria-label="LinkedIn"
             >
               <Icon name="skill-icons:linkedin" size="1.2rem" />
-              LinkedIn
+              <span class="hidden sm:inline">LinkedIn</span>
             </a>
             <a
               class="btn-ghost" target="_blank" rel="noopener noreferrer"
               :href="`mailto:${userMail}`"
+              aria-label="Mail"
             >
               <Icon name="material-symbols:mail-outline" size="1.2rem" />
-              Mail
+              <span class="hidden sm:inline">Mail</span>
             </a>
           </div>
         </div>

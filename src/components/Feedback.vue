@@ -26,25 +26,42 @@ export default {
       <h2>{{ $t('feedback.title') }}</h2>
       <p>{{ $t('feedback.subtitle') }}</p>
     </div>
-    <div class="mx-auto max-w-5xl text-center">
+    <div class="mx-0 max-w-5xl text-center md:mx-auto">
       <Swiper
         class="feedback-swiper text-left"
         :loop="true"
-        :centered-slides="true"
-        :slides-per-view="1.15"
-        :space-between="24"
-        :effect="'coverflow'"
-        :coverflow-effect="{
-          rotate: 0,
-          stretch: 24,
-          depth: 180,
-          modifier: 1.2,
-          slideShadows: false,
-        }"
+        :centered-slides="false"
+        :slides-per-view="1"
+        :space-between="12"
+        :effect="'slide'"
         :pagination="{ clickable: true }"
         :breakpoints="{
-          768: { slidesPerView: 1.4, spaceBetween: 28 },
-          1024: { slidesPerView: 1.8, spaceBetween: 32 },
+          768: {
+            centeredSlides: true,
+            effect: 'coverflow',
+            slidesPerView: 1.4,
+            spaceBetween: 28,
+            coverflowEffect: {
+              rotate: 0,
+              stretch: 24,
+              depth: 180,
+              modifier: 1.2,
+              slideShadows: false,
+            },
+          },
+          1024: {
+            centeredSlides: true,
+            effect: 'coverflow',
+            slidesPerView: 1.8,
+            spaceBetween: 32,
+            coverflowEffect: {
+              rotate: 0,
+              stretch: 24,
+              depth: 180,
+              modifier: 1.2,
+              slideShadows: false,
+            },
+          },
         }"
         :modules="[
           SwiperAutoplay,

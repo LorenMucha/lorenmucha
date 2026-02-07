@@ -1,9 +1,10 @@
 <script>
 export default {
   data: () => {
+    const publicConfig = useRuntimeConfig().public
     return {
-      userMail: process.env.USER_MAIL,
-      linkedIn: process.env.LINKEDIN,
+      userMail: publicConfig.userMail,
+      linkedIn: publicConfig.linkedin,
     }
   },
   methods: {

@@ -20,12 +20,14 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 12%;
+  overflow-x: hidden;
 }
 
 body {
   @apply font-body text-ink-900 antialiased;
   background-color: var(--md-surface);
   background-image: none;
+  overflow-x: hidden;
 }
 
 .layout {
@@ -128,9 +130,21 @@ body {
     @apply text-[0.6rem] font-semibold uppercase tracking-[0.28em] text-ink-500;
   }
 
+.image-float {
+  animation: floatSlow 8s ease-in-out infinite;
+}
+
+@media (max-width: 640px) {
+  .reveal-section,
+  .reveal-section.is-visible,
+  .motion-item,
   .image-float {
-    animation: floatSlow 8s ease-in-out infinite;
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
   }
+}
 }
 
 @keyframes floatIn {
@@ -233,6 +247,21 @@ body {
 
 .feedback-swiper {
   padding: 1rem 0 2.5rem;
+}
+
+@media (max-width: 640px) {
+  .feedback-swiper {
+    padding: 0.5rem 0.75rem 2rem;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .feedback-card {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
 }
 
 .feedback-swiper .swiper-slide {

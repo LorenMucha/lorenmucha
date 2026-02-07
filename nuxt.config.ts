@@ -11,6 +11,10 @@ export default defineNuxtConfig({
       // Doku: https://github.com/harlan-zw/nuxt-seo-kit
       titleSeparator: '|',
       calendlyLink: process.env.CALENDLY,
+      github: process.env.GITHUB,
+      linkedin: process.env.LINKEDIN,
+      freelancerMap: process.env.FREELANCERMAP,
+      userMail: process.env.USER_MAIL,
       siteUrl: 'https://www.lorenmucha.de',
       formspree: process.env.FORMSPREE,
       pageTitle: 'Loren Mucha · Software Engineering',
