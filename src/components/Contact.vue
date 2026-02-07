@@ -26,7 +26,8 @@ export default {
       this.cleanMailForm()
     })
 
-    useCalendly().initInlineWidget()
+    if (this.scheduleActive)
+      this.$nextTick(() => useCalendly().initInlineWidget())
   },
   methods: {
     async sendEmail() {
@@ -50,14 +51,17 @@ export default {
     },
     toggleEmail() {
       this.scheduleActive = false
-      this.emailActive = !this.emailActive
+      this.emailActive = true
     },
     toggleSchedule() {
       this.emailActive = false
-      this.scheduleActive = !this.scheduleActiveya
+      this.scheduleActive = true
+      this.$nextTick(() => {
+        if (this.calendlyLink)
+          useCalendly().initInlineWidget()
+      })
     },
     cleanMailForm() {
-      // TODO: Timer welches send Email kurz einblendet und wieder ausblendet
       this.nameMsg = ''
       this.emailMsg = ''
       this.messageMsg = ''
@@ -67,129 +71,80 @@ export default {
 </script>
 
 <template>
-  <div id="contact" class="section">
-    <div>
-      <h1>{{ $t('header.contact') }}</h1>
-      <div class="rounded-md shadow-sm mt-5 space-x-4 inline-flex" role="group">
-        <button @click="toggleSchedule()">
-          Termin vereinbaren
-        </button>
-        <button @click="toggleEmail()">
-          E-Mail schreiben
-        </button>
-      </div>
-      <div :class="{ active: scheduleActive, hidden: !scheduleActive }">
-        <div class="calendly-inline-widget" :data-url="calendlyLink" style="min-width: 320px; height: 630px;" />
-      </div>
+  <section id="contact" class="section reveal-section" data-reveal>
+    <div class="section-header text-left">
+      <h2>{{ $t('contact.title') }}</h2>
+      <p>{{ $t('contact.subtitle') }}</p>
     </div>
-    <div :class="{ active: emailActive, hidden: !emailActive }" class="pt-2">
-      <div class="flex justify-center items-center">
-        <div class="block p-6 rounded-lg shadow-lg bg-white w-screen">
-          <div class="form-group mb-6">
-            <input
-              v-model="nameMsg" type="text" class="
-                  form-control
-                  block
-                  w-full
-                  px-3
-                  py-1.5
-                  text-base
-                  font-normal
-                  text-gray-700
-                  bg-white bg-clip-padding
-                  border border-solid border-gray-300
-                  rounded
-                  transition
-                  ease-in-out
-                  m-0
-                  focus:text-gray-700
-                  focus:bg-white
-                  focus:border-blue-600
-                  focus:outline-none
-                " placeholder="Name"
-            >
+    <div class="mx-auto grid max-w-6xl gap-8 lg:grid-cols-[0.9fr_1.1fr]">
+      <div class="card card-interactive">
+        <div class="flex flex-wrap items-center gap-3">
+          <span class="chip">{{ $t('contact.note') }}</span>
+          <span class="chip">{{ $t('contact.response') }}</span>
+        </div>
+        <h3 class="card-title mt-5">{{ $t('contact.heading') }}</h3>
+        <p class="mt-4 text-ink-600">{{ $t('contact.detail') }}</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <button class="btn-primary" @click="toggleEmail()">
+            {{ $t('contact.emailCta') }}
+          </button>
+          <button class="btn-tonal" @click="toggleSchedule()">
+            {{ $t('contact.callCta') }}
+          </button>
+        </div>
+        <div class="mt-6 grid gap-4">
+          <div class="surface-muted rounded-[22px] p-4">
+            <p class="card-label">{{ $t('contact.scopeLabel') }}</p>
+            <p class="mt-2 text-sm text-ink-600">{{ $t('contact.scopeText') }}</p>
           </div>
-          <div class="form-group mb-6">
-            <input
-              id="email" v-model="emailMsg" type="email" name="email" required class="
-                  form-control
-                  block
-                  peer
-                  w-full
-                  px-3
-                  py-1.5
-                  text-base
-                  font-normal
-                  text-gray-700
-                  bg-white bg-clip-padding
-                  border border-solid border-gray-300
-                  rounded
-                  transition
-                  ease-in-out
-                  m-0
-                  focus:text-gray-700
-                  focus:bg-white
-                  focus:border-blue-600
-                  focus:outline-none
-                " placeholder="Email address"
-            >
-            <p class="invisible peer-invalid:visible text-red-700 font-light">
-              Please enter a valid email address
-            </p>
+          <div class="surface-muted rounded-[22px] p-4">
+            <p class="card-label">{{ $t('contact.stackLabel') }}</p>
+            <p class="mt-2 text-sm text-ink-600">{{ $t('contact.stackText') }}</p>
           </div>
-          <div class="form-group mb-6">
+        </div>
+      </div>
+      <div class="card card-interactive">
+        <div class="flex items-center gap-3">
+          <button :class="emailActive ? 'btn-primary' : 'btn-ghost'" @click="toggleEmail()">
+            {{ $t('contact.formTab') }}
+          </button>
+          <button :class="scheduleActive ? 'btn-primary' : 'btn-ghost'" @click="toggleSchedule()">
+            {{ $t('contact.scheduleTab') }}
+          </button>
+        </div>
+        <div v-if="emailActive" class="mt-6">
+          <div class="grid gap-4">
+            <input
+              v-model="nameMsg" type="text" class="w-full rounded-[18px] border border-ink-200 bg-white px-4 py-3 text-sm text-ink-700 focus:border-brand-500 focus:outline-none"
+              :placeholder="$t('contact.formName')"
+            >
+            <div>
+              <input
+                id="email" v-model="emailMsg" type="email" name="email" required
+                class="w-full rounded-[18px] border border-ink-200 bg-white px-4 py-3 text-sm text-ink-700 focus:border-brand-500 focus:outline-none"
+                :placeholder="$t('contact.formEmail')"
+              >
+              <p class="mt-2 text-xs text-red-600">
+                {{ $t('contact.formEmailHint') }}
+              </p>
+            </div>
             <textarea
-              v-model="messageMsg" class="
-                  form-control
-                  block
-                  w-full
-                  px-3
-                  py-1.5
-                  text-base
-                  font-normal
-                  text-gray-700
-                  bg-white bg-clip-padding
-                  border border-solid border-gray-300
-                  rounded
-                  transition
-                  ease-in-out
-                  m-0
-                  focus:text-gray-700
-                  focus:bg-white
-                  focus:border-blue-600
-                  focus:outline-none
-                " rows="3" placeholder="Message"
+              v-model="messageMsg" class="w-full rounded-[18px] border border-ink-200 bg-white px-4 py-3 text-sm text-ink-700 focus:border-brand-500 focus:outline-none" rows="4"
+              :placeholder="$t('contact.formMessage')"
             />
           </div>
-          <button
-            class="
-                px-6
-                py-2.5
-                bg-blue-600
-                text-white
-                font-medium
-                text-xs
-                leading-tight
-                uppercase
-                rounded
-                shadow-md
-                hover:bg-blue-700 hover:shadow-lg
-                focus:bg-blue-700
-                focus:shadow-lg
-                focus:outline-none
-                focus:ring-0
-                active:bg-blue-800 active:shadow-lg
-                transition
-                duration-150
-                ease-in-out
-              "
-            @click="sendEmail"
-          >
-            Senden
+          <button class="btn-primary mt-6" @click="sendEmail">
+            {{ $t('contact.formSubmit') }}
           </button>
+        </div>
+        <div v-else class="mt-6">
+          <div class="surface-muted rounded-[22px] p-4">
+            <p class="text-sm text-ink-600">{{ $t('contact.scheduleInfo') }}</p>
+          </div>
+          <div class="calendly-inline-widget mt-4" :data-url="calendlyLink" style="min-width: 320px; height: 630px;" />
         </div>
       </div>
     </div>
     <Modal :modal-state="modal" />
-  </div>
+  </section>
 </template>

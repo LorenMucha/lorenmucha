@@ -2,68 +2,118 @@
   "header": {
     "cv": "Lebenslauf",
     "contact": "Kontakt",
-    "greet": "Wilkommen, ich bin Loren Mucha",
-    "role": "Selbständiger Full Stack Entwickler",
+    "role": "Software Engineering & Architektur · Verfügbar für Nebenprojekte",
+    "availability": "Nebenberuflich verfügbar",
+    "focus": "Fokus: Web-Apps & Datenplattformen",
+    "location": "Remote oder Nürnberg",
+    "primaryCta": "Projekt anfragen",
+    "secondaryCta": "Projekte ansehen",
     "services": {
-      "architecture": "Architektur",
-      "development": "Entwicklung",
-      "devOps": "DevOps"
+      "architecture": "Produkt- & Systemarchitektur",
+      "architectureDesc": "Klare Strukturen, robuste Schnittstellen, skalierbare Systeme.",
+      "development": "Full-Stack Umsetzung",
+      "developmentDesc": "Von UI bis API — schnell, testbar, nachhaltig."
     },
-    "about": "Ich entwickle ganzheitliche Softwarelösungen – von der ersten Idee bis zur finalen Umsetzung. Dabei konzipiere ich neue Anwendungen oder optimiere bestehende Systeme, stets mit Fokus auf <b>Effizienz, Skalierbarkeit und Benutzerfreundlichkeit.</b>"
+    "about": "Freelancer für Softwarearchitektur und Full Stack. Ich entwerfe skalierbare Web-Plattformen, führe Teams und liefere von der Idee bis zum Release.",
+    "highlights": {
+      "scopeTitle": "Geeignet für",
+      "scopeText": "MVPs, Modernisierung, Architektur-Checks oder klar abgegrenzte Feature-Pakete.",
+      "capacityTitle": "Kapazität",
+      "capacityText": "Nebenberuflich mit festen Zeitfenstern – ideal für fokussierte Deliverables."
+    }
+  },
+  "about": {
+    "title": "About",
+    "subtitle": "Kurzprofil",
+    "body1": "Als zertifizierter Softwarearchitekt (iSAQB CPSA‑F) mag ich klare Strukturen: saubere Schnittstellen, nachvollziehbare Architektur und Software, die im Alltag zuverlässig läuft.",
+    "body2": "Ich habe quer durch Branchen und Systemlandschaften gearbeitet. Mein Hintergrund ist Geoinformatik aus Dresden; in Projekten verbinde ich Produktdenken mit pragmatischer Umsetzung.",
+    "body3": "Nebenberuflich unterstütze ich Teams bei klar abgegrenzten Vorhaben, Architekturreviews oder fokussierten Feature‑Paketen. Hauptberuflich bin ich Specialist bei der Alten GmbH. In der Freizeit bin ich leidenschaftlich auf dem Rad unterwegs und klettere im schönen Frankenjura."
+  },
+  "nav": {
+    "portfolio": "Portfolio",
+    "skills": "Skills",
+    "contact": "Kontakt",
+    "request": "Projekt anfragen",
+    "tagline": "Software Engineering"
   },
   "cv": "Lebenslauf",
+  "expertise": {
+    "title": "Skills & Tools",
+    "subtitle": "Tech-Stack und Arbeitsweise, mit der Projekte zuverlässig in Produktion kommen.",
+    "languagesTitle": "Sprachen",
+    "languagesHint": "Stabil in produktiven Systemen und Datenpipelines.",
+    "frameworksTitle": "Frameworks",
+    "frameworksHint": "Bewährte Frameworks für skalierbare Web-Produkte.",
+    "toolsTitle": "Plattformen",
+    "toolsHint": "Datenbanken, Cloud und Infrastruktur, die den Betrieb sichern.",
+    "certificationsTitle": "Zertifikate",
+    "certificationsHint": "Nachweise für Architekturkompetenz."
+  },
+  "feedback": {
+    "title": "Kundenstimmen",
+    "subtitle": "Auszug aus Projekten und langfristigen Kooperationen."
+  },
   "work": {
-    "header": "Portfolio",
+    "header": "Ausgewählte Projekte",
+    "subheader": "Fokussierte Auswahl aus digitalen Produkten, Plattformen und Datensystemen.",
+    "impactLabel": "Ergebnis",
     "fsd": {
       "header": "Projekt DynamX",
-      "intro": "<i>DynamX strebt an, die Verkehrssicherheit durch automatisierte und vernetzte Fahrfunktionen zu erhöhen und entwickelt dafür Prüfmethoden für die Fahrzeuguntersuchung während der gesamten Nutzungsdauer.</i>",
-      "description": "Als Teil eines Teams war ich für die Entwicklung des Frontends mit React sowie die Backend-Integration verantwortlich."
+      "intro": "Testmethoden für automatisierte Fahrfunktionen über den gesamten Lebenszyklus.",
+      "description": "Frontend-Architektur, stabile Backend-Anbindung und enge Abstimmung im Projektteam."
     },
     "wohnkontexte": {
       "header": "Befragungstool WohnKontexte",
-      "intro": "Wie viel Wohnraum wird gebraucht und was fehlt? Das Befragungstool WohnKontexte erhebt Bedarfe direkt bei der Mieter:innenschaft – als Grundlage für fundierte Entscheidungen im Wohnungsbau.",
-      "description": "Dockerisierte LimeSurvey-Instanz (self-hosted) mit API-Anbindung zur automatisierten Erhebung, Verwaltung und Analyse der Umfragedaten; ETL-Integration für die Weiterverarbeitung."
-    },
-    "regio_kontext": {
-      "header": "Showcase als Simulation der Zu- und Fortzüge für Berlin",
-      "intro": "<i>Dieses Tool ermöglicht es dem Nutzer auf interactiver Art und Weise die Zu und Fortzüge von Brandenburg nach Berlin zu visualisieren.</i>",
-      "description": "Dieses Projekt wurde von mir konzipiert und umgesetzt und dem Kunden über <a href='https://github.com/LorenMucha/ShowCaseRegioKontext' target='_blank' class='active-link'>Github Pages</a> bereitgestellt, da ein eigenes Hosting nicht in Frage kam. Die Anwendung ermöglicht es dem Nutzer, Indikatoren durch interaktive Tabellen und Kartenansichten anschaulich zu visualisieren. Durch Diagramme und Vergleichsmöglichkeiten können zeitliche Verläufe anschaulich dargestellt werden."
+      "intro": "Befragung von Wohnraumbedarfen direkt bei der Mieterschaft.",
+      "description": "Self-hosted Umfrageplattform mit API-Anbindung und automatisierter Auswertung."
     },
     "ioer_monitor": {
       "header": "IÖR Monitor",
-      "intro": "<i>Der IÖR-Monitor ist ein Web GIS um intuitiv Fragen zur Flächennutzung in Deutschland zu beantworten.</i>",
-      "description": "Dieses Projekt setzte ich im Rahmen meiner Tätigkeit für das <a class='active-link' href='https://ioer.de' target='_blank'>IÖR Dresden</a> als Architekt und Entwickler um. Hierbei entstand ein WebGIS, welches sich intuitiv mit jedem Endgerät steuern lässt und eine performante Darstellung bis auf die Gemeindeebene bietet. Darüber hinaus können über die bereitgestellten Werkzeuge umfangreiche Analaysen durchgeführt werden"
+      "intro": "Web-GIS für die Analyse von Flächennutzung und Raumindikatoren in Deutschland.",
+      "description": "Konzeption eines performanten Geo-Frontends mit stabiler Datenpipeline."
     },
     "addigo": {
-      "header": "Addigo",
-      "intro": "<i>ADDIGO Servicereport ist ein digitales, flexibles Werkzeug für die Optimierung administrativer Arbeitsabläufe. Hierbei werden dem Kunden eine App und Webanwendung zur Verfügung gestellt.</i>",
-      "description": "Dieses Projekt leitete ich als Softwarearchitekt, mit dem Ziel einer erfolgreichen Online Bereitstellung des Produktes. Der Fokus meiner Arbeit erstreckte sich von den DevOps bis hin zur Teamleitung und Security Analyse."
+      "header": "Addigo Service Suite",
+      "intro": "Digitale Serviceberichte und mobile Workflows für Innen- und Außendienst.",
+      "description": "Architektur für Offline-first Prozesse, Rollenmodelle und stabile Releases im Betrieb."
     },
     "vertical_life": {
       "header": "8a.nu",
-      "intro": "<i>Vertical Life ist eine Plattform für Kletterer, um Klettergebiete zu finden und zu teilen.</i>",
-      "description": "In meiner Rolle als Full Stack Entwickler arbeite ich daran, die beiden bestehenden monolithischen Anwendungen <b>8a.nu</b> und <b>Vertical-life</b> in einer einheitlichen Oberfläche zu vereinen. Ein weiterer Schwerpunkt meiner Tätigkeit liegt auf der Einführung von Test-driven Design sowie der Architektur und Implementierung einer leistungsfähigen DevOps-Umgebung."
+      "intro": "Plattform für Kletterer zur Recherche und zum Teilen von Klettergebieten.",
+      "description": "Systemintegration, um 8a.nu und Vertical-Life konsistent zu betreiben."
     },
     "noq": {
       "header": "No-Q Signature Pad",
-      "intro": "Plattform zur Verwaltung von Warteschlangen und Terminen, um physische Warteschlangen zu eliminieren und den Kundenservice zu verbessern.",
-      "description": "In diesem Projekt leitete ich die Implementierung und Architektur des Signature Pad zur digitalen Unterschrift von Corona Tests. Durch eine sehr hohe Last zu Stoßzeiten musste die Software bis zu 50 Tsd. Aufrufe gleichzeitig handhaben können. Ein weiterer Punkt war die Sicherheit der Patientendaten, welche nach den höchsten Standards gewährleistet werden musste."
-    },
-    "climbing_diary": {
-      "header": "Climbing Diary",
-      "intro": "Virtuelles Tagebuch mit Statistischer Auswertung der persönlichen Leistungen, als native Android App."
-    },
-    "monitor_api": {
-      "header": "Monitor API",
-      "intro": "REST API zur Geodatenprocessierung für das <a class='active-link' href='https://sora.git.gesis.org' target='_blank'>Sora-Forschungsprojektes</a>.",
-      "description": "Als Lead-Entwickler und Architekt war ich für die Implementierung dieser Geoprocessierung-API verantwortlich, die es den Clients ermöglicht, umfangreiche Algorithmen für ihre Daten zu nutzen. Ein weiterer Schwerpunkt meiner Arbeit lag in der Verwaltung von Nutzerdaten und Rollen, was es ermöglichte, den Zugriff auf die API zu steuern. Zusätzlich gehörten DevOps und die Gewährleistung des reibungslosen Betriebs zu meinen Aufgabenbereichen."
-    },
-    "land_use_monitor": {
-      "header": "Land Use Monitor DE",
-      "intro": "Stellt Informationen zur Flächenstruktur und deren Entwicklung sowie zur Qualität flächendeckend für die BRD als <b>App</b> bereit."
+      "intro": "Digitale Warteschlangen- und Terminverwaltung mit sicherer Signaturerfassung.",
+      "description": "Datenschutzkonforme Signatur-Lösung mit hoher Verfügbarkeit und resilientem Betrieb."
     }
   },
   "tools": {
     "languages": "Programmiersprachen"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Unverbindlich anfragen — ich melde mich mit kurzer Einschätzung zum Aufwand.",
+    "note": "Nebenberuflich",
+    "response": "Antwort i.d.R. binnen 48h",
+    "heading": "Projektidee kurz skizzieren",
+    "detail": "Ich unterstütze gern bei MVPs, Modernisierung oder gezielten Erweiterungen. Klare Zielsetzung und feste Rahmen funktionieren am besten.",
+    "emailCta": "E-Mail schreiben",
+    "callCta": "Kurztermin buchen",
+    "scopeLabel": "Geeignete Projektformen",
+    "scopeText": "MVPs, Modernisierung, Architektur-Checks, Feature-Pakete.",
+    "stackLabel": "Stack",
+    "stackText": "Frontend, Backend, APIs — entlang des gesamten Produktzyklus.",
+    "formTab": "Kontaktformular",
+    "scheduleTab": "Termin",
+    "formName": "Name",
+    "formEmail": "E-Mail",
+    "formEmailHint": "Bitte eine gültige E-Mail-Adresse eingeben.",
+    "formMessage": "Kurzbeschreibung des Projekts",
+    "formSubmit": "Nachricht senden",
+    "scheduleInfo": "Für ein kurzes Kennenlernen kannst du hier einen Slot wählen."
+  },
+  "footer": {
+    "tagline": "Software Engineering · nebenberuflich verfügbar"
   }
 }

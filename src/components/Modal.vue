@@ -29,44 +29,32 @@ export default {
 <template>
   <div
     v-if="state.show"
-    class="fixed inset-0 z-[1000] outline-none focus:outline-none justify-center items-center flex !overflow-hidden"
+    class="fixed inset-0 z-[1000] flex items-center justify-center bg-ink-900/40 px-4 backdrop-blur"
   >
-    <div>
-      <!-- content -->
-      <div
-        class="border w-auto rounded-lg shadow-lg relative flex flex-col bg-white outline-none focus:outline-none pl-10 pr-10 pt-10"
-      >
-        <div class="flex justify-center p-5 flex-col items-center">
-          <div v-if="state.type === 'sucess'">
-            <Icon name="ooui:success" size="8rem" class="animate-bounce w-auto mx-auto h-auto block text-blue-600" />
-          </div>
-          <div v-else>
-            <Icon name="mdi:error" size="8rem" class="animate-bounce w-auto mx-auto h-auto block text-red-600" />
-          </div>
-          <div v-if="state.type === 'sucess'" class="font-bold">
-            Email versendet
-          </div>
-          <div v-else class="font-bold text-red-600">
-            Uups.....es ist ein Fehler aufgetreten
-          </div>
-        </div>
-        <div class="flex items-center justify-end p-6">
-          <button
-            v-if="state.type === 'sucess'"
-            type="button" class="g-transparent hover:bg-green-100 text-blue-600 font-semibold hover:text-black py-2 px-4 border border-blue-600 hover:border-transparent rounded"
-            @click="toggleModal"
-          >
-            Schließen
-          </button>
-          <button
-            v-else
-            type="button" class="g-transparent hover:bg-green-100 text-red-600 font-semibold hover:text-black py-2 px-4 border border-red-600 hover:border-transparent rounded !bg-red-600"
-            @click="toggleModal"
-          >
-            Schließen
-          </button>
-        </div>
+    <div class="surface-strong w-full max-w-md rounded-[28px] p-8 text-center">
+      <div class="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-ink-100">
+        <Icon
+          v-if="state.type === 'sucess'"
+          name="ooui:success"
+          size="3.5rem"
+          class="text-brand-700"
+        />
+        <Icon
+          v-else
+          name="mdi:error"
+          size="3.5rem"
+          class="text-accent-600"
+        />
       </div>
+      <p class="mt-6 font-display text-xl font-semibold text-ink-900">
+        {{ state.type === 'sucess' ? 'Nachricht gesendet' : 'Da ist etwas schiefgelaufen' }}
+      </p>
+      <p class="mt-3 text-sm text-ink-600">
+        {{ state.type === 'sucess' ? 'Danke! Ich melde mich zeitnah zurück.' : 'Bitte versuche es später erneut oder nutze die E-Mail-Adresse.' }}
+      </p>
+      <button type="button" class="btn-primary mt-8 w-full justify-center" @click="toggleModal">
+        Schließen
+      </button>
     </div>
   </div>
 </template>

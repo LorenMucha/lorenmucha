@@ -1,52 +1,301 @@
 @import "flag-icons/css/flag-icons.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 @tailwind screens;
 
+:root {
+  color-scheme: light;
+  --md-surface: #f7f4ef;
+  --md-surface-variant: #f1ece6;
+  --md-surface-high: #ffffff;
+  --md-outline: rgba(68, 64, 60, 0.16);
+  --md-outline-strong: rgba(68, 64, 60, 0.28);
+  --md-ink: #1c1917;
+  --md-ink-muted: #57534e;
+}
+
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 10%;
+  scroll-padding-top: 12%;
+  overflow-x: hidden;
+}
+
+body {
+  @apply font-body text-ink-900 antialiased;
+  background-color: var(--md-surface);
+  background-image: none;
+  overflow-x: hidden;
+}
+
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .active-link {
-  @apply text-blue-500;
+  @apply text-brand-700;
 }
 
 @layer components {
-  .active-link {
-    @apply font-bold hover: text-blue-900 text-blue-700;
+  .reveal-section {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 700ms ease, transform 700ms ease;
   }
 
-  .section button{
-    @apply inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800
-  }
-  .time-card {
-    @apply px-10 rounded overflow-hidden shadow-lg;
+  .reveal-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
   }
 
-  .page {
-    @apply text-center;
+  .surface {
+    @apply bg-white/90 backdrop-blur border border-ink-200/60 shadow-soft;
+  }
+
+  .surface-strong {
+    @apply bg-white shadow-lift border border-ink-200/70;
+  }
+
+  .surface-muted {
+    @apply bg-ink-100/70 border border-ink-200;
   }
 
   .section {
-    @apply p-10 container mx-auto sm:w-full;
+    @apply min-h-screen px-6 py-16 md:px-10 md:py-20 lg:px-14;
   }
 
-  section h1 {
-    @apply mb-2 mt-0 text-5xl font-medium leading-tight;
+  .section-header {
+    @apply mx-auto mb-10 max-w-6xl;
   }
 
-  section .header {
-    @apply container text-center pb-5;
+  .section-header h2 {
+    @apply font-display text-3xl md:text-4xl font-semibold tracking-tight text-ink-900;
   }
 
-  section h2 {
-    @apply font-black leading-tight text-3xl md:text-4xl mb-4;
+  .section-header p {
+    @apply text-ink-600 text-lg mt-3;
   }
 
-  section h3 {
-    @apply font-black leading-tight text-xl md:text-xl mb-3;
+  .chip {
+    @apply inline-flex items-center gap-2 rounded-full border border-ink-200 bg-white/80 px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-ink-600;
+  }
+
+  .btn-primary {
+    @apply relative inline-flex items-center gap-2 rounded-full bg-brand-700 px-6 py-3 text-sm font-semibold text-white shadow-glow transition hover:bg-brand-800;
+    overflow: hidden;
+  }
+
+  .btn-tonal {
+    @apply inline-flex items-center gap-2 rounded-full border border-brand-200 bg-brand-100 px-6 py-3 text-sm font-semibold text-brand-800 transition hover:border-brand-300 hover:bg-brand-200;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 rounded-full border border-ink-200 bg-white/70 px-4 py-2 text-sm font-semibold text-ink-700 transition hover:border-ink-300 hover:bg-white;
+  }
+
+  .card {
+    @apply surface rounded-[28px] p-6 md:p-8;
+  }
+
+  .card-interactive {
+    @apply transition duration-300 ease-out hover:-translate-y-1 hover:shadow-lift;
+  }
+
+  .card-title {
+    @apply font-display text-xl md:text-2xl font-semibold text-ink-900;
+  }
+
+  .card-muted {
+    @apply text-ink-600 text-sm;
+  }
+
+  .motion-item {
+    animation: floatIn 700ms ease both;
+    transform-origin: center;
+  }
+
+  .eyebrow {
+    @apply text-[0.65rem] font-semibold uppercase tracking-[0.3em] text-ink-500;
+  }
+
+  .pill {
+    @apply inline-flex items-center gap-2 rounded-full border border-ink-200 bg-ink-50 px-3 py-1 text-xs font-semibold text-ink-700;
+  }
+
+  .card-label {
+    @apply text-[0.6rem] font-semibold uppercase tracking-[0.28em] text-ink-500;
+  }
+
+.image-float {
+  animation: floatSlow 8s ease-in-out infinite;
+}
+
+@media (max-width: 640px) {
+  .reveal-section,
+  .reveal-section.is-visible,
+  .motion-item,
+  .image-float {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
+}
+
+@keyframes floatIn {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes floatSlow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes sheen {
+  0% {
+    transform: translateX(-120%) skewX(-18deg);
+    opacity: 0;
+  }
+  35% {
+    opacity: 0.4;
+  }
+  60% {
+    transform: translateX(120%) skewX(-18deg);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.btn-primary::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.5) 50%, transparent 100%);
+  transform: translateX(-120%) skewX(-18deg);
+  animation: sheen 5s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.card-interactive .media-hover {
+  transition: transform 300ms ease;
+}
+
+.card-interactive:hover .media-hover {
+  transform: scale(1.02);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-primary::after {
+    animation: none;
+  }
+
+  .image-float {
+    animation: none;
+  }
+
+  .reveal-section {
+    transition: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+/* Swiper navigation */
+.swiper-button-next,
+.swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(68, 64, 60, 0.2);
+  box-shadow: 0 10px 22px rgba(28, 25, 23, 0.14);
+  transition: transform 200ms ease, box-shadow 200ms ease, background 200ms ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 26px rgba(28, 25, 23, 0.18);
+  background: #ffffff;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f766e;
+}
+
+.feedback-swiper {
+  padding: 1rem 0 2.5rem;
+}
+
+@media (max-width: 640px) {
+  .feedback-swiper {
+    padding: 0.5rem 0.75rem 2rem;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .feedback-card {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+.feedback-swiper .swiper-slide {
+  transition: transform 400ms ease, opacity 400ms ease;
+  opacity: 0.6;
+}
+
+.feedback-swiper .swiper-slide-active {
+  opacity: 1;
+}
+
+.feedback-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(247, 244, 239, 0.95));
+  border: 1px solid rgba(68, 64, 60, 0.12);
+}
+
+.feedback-swiper .swiper-pagination {
+  bottom: 0 !important;
+}
+
+.feedback-swiper .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: rgba(68, 64, 60, 0.35);
+  opacity: 1;
+}
+
+.feedback-swiper .swiper-pagination-bullet-active {
+  background: #0f766e;
+  transform: scale(1.25);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .motion-item {
+    animation: none;
   }
 }

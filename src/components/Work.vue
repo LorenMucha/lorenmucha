@@ -13,58 +13,56 @@ export default {
 </script>
 
 <template>
-  <div :id="id" class="section">
-    <div class="header">
-      <div class="max-w-3xl mx-auto">
-        <h2>
-          {{ $t("work.header") }}
-        </h2>
-      </div>
+  <section :id="id" class="section reveal-section" data-reveal>
+    <div class="section-header text-left">
+      <h2>{{ $t('work.header') }}</h2>
+      <p>{{ $t('work.subheader') }}</p>
     </div>
-    <div class="mx-auto content-center">
-      <div class="grid grid-col-3 gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 place-items-start">
-        <ClientOnly placeholder="Loading...">
-          <div v-for="(item, index) in workList" :key="index" class="flex flex-wrap items-center justify-center">
-            <NuxtLink :to="item.link" target="_blank">
-              <div class="max-w-[70%] md:max-w-[95%] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 p-5">
-                <img
-                  class="mx-auto rounded-t-lg object-cover h-32 sm:h-48 md:h-64 pb-5" :src="item.imageSrc" loading="lazy"
-                  :alt="$t(item.header)"
-                >
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  {{ $t(item.header) }}{{ item.customer ? ` - ${item.customer}` : '' }}
-                </h5>
-                <hr class="hr mb-2">
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400" v-html="$t(item.intro)" />
-                <p v-html="item.description ? $t(item.description) : ''" />
-                <div class="flex mt-2 mb-2 items-start overflow-x-auto pb-2">
-                  <div v-for="(ob, _index) in item.technology" :key="_index">
-                    <div class="pl-2" :title="ob.name">
-                      <Icon :name="ob.icon" size="2rem" />
-                    </div>
-                  </div>
-                </div>
-                <div class="mt-2">
-                  <hr class="hr">
-                  <button class="mt-2">
-                    {{ item.linkText ? item.linkText : 'Read More' }}
-                    <svg
-                      aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </button>
+    <div class="mx-auto grid max-w-6xl gap-6 lg:grid-cols-2">
+      <ClientOnly placeholder="Loading...">
+        <article
+          v-for="(item, index) in workList"
+          :key="index"
+          class="card card-interactive motion-item"
+          :style="{ animationDelay: `${index * 80 + 60}ms` }"
+        >
+          <div class="grid gap-6 md:grid-cols-[0.9fr_1.1fr]">
+            <div class="rounded-[22px] bg-ink-50/70 p-3" :class="item.imageWrapClass ? item.imageWrapClass : ''">
+              <img
+                class="media-hover h-48 w-full rounded-[18px] object-cover md:h-56"
+                :class="item.imageClass ? item.imageClass : ''"
+                :src="item.imageSrc" loading="lazy"
+                :alt="$t(item.header)"
+              >
+            </div>
+            <div class="flex h-full flex-col">
+              <div>
+                <p class="card-label">{{ item.customer }}</p>
+                <h3 class="card-title mt-2">{{ $t(item.header) }}</h3>
+                <p class="mt-3 text-sm text-ink-600" v-html="$t(item.intro)" />
+                <div v-if="item.description" class="mt-4 rounded-[18px] bg-ink-50 px-4 py-3 text-sm text-ink-600">
+                  <p class="card-label">{{ $t('work.impactLabel') }}</p>
+                  <p class="mt-2" v-html="$t(item.description)" />
                 </div>
               </div>
-            </NuxtLink>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <div v-for="(ob, _index) in item.technology" :key="_index" class="surface-muted rounded-full px-3 py-1 text-xs font-semibold text-ink-600" :title="ob.name">
+                  <span class="inline-flex items-center gap-2">
+                    <Icon :name="ob.icon" size="1rem" />
+                    {{ ob.name }}
+                  </span>
+                </div>
+              </div>
+              <div class="mt-6">
+                <a class="btn-ghost" :href="item.link" target="_blank" rel="noopener">
+                  {{ item.linkText ? item.linkText : 'Mehr erfahren' }}
+                  <Icon name="material-symbols:arrow-forward" />
+                </a>
+              </div>
+            </div>
           </div>
-        </ClientOnly>
-      </div>
+        </article>
+      </ClientOnly>
     </div>
-  </div>
+  </section>
 </template>

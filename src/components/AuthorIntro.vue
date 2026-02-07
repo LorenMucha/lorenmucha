@@ -11,72 +11,36 @@ export default {
 </script>
 
 <template>
-  <div class="lg:h-screen w-screen h-max section flex justify-center items-center mt-10">
-    <div class="container grid grid-cols-1 gap-3 lg:grid-flow-col lg:grid-cols-4">
-      <div class="md:col-span-3">
-        <div class="items-center">
-          <h1 class="text-bold sm-text-3xl w-auto" v-html="$t('header.role')" />
-          <div class="pt-5">
-            <div class="grid grid-cols-3 font-bold mt-4 items-start">
-              <div class="offer-container">
-                <Icon class="offer-icons" name="mdi:design" />
-                <div class="offer-text">
-                  {{ $t("header.services.architecture") }}
-                </div>
-              </div>
-              <div class="offer-container">
-                <Icon class="offer-icons" name="carbon:development" />
-                <div class="offer-text">
-                  {{ $t("header.services.development") }}
-                </div>
-              </div>
-              <div class="offer-container">
-                <Icon class="offer-icons" name="carbon:continuous-integration" />
-                <div class="offer-text">
-                  {{ $t("header.services.devOps") }}
-                </div>
-              </div>
-            </div>
-            <hr class="my-1 h-1 bg-blue-700 rounded border-0 md:my-6 dark:bg-gray-700">
-            <p class="mb-4 dark:bg-gray-800 dark:text-blue-200 sm:text-justify text-xl" v-html="$t('header.about')" />
-          </div>
+  <section class="section reveal-section flex items-center" data-reveal>
+    <div class="mx-auto grid w-full max-w-6xl items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+      <div class="motion-item" style="animation-delay: 60ms;">
+        <div class="flex flex-wrap items-center gap-3 text-xs font-semibold uppercase tracking-[0.28em] text-ink-400">
+          <span>{{ $t('header.availability') }}</span>
+          <span class="text-ink-300">·</span>
+          <span>{{ $t('header.location') }}</span>
         </div>
-        <div class="rounded-md shadow-sm mt-5 space-x-4 hidden lg:inline-flex" role="group">
-          <button class="content_button" @click="$scrollTo('work')">
-            Portfolio
+        <h2 class="mt-5 text-4xl font-semibold leading-tight tracking-tight text-ink-900 sm:text-5xl">
+          {{ $t('header.role') }}
+        </h2>
+        <p class="mt-6 max-w-2xl text-lg text-ink-600" v-html="$t('header.about')" />
+        <div class="mt-8 flex flex-wrap gap-3">
+          <button class="btn-primary" @click="$scrollTo('contact')">
+            {{ $t('header.primaryCta') }}
+            <Icon name="material-symbols:arrow-forward" />
           </button>
-          <button class="content_button" @click="$scrollTo('expertise')">
-            Skills & Tools
-          </button>
-          <button class="content_button" @click="$scrollTo('contact')">
-            Kontakt
+          <button class="btn-ghost" @click="$scrollTo('work')">
+            {{ $t('header.secondaryCta') }}
           </button>
         </div>
       </div>
-      <div class="row-start-1 p-5">
-        <img
-          :src="authorImage" alt="Author"
-          class="shadow-xl md:h-60 md:w-60 h-40 w-40 rounded-full block object-cover"
-        >
+      <div class="motion-item flex justify-center lg:justify-end" style="animation-delay: 140ms;">
+        <div class="aspect-[3/4] w-full max-w-[340px] overflow-hidden rounded-[24px] border border-ink-200/70 bg-white md:max-w-[380px]">
+          <img
+            :src="authorImage" alt="Loren Mucha"
+            class="h-full w-full object-cover object-top"
+          >
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
-
-<style scoped>
-.profile-icon {
-  @apply w-16 h-16
-}
-.offer-container {
-  @apply block text-center hover:animate-pulse
-}
-.offer-container .offer-icons {
-  @apply text-8xl text-blue-700
-}
-.offer-container  .offer-text{
-  @apply mt-2 md:text-2xl
-}
-.content_button{
-  @apply text-lg
-}
-</style>
