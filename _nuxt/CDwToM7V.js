@@ -1,0 +1,1 @@
+import{_ as o}from"./Ae-8f4ny.js";import{I as r,J as t,al as s}from"./Gaanpa4-.js";const l={};function n(e,a){return r(),t("ol",null,[s(e.$slots,"default")])}const _=o(l,[["render",n]]);export{_ as default};
